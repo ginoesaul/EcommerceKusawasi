@@ -4,12 +4,12 @@
          <div class="row">
             <div class="col-sm-6 col-md-3">
                <div class="mobile-collapse">
-                  <h4 class="mobile-collapse_title visible-xs">FREE SHIPPING</h4>
+                  <h4 class="mobile-collapse_title visible-xs">ENVIO GRATIS</h4>
                   <div class="mobile-collapse_content">
                      <a href="#" class="services-block">
                         <span class="icon icon-airplanemode_active"></span>
-                        <div class="title">Free Shipping</div>
-                        <p>Free on all products</p>
+                        <div class="title">Envio gratis</div>
+                        <p>Descuento en todos los productos</p>
                      </a>
                   </div>
                </div>
@@ -20,8 +20,8 @@
                   <div class="mobile-collapse_content">
                      <a href="#" class="services-block">
                         <span class="icon icon-security"></span>
-                        <div class="title">Secured Shopping</div>
-                        <p>We use the best security features</p>
+                        <div class="title">Compras seguras</div>
+                        <p>Usamos las mejores funciones de seguridad</p>
                      </a>
                   </div>
                </div>
