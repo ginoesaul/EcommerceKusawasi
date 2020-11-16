@@ -18,7 +18,7 @@
                 <button data-toggle="modal" data-target="#comment-modal-{{ $comment->id }}" class="btn btn-sm btn-link text-uppercase">Edit</button>
             @endcan--}}
             @can('delete-comment', $comment)
-                <a href="{{ url('comments/' . $comment->id) }}" onclick="event.preventDefault();document.getElementById('comment-delete-form-{{ $comment->id }}').submit();" class="btn btn-sm btn-link text-danger text-uppercase">Delete</a>
+                <a href="{{ url('comments/' . $comment->id) }}" onclick="event.preventDefault();document.getElementById('comment-delete-form-{{ $comment->id }}').submit();" class="btn btn-sm btn-link text-danger text-uppercase">Borrar</a>
                 <form id="comment-delete-form-{{ $comment->id }}" action="{{ url('comments/' . $comment->id) }}" method="POST" style="display: none;">
                     @method('DELETE')
                     @csrf
@@ -34,21 +34,21 @@
                             @method('PUT')
                             @csrf
                             <div class="modal-header">
-                                <h5 class="modal-title">Edit Comment</h5>
+                                <h5 class="modal-title">Editar comentario:</h5>
                                 <button type="button" class="close" data-dismiss="modal">
                                 <span>&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="message">Update your message here:</label>
+                                    <label for="message">Actualizar tu mensaje aqui:</label>
                                     <textarea required class="form-control" name="message" rows="3">{{ $comment->comment }}</textarea>
                                     <small class="form-text text-muted"><a target="_blank" href="https://help.github.com/articles/basic-writing-and-formatting-syntax">Markdown</a> cheatsheet.</small>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-sm btn-outline-secondary text-uppercase" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-sm btn-outline-success text-uppercase">Update</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary text-uppercase" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-sm btn-outline-success text-uppercase">Actualizar</button>
                             </div>
                         </form>
                     </div>
