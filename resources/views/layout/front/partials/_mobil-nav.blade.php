@@ -1,8 +1,8 @@
 <nav class="panel-menu mm-right">
    <ul>
-      <li><a href="{{ route('home') }}" class="load_page">Home</a></li>
+      <li><a href="{{ route('home') }}" class="load_page">Inicio</a></li>
       <li>
-         <a href="{{ route('front.productsList') }}" class="load_page">Products</a>
+         <a href="{{ route('front.productsList') }}" class="load_page">Productos</a>
          <ul>
             @forelse($categories as $category)
                <li><a href="{{ route('front.lists',['list' => 'categories','slug' => "$category->category_slug", ]) }}"
@@ -12,12 +12,12 @@
                   @endif
                </li>
             @empty
-               <li>NOTHING YET</li>
+               <li>NADA AÚN</li>
             @endforelse
          </ul>
       </li>
       <li>
-         <a>SPECIAL OFFERS</a>
+         <a>OFERTAS ESPECIALES</a>
          <ul>
             @forelse($special_offers as $product)
                <li><a href="{{ route('front.show',$product->product_slug) }}">{{ $product->product_name }}</a></li>
@@ -27,7 +27,7 @@
          </ul>
       </li>
       <li>
-         <a>MOST SOLD</a>
+         <a>MÁS VENDIDOS</a>
          <ul>
             @forelse($popular_products as $product)
                <li><a href="{{ route('front.show',$product->product_slug) }}">{{ $product->product_name }}</a></li>
@@ -37,20 +37,20 @@
 
 
       <li>
-         <a>BRANDS</a>
+         <a>MARCAS</a>
          <ul>
             @forelse($brands as $brand)
                <li><a href="{{ route('front.lists', ['list' => 'brands' , 'slug' => $brand->brand_slug ]) }}"
                       class="load_page">{{ $brand->brand_name }}</a></li>
             @empty
-               <b>NO DATA</b>
+               <b>NO HAY INFORMACIÓN</b>
             @endforelse
          </ul>
       </li>
    </ul>
    <div class="mm-navbtn-names" style="display:none">
-      <div class="mm-closebtn">CLOSE</div>
-      <div class="mm-backbtn">BACK</div>
+      <div class="mm-closebtn">CERRAR</div>
+      <div class="mm-backbtn">VOLVER</div>
    </div>
 </nav>
 

@@ -1,9 +1,9 @@
-<nav class="header-menu">
+<nav class="header-menu" >
    <ul>
       <li class="dropdown">
-         <a href="{{ route('front.productsList') }}" class="load_page">PRODUCTS</a>
+         <a href="{{ route('front.productsList') }}" class="load_page">PRODUCTOS</a>
          <div class="dropdown-menu">
-            {{--            <h2 class="title-submenu">LAYOUT</h2>--}}
+            {{--            <h2 class="title-submenu">DISEÑO</h2>--}}
             <div class="row custom-layout-02 menu-list-col">
                <div class="col-sm-4">
                   <div class="row" style="margin-top: -3rem ">
@@ -37,7 +37,7 @@
                </div>
                <div class="col-sm-4">
                   {{--                  <a class="title-underline" href="listing-left-column.html">--}}
-                  {{--                     <span>SHOPPING PAGES</span>--}}
+                  {{--                     <span>PÁGINAS DE COMPRAS</span>--}}
                   {{--                  </a>--}}
                   <div class="row" style="margin-top: -3rem ">
                      <div class="col-sm-pull-4 ">
@@ -53,7 +53,7 @@
          </div>
       </li>
       <li class="dropdown">
-         <a href="{{ route('front.productsList') }}">SPECIAL OFFERS</a>
+         <a href="{{ route('front.productsList') }}">OFERTAS ESPECIALES</a>
          <div class="dropdown-menu">
             <div class="row custom-layout-02">
                <div class="col-sm-12">
@@ -65,7 +65,7 @@
                                  <a href="{{ route('front.show',$product->product_slug) }}">
                                     <div class="image-box">
                                        <img src="{{ $product->thumbnail }}" class="img-thumbnail" alt="photo">
-                                       <div class="label-sale ">Sale<br>{{ $product->off }}% Off</div>
+                                       <div class="label-sale ">Venta<br>{{ $product->off }}% Off</div>
                                     </div>
                                     <h2 class="title">
                                        {{ $product->product_name }}
@@ -87,7 +87,7 @@
          </div>
       </li>
       <li class="dropdown">
-         <a>POPULER PRODUCTS</a>
+         <a>PRODUCTOS POPULARES</a>
          <div class="dropdown-menu">
             <div class="row custom-layout-02">
                <div class="col-sm-12">
@@ -100,7 +100,7 @@
                                     <a href="{{ route('front.show',$product->product_slug) }}">
                                        <div class="image-box">
                                           <img src="{{ $product->thumbnail }}" class="img-thumbnail" alt="photo">
-                                          <div class="label-sale left">Sale</div>
+                                          <div class="label-sale left">Venta</div>
                                        </div>
                                        <h2 class="title">
                                           {{ $product->product_name }}
@@ -126,7 +126,7 @@
       </li>
 
       <li class="dropdown">
-         <a>BRANDS</a>
+         <a>MARCAS</a>
          <div class="dropdown-menu">
             <div class="row custom-layout-02">
                <div class="col-sm-12">
@@ -142,7 +142,7 @@
                         </div>
 
                      @empty
-                        NO BRANDS
+                        NO EXISTEN NINGUNA MARCA
                      @endforelse
                   </div>
 
