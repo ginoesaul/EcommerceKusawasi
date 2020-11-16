@@ -16,10 +16,10 @@
                <div class="dropdown-menu">
                   <div class="mini-menu">
                      <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html">Casa</a></li>
                         <li><a href="faqs.html">Delivery</a></li>
                         <li><a href="blog_listing.html">Blog</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
                      </ul>
                   </div>
                </div>
@@ -29,15 +29,15 @@
             <!-- account -->
             <div class="account dropdown">
                <a class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon-person "></span></a>
-               <div class="dropdown-label hidden-sm hidden-xs">My Account</div>
+               <div class="dropdown-label hidden-sm hidden-xs">Mi perfil</div>
                <ul class="dropdown-menu">
-                  <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Compare</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Track My Order</a></li>
+                  <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Seguimiento de mi pedido</a></li>
                   @auth
-                     {{--                           <li>Welcome <b>{{ auth()->user()->name }}</b></li>--}}
-                     <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>My Account</a></li>
-                     <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>My Wishlist</a></li>
-                     <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>My Orders</a></li>
+                     {{--                           <li>Bienvenido <b>{{ auth()->user()->name }}</b></li>--}}
+                     <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>Mi perfil</a></li>
+                     <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>Favoritos</a></li>
+                     <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis ordenes</a></li>
                      <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -50,8 +50,8 @@
                         </form>
                      </li>
                   @else
-                     <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Log In</a></li>
-                     <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Create an account</a></li>
+                     <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar Sesión</a></li>
+                     <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Crear cuenta</a></li>
                   @endauth
                </ul>
             </div>
@@ -86,8 +86,8 @@
                <div class="search-dropdown">
                   <form action="#" method="get">
                      <div class="input-outer">
-                        <input type="search" class="typeahead" name="search" value="" maxlength="128" placeholder="Enter keyword">
-                        <button type="submit" class="btn-search"><span>Search</span></button>
+                        <input type="search" class="typeahead" name="search" value="" maxlength="128" placeholder="Ingrese lo que quiera buscar">
+                        <button type="submit" class="btn-search"><span>Buscar</span></button>
                      </div>
                      <a href="#" class="search-close"><span class="icon icon-close"></span></a>
                   </form>
@@ -105,7 +105,7 @@
             <!-- mini-menu -->
             <div class="mini-menu">
                <ul>
-                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class="active"><a href="index.html">Inicio</a></li>
                   <li><a href="faqs.html">Delivery</a></li>
                   <li><a href="blog_listing.html">Blog</a></li>
                   <li><a href="contact.html">Contacts</a></li>
@@ -120,7 +120,7 @@
                   <span class="icon icon-call"></span>+300-9876-2345
                </div>
                <div class="time">
-                  7 Days a week from 9:00 am to 7:00 pm
+                  7 días a la semana de 9:00 am a 7:00 pm
                </div>
             </div>
             <!-- /box-info -->
@@ -128,7 +128,7 @@
             <div class="main-parent-language">
                <div class="language dropdown select-change">
                   <a class="dropdown-toggle" data-toggle="dropdown">
-                     <span class="dropdown-label hidden-sm hidden-xs">Language:</span>
+                     <span class="dropdown-label hidden-sm hidden-xs">Lenguaje:</span>
                      <span class="title-value"></span>
                      <span class="caret"></span>
                   </a>
@@ -143,12 +143,12 @@
             <div class="main-parent-currency">
                <div class="currency dropdown select-change">
                   <a class="dropdown-toggle" data-toggle="dropdown">
-                     <span class="dropdown-label hidden-sm hidden-xs">Currency:</span>
+                     <span class="dropdown-label hidden-sm hidden-xs">Moneda:</span>
                      <span class="title-value"></span>
                      <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                     <li class="active" data-top-value="GBP"><a href="#">GBP - British Pound Sterling</a></li>
+                     <li class="active" data-top-value="GBP"><a href="#">GBP - Libra esterlina británica</a></li>
                      <li data-top-value="EUR"><a href="#">EUR - Euro</a></li>
                      <li data-top-value="USD"><a href="#">USD - US Dollar</a></li>
                   </ul>
@@ -172,9 +172,9 @@
                   <div class="social-icon">
                      <form method="get" action="{{ route('front.search') }}" id="search_from">
                         <div  class="input-group">
-                           <input name="search" type="text" id="search_input" class="typeahead form-control search-query " placeholder="Type your query" required>
+                           <input name="search" type="text" id="search_input" class="typeahead form-control search-query " placeholder="Escriba su consulta" required>
                            <span class="input-group-btn" autocomplete="off">
-                              <button type="submit" class="btn btn-purple">
+                              <button type="submit" class="btn btn-info" style="background: #2C7A7B">
                                  <span class="fa fa-search"></span>
                               </button>
                            </span>
@@ -189,21 +189,21 @@
                   <div class="account dropdown">
                      <a class="dropdown-toggle" data-toggle="dropdown">
                         <span class="icon icon-person "></span>
-                        <span class="dropdown-label hidden-sm hidden-xs">My Account</span>
+                        <span class="dropdown-label hidden-sm hidden-xs">Mi perfil</span>
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Compare</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Track My Order</a></li>
+                        <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Seguimiento de mi pedido</a></li>
                      @auth
 {{--                           <li>Welcome <b>{{ auth()->user()->name }}</b></li>--}}
-                           <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>My Account</a></li>
-                           <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>My Wishlist</a></li>
-                           <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>My Orders</a></li>
+                           <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>Mi perfil</a></li>
+                           <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>Favoritos</a></li>
+                           <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis ordenes</a></li>
                            <li>
                               <a href="{{ route('logout') }}"
                                  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                 <span class="glyphicon glyphicon-log-out"></span>{{ __('Logout') }}
+                                 <span class="glyphicon glyphicon-log-out"></span>{{ __('Cerrar Sesión') }}
                               </a>
 
                               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -211,8 +211,8 @@
                               </form>
                            </li>
                         @else
-                           <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Log In</a></li>
-                           <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Create an account</a></li>
+                           <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar Sesión</a></li>
+                           <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Crear cuenta</a></li>
                         @endauth
                      </ul>
                   </div>
@@ -223,18 +223,18 @@
                         <div class="dropdown">
                            <a class="dropdown-toggle">
                               <span class="icon icon-shopping_basket"></span>
-                              <span class="badge badge-cart" id="cart_count" data-id="{{ Cart::count() }}">{{ Cart::count() }}</span>
-                              <div class="dropdown-label hidden-sm hidden-xs">YOUR BAG</div>
+                              <span class="badge badge-cart" style="background: #2C7A7B" id="cart_count" data-id="{{ Cart::count() }}">{{ Cart::count() }}</span>
+                              <div class="dropdown-label hidden-sm hidden-xs">Carrito de compras</div>
                            </a>
                            <div class="dropdown-menu slide-from-top" >
                               <div class="container" >
-                                 <div class="top-title">RECENTLY ADDED ITEM(S)</div>
+                                 <div class="top-title">ITEM(S) AÑADIDOS RECIENTEMENTE</div>
                                  <a href="#" class="icon icon-close cart-close"></a>
                                  <ul id="cart_content">
                                     @include('layout.front.partials._cart')
                                  </ul>
                                  @if (Cart::count() == 0)
-                                    <h4 class="empty-cart-js">Your Cart is Empty</h4>
+                                    <h4 class="empty-cart-js">Tu carrito esta vacio</h4>
                                  @else
                                     <div class="cart-bottom">
                                     <div class="pull-right">
@@ -248,7 +248,7 @@
                                        @endauth
                                     </div>
                                     <div class="pull-left">
-                                       <a href="{{ route('cart.index') }}" class="btn icon-btn-left "><span class="icon icon-shopping_basket"></span>VIEW CART</a>
+                                       <a href="{{ route('cart.index') }}" class="btn icon-btn-left "><span class="icon icon-shopping_basket"></span>VER CARRO</a>
                                     </div>
                                  </div>
                                  @endif
