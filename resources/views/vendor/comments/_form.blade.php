@@ -22,9 +22,9 @@
          @if(isset($guest_commenting) and $guest_commenting == true)
 
             <div class="form-group @if($errors->has('guest_name')) has-error @endif">
-               {{--                    <label for="message">Enter your name here:</label>--}}
+               {{--                    <label for="message">Ingresa tu nombre aquí:</label>--}}
                <input type="text" class="form-control "
-                      name="guest_name" placeholder="Your Name" required/>
+                      name="guest_name" placeholder="Tu nombre" required/>
                @error('guest_name')
                <div class="form-control-hint">
                   {{ $message }}
@@ -32,9 +32,9 @@
                @enderror
             </div>
             <div class="form-group @if($errors->has('guest_email')) has-error @endif">
-               {{--                    <label for="message">Enter your email here:</label>--}}
+               {{--                    <label for="message">Ingreza tu correo aqui:</label>--}}
                <input type="email" class="form-control "
-                      name="guest_email" placeholder="Your Email" required/>
+                      name="guest_email" placeholder="Tu correo" required/>
                @error('guest_email')
                <div class="form-control-hint">
                   {{ $message }}
@@ -47,7 +47,7 @@
             <div class="form-group">
                <div class="">
                   @guest()
-                     <span>for rating please login</span>
+                     <span>para calificar, inicie sesión</span>
                   @endguest
                   <fieldset class="rating0">
                      <input onclick="getRatingVal(this)" type="radio" id="star5" name="rating" value="5"/>
@@ -67,16 +67,16 @@
             <!-- /RATING -->
 
             <div class="form-group @if($errors->has('message')) has-error @endif">
-               <label for="message">Enter your message here:</label>
+               <label for="message">Ingresa tu mensaje aquí:</label>
                <textarea class="form-control " name="message" rows="3" id="comment_message"
                          required></textarea>
                <div class="form-control-hint">
-                  Your message is required.
+                  Tu mensaje es obligatorio.
                </div>
             </div>
-            <button type="submit" class="btn btn-sm btn-outline-success text-uppercase">Submit</button>
+            <button type="submit" class="btn btn-sm btn-outline-success text-uppercase">Enviar</button>
             @else
-            <h4>you have already write a comment . <br> your comment will show after approved  </h4>
+            <h4>ya has escrito un comentario . <br> su comentario se mostrará después de aprobado  </h4>
          @endif
 
       </form>
