@@ -35,27 +35,27 @@
                               <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
                            </select>
                         </div>
-                        <span>&nbsp; Choose Skin</span>
+                        <span>&nbsp; Elige el color</span>
                      </div>
 
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar"
                                autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                        <label class="lbl" for="ace-settings-sidebar"> Barra lateral fija</label>
                      </div>
 
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                        <label class="lbl" for="ace-settings-rtl"> De derecha a izquierda(rtl)</label>
                      </div>
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container"
                                autocomplete="off"/>
                         <label class="lbl" for="ace-settings-add-container">
-                           Inside
+                           Dentro
                            <b>.container</b>
                         </label>
                      </div>
@@ -64,18 +64,18 @@
                   <div class="pull-left width-50">
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+                        <label class="lbl" for="ace-settings-hover"> Submenú al pasar el mouse</label>
                      </div>
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+                        <label class="lbl" for="ace-settings-compact"> Barra lateral compacta</label>
                      </div>
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight"
                                autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+                        <label class="lbl" for="ace-settings-highlight"> Alt. Elemento activo</label>
                      </div>
                   </div><!-- /.pull-left -->
                </div>
@@ -103,23 +103,10 @@
       <div class="footer-content">
             <span class="bigger-120">
                <span class="blue bolder">{{ env('APP_NAME') }}</span>
-              <a href="http://findhossein.ir/">developed by HOSSEIN HAGHPARAST</a> ; 2019
+              <a href="http://findhossein.ir/">desarrollado por TEAM KUSAWASI</a> ; 2020
             </span>
 
-         &nbsp; &nbsp;
-         <span class="action-buttons">
-               <a href="https://www.instagram.com/hossein_hagh_parast/">
-                  <i class="ace-icon fa fa-instagram light-blue bigger-150"></i>
-               </a>
-
-               <a href="https://github.com/hossein-git">
-                  <i class="ace-icon fa fa-github-square text-primary bigger-150"></i>
-               </a>
-
-               <a href="https://www.linkedin.com/in/hossein-haghparast-88b230b4">
-                  <i class="ace-icon fa fa-linkedin-square orange bigger-150"></i>
-               </a>
-            </span>
+         
       </div>
    </div>
 </div>
