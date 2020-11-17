@@ -76,7 +76,7 @@
       <li class="">
          <a disabled="">
             <i class="menu-icon fa fa-shopping-basket"></i>
-            <span class="menu-text"> E-commerce </span>
+            <span class="menu-text"> Kusawasi </span>
          </a>
       </li>
       @can('product-list')
@@ -105,7 +105,7 @@
          <li class="">
             <a class="click_me" href="{{ route('settings.index') }}">
                <i class="menu-icon fa fa-cogs"></i>
-               <span class="menu-text"> Settings </span>
+               <span class="menu-text"> Configuración </span>
             </a>
 
             <b class="arrow"></b>

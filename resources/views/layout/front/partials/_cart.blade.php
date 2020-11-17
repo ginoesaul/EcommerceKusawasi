@@ -34,5 +34,5 @@
    </li>
 
 @empty
-   <b>Your Cart is empty</b>
+   <b>Tu carrito está vacio</b>
 @endforelse
