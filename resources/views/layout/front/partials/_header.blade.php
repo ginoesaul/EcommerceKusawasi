@@ -174,7 +174,7 @@
                         <div  class="input-group">
                            <input name="search" type="text" id="search_input" class="typeahead form-control search-query " placeholder="Escriba su consulta" required>
                            <span class="input-group-btn" autocomplete="off">
-                              <button type="submit" class="btn btn-info" style="background: #2C7A7B">
+                              <button type="submit" class="btn btn-info" >
                                  <span class="fa fa-search"></span>
                               </button>
                            </span>
@@ -223,12 +223,12 @@
                         <div class="dropdown">
                            <a class="dropdown-toggle">
                               <span class="icon icon-shopping_basket"></span>
-                              <span class="badge badge-cart" style="background: #2C7A7B" id="cart_count" data-id="{{ Cart::count() }}">{{ Cart::count() }}</span>
+                              <span class="badge badge-cart" id="cart_count" data-id="{{ Cart::count() }}">{{ Cart::count() }}</span>
                               <div class="dropdown-label hidden-sm hidden-xs">Carrito de compras</div>
                            </a>
                            <div class="dropdown-menu slide-from-top" >
                               <div class="container" >
-                                 <div class="top-title">ITEM(S) AÑADIDOS RECIENTEMENTE</div>
+                                 <div class="top-title">COMPRAS AÑADIDAS RECIENTEMENTE</div>
                                  <a href="#" class="icon icon-close cart-close"></a>
                                  <ul id="cart_content">
                                     @include('layout.front.partials._cart')

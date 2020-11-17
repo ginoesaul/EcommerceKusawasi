@@ -1,7 +1,7 @@
 <div id="navbar" class="navbar navbar-default ace-save-state">
    <div class="navbar-container ace-save-state" id="navbar-container">
       <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
-         <span class="sr-only">Toggle sidebar</span>
+         <span class="sr-only">Alternar barra lateral</span>
 
          <span class="icon-bar"></span>
 
@@ -30,7 +30,7 @@
                <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
                   <li class="dropdown-header">
                      <i class="ace-icon fa fa-check"></i>
-                     4 Tasks to complete
+                     4 tareas para completar
                   </li>
 
                   <li class="dropdown-content">
@@ -38,7 +38,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Software Update</span>
+                                 <span class="pull-left">Software Actualizado</span>
                                  <span class="pull-right">65%</span>
                               </div>
 
@@ -51,7 +51,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Hardware Upgrade</span>
+                                 <span class="pull-left">Hardware potenciado</span>
                                  <span class="pull-right">35%</span>
                               </div>
 
@@ -64,7 +64,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Unit Testing</span>
+                                 <span class="pull-left">Examen de la Unidad</span>
                                  <span class="pull-right">15%</span>
                               </div>
 
@@ -77,7 +77,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Bug Fixes</span>
+                                 <span class="pull-left">Corrección de Errores</span>
                                  <span class="pull-right">90%</span>
                               </div>
 
@@ -107,7 +107,7 @@
                <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
                   <li class="dropdown-header">
                      <i class="ace-icon fa fa-exclamation-triangle"></i>
-                     8 Notifications
+                     8 Notificaciones
                   </li>
 
                   <li class="dropdown-content">
@@ -117,7 +117,7 @@
                               <div class="clearfix">
                                  <span class="pull-left">
                                     <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
-                                    New Comments
+                                    Nuevos comentarios
                                  </span>
                                  <span class="pull-right badge badge-info">+12</span>
                               </div>
@@ -127,7 +127,7 @@
                         <li>
                            <a href="#">
                               <i class="btn btn-xs btn-primary fa fa-user"></i>
-                              Bob just signed up as an editor ...
+                              Bob acaba de registrarse como editor ...
                            </a>
                         </li>
 
@@ -148,7 +148,7 @@
                               <div class="clearfix">
 													<span class="pull-left">
 														<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
-														Followers
+														Seguidores
 													</span>
                                  <span class="pull-right badge badge-info">+11</span>
                               </div>
@@ -159,7 +159,7 @@
 
                   <li class="dropdown-footer">
                      <a href="#">
-                        See all notifications
+                        Ver todas las notificaciones
                         <i class="ace-icon fa fa-arrow-right"></i>
                      </a>
                   </li>
@@ -191,7 +191,7 @@
 
                                  <span class="msg-time">
                                     <i class="ace-icon fa fa-clock-o"></i>
-                                    <span>a moment ago</span>
+                                    <span>hace un momento</span>
                                  </span>
                               </span>
                            </a>
@@ -201,7 +201,7 @@
 
                   <li class="dropdown-footer">
                      <a href="inbox.html">
-                        See all messages
+                        Ver todos los mensajes
                         <i class="ace-icon fa fa-arrow-right"></i>
                      </a>
                   </li>
@@ -212,7 +212,7 @@
                <a data-toggle="dropdown" href="#" class="dropdown-toggle">
 {{--                  <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo"/>--}}
                   <span class="user-info">
-                     <small>Welcome,</small>
+                     <small>Bienvenido,</small>
                      {{ auth()->user()->name }}
                   </span>
 
@@ -224,7 +224,7 @@
                   <li>
                      <a href="{{ route("user.show",auth()->id()) }}">
                         <i class="ace-icon fa fa-user"></i>
-                        Profile
+                        Perfils
                      </a>
                   </li>
 

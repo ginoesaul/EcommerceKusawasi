@@ -47,7 +47,7 @@
                @endif
             </div>
             {{-- <div class="description">
-                Silver, metallic-blue and metallic-lavender silk-blend jacquard, graphic pattern, pleated ruffle along collar, long sleeves with button-fastening cuffs, buckle-fastening silver skinny belt, large pleated rosettes at hips. Dry clean. Zip and hook fastening at back. 100% silk. Specialist clean
+                Silver
              </div>--}}
             <div class="product_inside_hover">
                <div class="product_inside_info">
@@ -80,19 +80,19 @@
                   </div>
                   {{-- <a class="btn btn-product_addtocart" href="#" data-toggle="modal"
                       data-target="#modalAddToCartProduct">
-                      <span class="icon icon-shopping_basket"></span>ADD TO CART
+                      <span class="icon icon-shopping_basket"></span>Añadir al carrito
                    </a>--}}
                   {{--<ul class="product_inside_info_link">
                      <li class="text-right">
                         <a href="#" class="wishlist-link">
                            <span class="fa fa-heart-o"></span>
-                           <span class="text">Add to wishlist</span>
+                           <span class="text">Añadir a favoritos</span>
                         </a>
                      </li>
                      <li class="text-left">
                         <a href="#" class="compare-link">
                            <span class="fa fa-balance-scale"></span>
-                           <span class="text">Add to compare</span>
+                           <span class="text">Añadir a comparar</span>
                         </a>
                      </li>
                      <li>
