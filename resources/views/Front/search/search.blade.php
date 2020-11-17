@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Search
+   Búsqueda
 @endsection
 @section('extra_css')
 @endsection
@@ -12,9 +12,9 @@
       <div class=" offset-80">
          <div class="on-duty-box">
             <img src="{{ asset('front-assets/empty-search-icon.png')  }}" alt="">
-            <h1 class="block-title large">Your search returns<br>no results.</h1>
+            <h1 class="block-title large">Tu búsqueda<br>no tuvo resultados.</h1>
             <div class="description">
-               Search results for <span class="color-base">'{{ $query ?? '' }}'</span>
+              Resultados de búsqueda de <span class="color-base">'{{ $query ?? '' }}'</span>
             </div>
          </div>
       </div>
