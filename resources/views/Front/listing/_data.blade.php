@@ -10,34 +10,17 @@
                <a href="{{ route('front.show',$product->product_slug) }}" class="load_page">
                   <img src="{{ $product->thumbnail }}" alt="product image" class="img-thumbnail">
                   @if($product->is_off == 1)
-                     <div class="label-sale ">Sale<br>{{ $product->off }}% Off</div>
+                     <div class="label-sale ">En venta<br>{{ $product->off }}% de descuento</div>
                   @endif
                   @if($product->created_at > $data)
-                     <div class="label-new">New</div>
+                     <div class="label-new">Nuevo</div>
                   @endif
                   @if($product->status != 1)
-                     <div class="label-sale">coming soon!</div>
+                     <div class="label-sale">¡próximamente!</div>
                   @endif
                </a>
             </div>
-            <h2 class="title">
-               @if($product->status != 1)
-                  <div class="countdown_box">
-                     <div class="countdown_inner">
-                        <div class="countdown" data-date="{{ $product->data_available }}">
-                           <span class="countdown-row"><span class="countdown-section"><span class="countdown-amount">0</span><span
-                                         class="countdown-period">Day</span></span><span class="countdown-section"><span
-                                         class="countdown-amount">0</span><span
-                                         class="countdown-period">Hrs</span></span><span class="countdown-section"><span
-                                         class="countdown-amount">0</span><span
-                                         class="countdown-period">Min</span></span><span class="countdown-section"><span
-                                         class="countdown-amount">0</span><span
-                                         class="countdown-period">Sec</span></span></span></div>
-                     </div>
-                  </div>
-               @endif
-               <a href="{{ route('front.show',$product->product_slug) }}" class="load_page">{{ $product->product_name }}</a>
-            </h2>
+            
             <div class="price">
                @if($product->is_off == 1)
                   <span class="new-price">{{ $product->price }}</span>
@@ -69,9 +52,9 @@
       <div class="offset-80">
          <div class="on-duty-box">
             <img src="{{ asset('front-assets/empty-category-icon.png') }}" alt="">
-            <h1 class="block-title large">Empty Category</h1>
+            <h1 class="block-title large">Categoría vacía</h1>
             <div class="description">
-               There are no products matching the selection.
+               No hay productos que coincidan con la selección.
             </div>
          </div>
       </div>
