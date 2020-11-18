@@ -68,25 +68,25 @@
          <div class="stepwizard-step col-xs-3">
             <a href="#step-1" type="button" class="btn btn-success btn-circle" disabled="disabled">1</a>
             <p>
-               <small>Shipper</small>
+               <small>Navegante</small>
             </p>
          </div>
          <div class="stepwizard-step col-xs-3">
             <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
             <p>
-               <small>Destination</small>
+               <small>Destino</small>
             </p>
          </div>
          <div class="stepwizard-step col-xs-3">
             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
             <p>
-               <small>Review</small>
+               <small>Revisar</small>
             </p>
          </div>
          <div class="stepwizard-step col-xs-3">
             <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
             <p>
-               <small>Payment</small>
+               <small>Pago</small>
             </p>
          </div>
       </div>
@@ -99,13 +99,13 @@
          <input type="hidden" id="input1" name="input" value="">
          <div class=" setup-content" id="step-1">
             <div class="panel-heading">
-               <h2 class="panel-title">Shipper</h2>
+               <h2 class="panel-title">Navegante</h2>
             </div>
 
             <div class="row">
                <div class="col-sm-3">
                   <div class="form-group required">
-                     <label for="client_name" class="control-label">Your Name: <span>*</span></label>
+                     <label for="client_name" class="control-label">Tu nombre: <span>*</span></label>
                      <input type="text" name="client_name" class="form-control"
                             id="client_name" placeholder="Shipper Name" maxlength="15" minlength="3"
                             value="{{ auth()->check() ? auth()->user()->name : '' }}"
@@ -114,8 +114,8 @@
                </div>
                <div class="col-sm-4">
                   <div class="form-group required">
-                     <label for="inputStreet" class=" control-label">Phone Number: <span>*</span>
-                        <small>Like +905534676564</small>
+                     <label for="inputStreet" class=" control-label">Número Telefónico: <span>*</span>
+                        <small> +905534676564</small>
                      </label>
                      <input type="text" name="client_phone" class="form-control" id="clientPhoneNumber"
                             required value="{{ isset($address) ? $address->phone_number : '' }}">
@@ -130,27 +130,27 @@
                </div>
                <div class="col-sm-12">
                   <div class="form-group">
-                     <label for="inputStreet" class=" control-label">Details:</label>
+                     <label for="inputStreet" class=" control-label">Detalles:</label>
                      <textarea name="details" class="form-control" id="details"></textarea>
                   </div>
                   <div class="form-group">
                      @auth()
                         <div id="off_div" class="form-group">
-                           <label for="giftCode" class="control-label ">Gift Code: <span>*</span></label>
+                           <label for="giftCode" class="control-label ">Código de regalo: <span>*</span></label>
                            <input type="text" name="giftCode" class="form-control" id="giftCode">
                            <button class="btn btn-border color-default" data-loading-text="loading ..."
-                                   id="apply_gift">APPLY DISCOUNT
+                                   id="apply_gift">APLICAR DESCUENTO
                            </button>
                            <span id="error-gift" class="invalid-feedback font-weight-bolder" role="alert"></span>
                         </div>
                      @else()
-                        <h5>for using Gift card, please <a href="{{ route('login') }}">login</a></h5>
+                        <h5>para usar la tarjeta de regalo, por favor <a href="{{ route('login') }}">Iniciar Sesión</a></h5>
                      @endauth
                   </div>
                   @if (\Cart::count() > 0)
-                     <button class="btn btn-primary nextBtn pull-right" id="first_step" type="button">Next</button>
+                     <button class="btn btn-primary nextBtn pull-right" id="first_step" type="button">Siguiente</button>
                   @else
-                     <h4>YOUR CART IS EMPTY</h4>
+                     <h4>TU CARRITO ESTÁ VACÍO</h4>
                   @endif
                </div>
 
@@ -164,33 +164,33 @@
          <input type="hidden" id="input2" name="input" value="">
          <div class="setup-content" id="step-2">
             <div class="panel-heading">
-               <h3 class="panel-title">Destination</h3>
+               <h3 class="panel-title">Destino</h3>
             </div>
             <section>
                <div class="row">
                   <div class="col-sm-6">
                      <div class="form-group required">
-                        <label for="name" class=" control-label">First Name: <span>*</span></label>
+                        <label for="name" class=" control-label">Primer Nombre: <span>*</span></label>
                         <input type="text" value="{{ isset($address) ? $address->name : '' }}" name="name"
                                class="form-control" id="name" required>
                      </div>
                      <div class="form-group required">
-                        <label for="number" class="control-label">Number: <span>*</span></label>
+                        <label for="number" class="control-label">Número: <span>*</span></label>
                         <input type="number" value="{{ isset($address) ? $address->number : '' }}" name="number"
                                class="form-control" id="number" required>
                      </div>
                      <div class="form-group required">
-                        <label for="area" class=" control-label">Area: </label>
+                        <label for="area" class=" control-label">Área: </label>
                         <input type="text" name="area" value="{{ isset($address) ? $address->area : '' }}"
                                class="form-control" id="area" maxlength="15">
                      </div>
                      <div class="form-group required">
-                        <label for="city" class=" control-label">City: <span>*</span></label>
+                        <label for="city" class=" control-label">Ciudad: <span>*</span></label>
                         <input type="text" name="city" value="{{ isset($address) ? $address->city : '' }}"
                                class="form-control" id="city" required>
                      </div>
                      <div class="form-group required">
-                        <label for="postal_code" class=" control-label">Zip/Postal Code: <span>*</span></label>
+                        <label for="postal_code" class=" control-label">Código postal: <span>*</span></label>
                         <input type="text" class="form-control" value="{{ isset($address) ? $address->postal_code : '' }}"
                                name="postal_code" id="postal_code" required>
                      </div>
@@ -201,7 +201,7 @@
                               <label for="def_addr">
                                  <span class="check"></span>
                                  <span class="box"></span>
-                                 save this address as my address
+                                 guardar esta dirección como mi dirección
                               </label>
                            </div>
                         @endauth
@@ -209,36 +209,36 @@
                   </div>
                   <div class="col-sm-6">
                      <div class="form-group required">
-                        <label for="surname" class=" control-label">Last Name: <span>*</span></label>
+                        <label for="surname" class=" control-label">Apellido: <span>*</span></label>
                         <div class="">
                            <input type="text" name="surname" value="{{ isset($address) ? $address->surname : '' }}"
                                   class="form-control" id="surname" required>
                         </div>
                      </div>
                      <div class="form-group required">
-                        <label for="street" class=" control-label">Street: <span>*</span></label>
+                        <label for="street" class=" control-label">Calle: <span>*</span></label>
                         <input type="text" name="street" value="{{ isset($address) ? $address->street : '' }}"
                                class="form-control" id="street" maxlength="15">
                      </div>
                      <div class="form-group required">
-                        <label for="avenue" class=" control-label">Avenue:</label>
+                        <label for="avenue" class=" control-label">Avenida:</label>
                         <input type="text" name="avenue" value="{{ isset($address) ? $address->avenue : '' }}"
                                class="form-control" id="avenue" maxlength="20">
                      </div>
                      <div class="form-group required">
-                        <label for="state" class=" control-label">State/Province: <span>*</span></label>
+                        <label for="state" class=" control-label">Provincia: <span>*</span></label>
                         <input type="text" name="state" value="{{ isset($address) ? $address->state : '' }}"
                                class="form-control" id="state" required>
                      </div>
                      <div class="form-group required">
-                        <label for="phone_number" class=" control-label">Phone Number: <span>*</span>
-                           <small>Like +905534676564</small>
+                        <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
+                           <small> +905534676564</small>
                         </label>
                         <input type="text" name="phone_number" value="{{ isset($address) ? $address->phone_number : '' }}"
                                class="form-control" id="phone_number" required>
                      </div>
 
-                     <button class="btn btn-primary nextBtn pull-right" id="second_step" type="button">Next</button>
+                     <button class="btn btn-primary nextBtn pull-right" id="second_step" type="button">Siguiente</button>
                   </div>
 
                </div>
@@ -255,9 +255,9 @@
             <table class="table table-hover table-bordered">
                <thead>
                <tr>
-                  <td class="center">Photo</td>
-                  <td class="center">Product Name</td>
-                  <td class="center">Price</td>
+                  <td class="center">Foto</td>
+                  <td class="center">Nombre del producto</td>
+                  <td class="center">Precio</td>
                   <td class="center">qty</td>
                </tr>
                </thead>
@@ -276,7 +276,7 @@
                      <td class="center">{{ $cart->qty }}</td>
                   </tr>
                @empty
-                  <h4>your cart is empty</h4>
+                  <h4>Tu cesta esta vacío</h4>
                @endforelse
 
                </tbody>
@@ -288,9 +288,9 @@
 
          <div class="container-fluid">
             <div class="pull-left">
-               <h4>Total Price:</h4>
-               <h4>Discount:</h4>
-               <h4>Total price after Discount:</h4>
+               <h4>Precio Total:</h4>
+               <h4>Descuento:</h4>
+               <h4>Precio total después del descuento:</h4>
             </div>
             <div class="pull-right">
                <h5>{{ Cart::subTotal() }}</h5>
@@ -320,7 +320,7 @@
             </div>
          </div>
 
-         <button class="btn btn-primary nextBtn pull-right" id="third_step" type="button">Payment</button>
+         <button class="btn btn-primary nextBtn pull-right" id="third_step" type="button">Pago</button>
       </div>
 
       <!-- STEP 4  -->
@@ -329,15 +329,15 @@
 {{--         <input type="hidden" name="input" value="">--}}
          <div class="panel panel-primary setup-content" id="step-4">
             <div class="panel-heading">
-               <h3 class="panel-title">Payment</h3>
+               <h3 class="panel-title">Pago</h3>
             </div>
             <div class="panel-body">
                <div class="form-group">
-                  <h4>With PayPal<i class="fa fa-paypal"></i></h4>
+                  <h4>Con PayPal<i class="fa fa-paypal"></i></h4>
                </div>
                <div class="form-group">
-                  <h6 class="control-label">Redirect to Payment Page</h6>
-                  <a href="{{ route('payment') }}" class="btn pull-left" id="payment">Payment</a>
+                  <h6 class="control-label">Redireccionar a la página de pago</h6>
+                  <a href="{{ route('payment') }}" class="btn pull-left" id="payment">Pago</a>
                </div>
 
             </div>
