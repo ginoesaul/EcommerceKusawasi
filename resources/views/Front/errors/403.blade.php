@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Page Not Found!
+   Página no encontrada
 @endsection
 @section('extra_css')
 @endsection
@@ -8,11 +8,11 @@
    <div class="offset-80">
       <div class="on-duty-box">
          <img src="{{ asset('front-assets/empty-404-icon.png') }}" alt="">
-         <h1 class="block-title large">Please login or register!</h1>
+         <h1 class="block-title large">Por favor, inicie sesión o regístrese</h1>
          <div class="description">
-            Sorry, this page is restricted to authorized users only
+            Lo sentimos, esta página está restringida sólo a usuarios autorizados
          </div>
-         <a class="btn btn-border color-default" href="{{ route('login') }}">Login PAGE</a>
+         <a class="btn btn-border color-default" href="{{ route('login') }}">Página de inicio de sesión</a>
       </div>
    </div>
 @endsection
