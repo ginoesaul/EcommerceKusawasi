@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Page Not Found!
+   Página no encontrada
 @endsection
 @section('extra_css')
 @endsection
@@ -8,12 +8,12 @@
    <div class="offset-80">
       <div class="on-duty-box">
          <h1 class="green font-weight-bold">500</h1>
-         <h1 class="block-title large">Service Unavailable!</h1>
+         <h1 class="block-title large">¡El servicio no está disponible!</h1>
          <div class="description">
             {{ $exception->getMessage() }}
-            <p>Ooops, server error occurred.</p> Please check again later.
+            <p>Ooops, se produjo un error en el servidor.</p> Por favor, compruébelo más tarde.
          </div>
-         <a class="btn btn-border color-default" href="{{ route('home') }}">HOME PAGE</a>
+         <a class="btn btn-border color-default" href="{{ route('home') }}">PÁGINA DE INICIO</a>
       </div>
    </div>
 @endsection

@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Empty Shopping Cart
+   Cesta de la compra vacía
 @endsection
 @section('extra_css')
 @endsection
@@ -8,11 +8,11 @@
    <div class="container offset-80">
       <div class="on-duty-box">
          <img src="{{ asset('front-assets/empty-shopping-cart-icon.png') }}" alt="">
-         <h1 class="block-title large">Shopping Cart is Empty</h1>
+         <h1 class="block-title large">La cesta de la compra está vacía</h1>
          <div class="description">
-            You have no items in your shopping cart.
+            No tienes artículos en tu carrito de compras.
          </div>
-         <a class="btn btn-border color-default" href="{{ route('front.productsList') }}">CONTINUE SHOPPING </a>
+         <a class="btn btn-border color-default" href="{{ route('front.productsList') }}">SEGUIR COMPRANDO </a>
       </div>
    </div>
 @endsection

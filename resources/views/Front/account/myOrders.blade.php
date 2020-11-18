@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   My Orders
+   Mis ordenes
 @endsection
 @section('extra_css')
 @endsection
@@ -27,39 +27,39 @@
                   onclick="event.preventDefault();show_order_details(this)">{{ $order->track_code }}</a>
             </td>
             <td>
-               <div class="th-title visible-xs">Date</div>
+               <div class="th-title visible-xs">Fecha</div>
                {{ $order->created_at }}
             </td>
             <td>
-               <div class="th-title visible-xs">Payment Status</div>
+               <div class="th-title visible-xs">Estado de Pago</div>
                @if ($payment = $order->payment)
                   @if ($payment->status )
-                     <span class="label label-success label-large">PAID</span>
+                     <span class="label label-success label-large">PAGADO</span>
                   @else
-                     <span class="label label-danger label-large">NOT-PAID</span>
+                     <span class="label label-danger label-large">NO PAGADO</span>
                   @endif
 
                @else
-                  <span class="label badge-normal badge-danger">NOTHING PAID</span>
+                  <span class="label badge-normal badge-danger">NO HAY PAGOS</span>
                @endif
             </td>
             <td class="status_">
-               <div class="th-title visible-xs">Fulfillment Status</div>
+               <div class="th-title visible-xs">Estado de cumplimiento</div>
                @switch($order->order_status)
                   @case(0)
-                  <span class="label badge-normal ">NOT Complete</span>
+                  <span class="label badge-normal ">No Completo</span>
                   @break
                   @case(1)
-                  <span class="label label-default arrowed bolder ">NOT Sent Yet</span>
+                  <span class="label label-default arrowed bolder ">No se ha enviado todavía</span>
                   @break
                   @case(2)
-                  <span class="label label-warning bolder ">Has Sent</span>
+                  <span class="label label-warning bolder ">Ha enviado</span>
                   @break
                   @case(3)
-                  <span class="label label-success bolder ">Delivered</span>
+                  <span class="label label-success bolder ">Entregado</span>
                   @break
                   @case(5)
-                  <span class="label bg-brown">Canceled</span>
+                  <span class="label bg-brown">Cancelado</span>
                   @break
                @endswitch
             </td>
@@ -69,7 +69,7 @@
                      {{ $order->giftCard->gift_name }}
                   </a>
                @else
-                  <span class="label badge-primary">NO GIFTCARD</span>
+                  <span class="label badge-primary">NO HAY TARJETA DE REGALO</span>
                @endif
             </td>
             <td>
@@ -135,7 +135,7 @@
          </tr>
       @empty
          <tr class="text-center">
-            <td colspan="6" class="text-center center "><span class="font-weight-bolder">Nothing Found</span></td>
+            <td colspan="6" class="text-center center "><span class="font-weight-bolder">No se encontró nada</span></td>
          </tr>
       @endforelse
       </tbody>
