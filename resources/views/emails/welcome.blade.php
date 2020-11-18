@@ -162,13 +162,13 @@
                                        <tr>
                                           <td class="header-row-td" width="378"
                                               style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; margin: 0px; font-size: 18px; padding-bottom: 10px; padding-top: 15px;"
-                                              valign="top" align="left">,Thank you for signing up!
+                                              valign="top" align="left">¡Gracias por registrarte!
                                           </td>
                                        </tr>
                                        </tbody>
                                     </table>
                                     <div style="font-family: Arial, sans-serif; line-height: 20px; color: #444444; font-size: 13px;">
-                                       <b style="color: #777777;">We are excited to have you join us
+                                       <b style="color: #777777;">Estamos emocionados de que te unas a nosotros
                                           in {{ env('APP_NAME') }}</b>
 
                                     </div>

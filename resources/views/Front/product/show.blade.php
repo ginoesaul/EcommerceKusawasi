@@ -69,18 +69,7 @@
                </a>
             </div>
          </div>
-         <!--  BRAND -->
-         <div class="wrapper">
-            <div class="brand text-center">
-               <img src="{{ $product->brands->src }}" alt="LOGO">
-            </div>
-            <div class="text">
-               {{ $product->brands->brand_description }}
-            </div>
-         </div>
-
-         <hr>
-         <!--  /BRAND -->
+         
       </div>
       <!-- /IMAGE -->
       <div class="col-md-6">
@@ -110,12 +99,12 @@
                </div>
                <div class="pull-left">
                   <div class="availability">
-                     <span class="font-weight-medium color-defaulttext2">Availability:</span>
+                     <span class="font-weight-medium color-defaulttext2">Disponibilidad:</span>
                      @if($product->status == 1)
-                        <span class="color-base">In stock</span>
+                        <span class="color-base">En venta</span>
                      @else
-                        <span class="color-red">Out stock</span>
-                        <span class="btn-info">Coming On :{{ $product->data_available }}</span>
+                        <span class="color-red">Fuera de venta</span>
+                        <span class="btn-info">Comenzamos:{{ $product->data_available }}</span>
                      @endif
                   </div>
                </div>
@@ -142,8 +131,8 @@
                         <i class="fa fa-star-o fa-stack-2x"></i>
                      </span>
                @endfor
-               <a href="#review1">{{ $product->comments->count() }} Review(s)</a>
-               <a href="#review1">Add Your Review</a>
+               <a href="#review1">{{ $product->comments->count() }} Comentarios</a>
+               <a href="#review1">Añadir tus comentarios</a>
             </div>
             <!-- /RATING -->
             <div class="row">
@@ -212,7 +201,7 @@
             </div>
             <b id="p_error" style="display: none;color: red;">ddd</b>
             <div class="wrapper">
-               <div class="pull-left"><label class="qty-label">QTY</label></div>
+               <div class="pull-left"><label class="qty-label">Cantidad</label></div>
                <div class="pull-left">
                   <div class="style-2 input-counter">
                      <span class="minus-btn"></span>
@@ -240,23 +229,12 @@
                            </a>
                         @endif
                      @else
-                        <i>para la lista de deseos por favor<a href="{{ route('login') }}">iniciar sesión</a></i>
+                        <hr>
+                        <hr>
+                        <i>para acceder a la lista de deseos por favor <a href="{{ route('login') }}">iniciar sesión</a></i>
                      @endauth
                   </li>
-                  <li class="text-left">
-                     <a data-id="{{ $product->product_id }}" class="compare-link">
-                        <span class="fa fa-balance-scale"></span>
-                        <span id="compare_text" class="text">
-                              {{--@if (request()->cookie('P_compare_1') == $product->product_id
-                                    or request()->cookie('P_compare_2') == $product->product_id )
-                                    ya en la lista comparativa
-                                 @else
-                                 AGREGAR PARA COMPARAR
-                              @endif--}}
-                              AGREGAR PARA COMPARAR
-                           </span>
-                     </a>
-                  </li>
+                  
                </ul>
             </div>
             <!-- SOCIALS -->
@@ -277,174 +255,8 @@
    <input type="hidden" id="p_id" value="{{ $product->product_id }}">
    <input type="hidden" id="_token" name="_token" value="{{ csrf_token() }}">
    <input type="hidden" id="_url" value="{{ route('cart.store')}}">
-   <div id="review1">
-      <div class="tt-product-page__tabs tt-tabs">
-         <div class="tt-tabs__head">
-            <ul>
-               <li data-active="true"><span>DESCRIPCIÓN</span></li>
-               <li><span>MÉTODO DE COMPRA</span></li>
-               @if ($product->has_size)
-                  <li><span>GUÍA DE TALLAS</span></li>
-               @endif
-               <li><span>TAGS</span></li>
-               <li><span>REVISIONES</span></li>
-            </ul>
-            <div class="tt-tabs__border"></div>
-         </div>
-         <div class="tt-tabs__body">
-            <div>
-               <span class="tt-tabs__title">DESCRIPCIÓN</span>
-               <div class="tt-tabs__content">
-                  <h5 class="tab-title">DESCRIPCIÓN</h5>
-                  <P>
-                     {{ $product->description }}
-                  </P>
-                  <ul class="list-simple-dot">
-                     <li><span class="font-weight-600">Hecho en :</span> {{ $product->made_in }}</li>
-                     @forelse($product->attributes as $attribute)
-                        <li>
-                           <span class="badge-grey font-weight-600">{{ $attribute->attr_name }} : </span>
-                           @forelse($attribute->attributeValues as $value)
-                              <span class="badge-dark">{{ $value->value }}</span>
-                           @empty
-                           @endforelse
-                        </li>
-                     @empty
-                     @endforelse
-                  </ul>
-               </div>
-            </div>
-            <div>
-               <span class="tt-tabs__title">MÉTODO DE COMPRA</span>
-               <div class="tt-tabs__content">
-                  <h5 class="tab-title">MÉTODO DE COMPRA</h5>
-                  <h6><span class="color-base icon icon-local_shipping"></span> ya en la lista de comparación</h6>
-                  Estamos dedicados a entregar su compra de la manera más rápida y económica posible. Ofrecemos una variedad de opciones 
-                  de entrega y recogida, para que pueda elegir el método de envío que mejor se adapte a sus necesidades.
-                  <div class="divider"></div>
-                  <h6><span class="color-base icon icon-payment"></span> Métodos de Pago</h6>
-                  Cada país y comprador tiene su método preferido para pagar en línea. Ofrecer a sus compradores opciones de pago seguras y 
-                  convenientes puede ayudar a que su venta se realice sin problemas, obtener comentarios positivos y traerlos de vuelta por más.
-               </div>
-            </div>
-            @if ($product->has_size)
-               <div>
-                  <span class="tt-tabs__title">GUÍA DE TAMAÑO</span>
-                  <div class="tt-tabs__content">
-                     <h5 class="tab-title"> VENTA DE UTENSILIOS DE CASA </h5>
-                     <div class="table-responsive">
-                        <table class="table table-parameters">
-                           <tbody>
-                           <tr>
-                              <td>Reino Unido</td>
-                              <td>18</td>
-                              <td>20</td>
-                              <td>22</td>
-                              <td>24</td>
-                              <td>26</td>
-                           </tr>
-                           <tr>
-                              <td>Europeo</td>
-                              <td>46</td>
-                              <td>48</td>
-                              <td>50</td>
-                              <td>52</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td>Estados Unidos</td>
-                              <td>14</td>
-                              <td>16</td>
-                              <td>18</td>
-                              <td>20</td>
-                              <td>22</td>
-                           </tr>
-                           <tr>
-                              <td>Australia</td>
-                              <td>8</td>
-                              <td>10</td>
-                              <td>12</td>
-                              <td>14</td>
-                              <td>16</td>
-                           </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
-            @endif
-
-            <div>
-               <span class="tt-tabs__title">TAGS</span>
-               <div class="tt-tabs__content">
-                  <h5 class="tab-title">TAGS</h5>
-                  <ul>
-                     @forelse($product->tags as $tag)
-                        <li>
-                           <a class="badge-01 badge-primary"
-                              href="{{ route('front.lists',['list' => 'tags','slug' => "$tag->tag_slug", ]) }}">{{ $tag->tag_name }}</a>
-                        </li>
-                     @empty
-                        <b>NO TAG</b>
-                     @endforelse
-                  </ul>
-               </div>
-            </div>
-            <!-- COMMENTS -->
-            <div id="">
-               <span class="tt-tabs__title badge-">REVISIONES</span>
-               <div class="tt-tabs__content">
-                  <h5 class="right tab-title">OPINIONES DE LOS USUARIOS</h5>
-                  <h6 id="comment_answer"></h6>
-                  <h6>Escribe una reseña</h6>
-                  @comments([
-                  'model' => $product,
-                  'approved' => true
-                  ])
-               </div>
-            </div>
-            <!-- /COMMENTS -->
-         </div>
-      </div>
-   </div>
+   
    <div class="divider"></div>
-
-   <div class="">
-      <h3 class="block-title small">TAMBIÉN PUEDE ESTAR INTERESADO EN LOS SIGUIENTES PRODUCTOS</h3>
-      <div class="row">
-         <div class="carousel-products-2 carouselTab slick-arrow-top slick-arrow-top2">
-            @forelse($related_products as $product)
-               <div>
-                  <div class="product">
-                     <div class="product_inside">
-                        <div class="image-box">
-                           <a href="{{ route('front.show',$product->product_slug) }}">
-                              <img src="{{ $product->cover }}" alt="product image" class="img-thumbnail">
-                           </a>
-                           @if($product->is_off)
-                              <div class="label-sale">Sale<br>{{ $product->off }}% Off</div>
-                           @endif
-                        </div>
-                        <div class="title">
-                           <a href="{{ route('front.show',$product->product_slug) }}">{{ $product->product_name }}</a>
-                        </div>
-                        <div class="price">
-                           @if($product->is_off == 1)
-                              <span class="new-price">{{ number_format($product->sale_price) }}</span>
-                              <span class="old-price">{{ $product->price }}</span>
-                           @else
-                              <span class="price view">{{ $product->price }}</span>
-                           @endif
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            @empty
-            @endforelse
-
-         </div>
-      </div>
-   </div>
 
 
 @endsection
