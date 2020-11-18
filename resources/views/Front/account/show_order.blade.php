@@ -9,7 +9,7 @@
          <div class="widget-header widget-header-large">
             <h3 class="widget-title grey lighter">
                <i class="ace-icon fa fa-leaf green"></i>
-               Código de pista:<span>#{{ $order->track_code}}</span>
+               Buscar Código:<span>#{{ $order->track_code}}</span>
                <span class="pull-right">Fecha: <span class="">{{ $order->created_at }}</span></span>
             </h3>
             {{--<div class="widget-toolbar hidden-480">

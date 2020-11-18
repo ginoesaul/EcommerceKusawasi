@@ -5,7 +5,7 @@
 @section('extra_css')
 @endsection
 @section('content')
-   <h1 class="block-title large">Compare Products</h1>
+   <h1 class="block-title large">Compara Productos</h1>
    <!-- compare -->
    <div class="compare-table">
       <table>
@@ -23,7 +23,7 @@
                            <img src="{{ $p_1->cover }}" alt="product image" class="img-thumbnail">
                         </a>
                         @if($p_1->is_off)
-                           <div class="label-sale">Sale<br>{{ $p_1->off }}% Off</div>
+                           <div class="label-sale">Venta<br>{{ $p_1->off }}% Off</div>
                         @endif
                      </div>
 
@@ -77,7 +77,7 @@
                            <img src="{{ $p_2->cover }}" alt="product image" class="img-thumbnail">
                         </a>
                         @if($p_2->is_off)
-                           <div class="label-sale">Venta<br>{{ $p_2->off }}% Off</div>
+                           <div class="label-sale">Venta<br>{{ $p_2->off }}% de descuento</div>
                         @endif
                      </div>
 
@@ -95,7 +95,7 @@
                      <!-- visible-xs -->
                      <div class="visible-mobil-block visible-xs visible-sm">
                         <p>
-                           <strong>BRAND</strong>
+                           <strong>MARCAS</strong>
                         </p>
                         <p>
                            <a href="{{ route('front.lists', ['list' => 'brands' , 'slug' => $p_2->brands->brand_slug ]) }}">
@@ -165,17 +165,17 @@
             <td>
                @if ($p_1)
                   @if($p_1->status == 1)
-                     <span class="color-base">In stock</span>
+                     <span class="color-base">En venta</span>
                   @else
-                     <span class="color-red">Out stock</span>
-                     <span class="btn-info">Coming On :{{ $p_1->data_available }}</span>
+                     <span class="color-red">Fuera de venta</span>
+                     <span class="btn-info">Comenzamos :{{ $p_1->data_available }}</span>
                   @endif
                @endif
             </td>
             <td>
                @if ($p_2)
                   @if($p_2->status == 1)
-                     <span class="color-base">En stock</span>
+                     <span class="color-base">En venta</span>
                   @else
                      <span class="color-red">Fuera de stock</span>
                      <span class="btn-info">Comenzamos :{{ $p_2->data_available }}</span>

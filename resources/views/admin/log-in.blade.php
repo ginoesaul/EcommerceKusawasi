@@ -3,7 +3,7 @@
 <head>
    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
    <meta charset="utf-8"/>
-   <title>Login Page</title>
+   <title>Página de inicio de sesión</title>
 
    <meta name="description" content="User login page"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -25,7 +25,7 @@
                   <h1>
                      <i class="ace-icon fa fa-leaf green"></i>
                      <span class="red">{{ env('APP_NAME') }}</span>
-                     <span class="white" id="id-text2">Application</span>
+                     <span class="white" id="id-text2">Applicación</span>
                   </h1>
                   <h4 class="blue" id="id-company-text">&copy; ARIYAN NET</h4>
                </div>
@@ -38,7 +38,7 @@
                         <div class="widget-main">
                            <h4 class="header blue lighter bigger">
                               <i class="ace-icon fa fa-coffee green"></i>
-                              Please Enter Your Information
+                              Ingrese su información
                            </h4>
 
                            <div class="space-6"></div>
@@ -50,7 +50,7 @@
                                  <div class="@error('email') has-error @enderror">
                                     <label class="block clearfix ">
                                     <span class="block input-icon input-icon-right">
-                                       <input type="email" class="form-control" placeholder="Email" name="email" required/>
+                                       <input type="email" class="form-control" placeholder="Correo" name="email" required/>
                                        <i class="ace-icon fa fa-user"></i>
                                         @error('email')
                                           <span class="form-control-hint" role="alert">
@@ -63,7 +63,7 @@
                                  <div class="@error('password') has-error @enderror">
                                     <label class="block clearfix">
                                     <span class="block input-icon input-icon-right">
-                                       <input type="password" class="form-control" placeholder="Password"
+                                       <input type="password" class="form-control" placeholder="Contraseña"
                                               name="password" required/>
                                        <i class="ace-icon fa fa-lock"></i>
                                     </span>
@@ -83,7 +83,7 @@
                                  <div class="clearfix center">
                                     <button type="submit" class=" btn btn-lg btn-primary">
                                        <i class="ace-icon fa fa-key"></i>
-                                       <span class="bigger-110">Login</span>
+                                       <span class="bigger-110">Iniciar Sesión</span>
                                     </button>
                                  </div>
 
@@ -92,7 +92,7 @@
                            </form>
 
                            <div class="social-or-login center">
-                              {{--                              <span class="bigger-110">Or Login Using</span>--}}
+                              {{--                              <span class="bigger-110">O inicie sesión usando</span>--}}
                            </div>
 
                            <div class="space-6"></div>

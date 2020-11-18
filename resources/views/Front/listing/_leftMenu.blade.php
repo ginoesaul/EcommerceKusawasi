@@ -14,7 +14,7 @@
          action="{{ (\Request::route()->getName()) == 'front.productsList' ? route('front.productsList') : route('front.lists',[ 'list' => \Request::route('list'), 'slug' => \Request::route('slug') ])}}"
          method="post">
       <div class="collapse-block open">
-         <h3 class="collapse-block_title ">SORTEO</h3>
+         <h3 class=" ">ORDENAR</h3>
          <div class="collapse-block_content">
             @csrf
             <div class="filters-row_select ">
