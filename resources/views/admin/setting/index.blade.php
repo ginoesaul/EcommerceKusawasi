@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Site Settings
+   Configuración del sitio
 @endsection
 @section('extra_css')
 @endsection
@@ -14,48 +14,48 @@
       {{ csrf_field() }}
 
       <div class="form-group {{ $errors->has('site_title') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_title">Site Title</label>
-         <input type="text" name="site_title" maxlength="21" id="site_title" placeholder="Site Title"
+         <label class="bolder bigger-110" for="site_title">Título del sitio</label>
+         <input type="text" name="site_title" maxlength="21" id="site_title" placeholder="Título del sitio"
                 value="{{ isset($setting) ? $setting->site_title : old('site_title')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('site_title') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('site_phone') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_phone">Site Phone</label>
-         <input type="text" name="site_phone" id="site_phone" placeholder="Site Phone"
+         <label class="bolder bigger-110" for="site_phone">Teléfono del sitio</label>
+         <input type="text" name="site_phone" id="site_phone" placeholder="Teléfono del sitio"
                 value="{{ isset($setting) ? $setting->site_phone : old('site_phone')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('site_phone') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('site_fax') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_fax">Site fax</label>
-         <input type="text" name="site_fax" id="site_fax" placeholder="Site fax"
+         <label class="bolder bigger-110" for="site_fax">Sitio web de fax</label>
+         <input type="text" name="site_fax" id="site_fax" placeholder="Sitio web de fax"
                 value="{{ isset($setting) ? $setting->site_fax : old('site_fax')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('site_fax') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('site_email') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_email">Site Email</label>
-         <input type="email" name="site_email" id="site_email" placeholder="Site Email"
+         <label class="bolder bigger-110" for="site_email">Correo electrónico del sitio</label>
+         <input type="email" name="site_email" id="site_email" placeholder="Correo electrónico del sitio"
                 value="{{ isset($setting) ? $setting->site_email : old('site_email')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('site_email') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('site_address') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_address">Site address</label>
-         <input type="text" name="site_address" id="site_address" placeholder="Site address"
+         <label class="bolder bigger-110" for="site_address">Dirección del sitio</label>
+         <input type="text" name="site_address" id="site_address" placeholder="Dirección del sitio"
                 value="{{ isset($setting) ? $setting->site_address : old('site_address')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('site_address') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('site_description') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="site_description">Site Description</label>
-         <textarea type="text" name="site_description" id="site_description" placeholder="site Description" required
+         <label class="bolder bigger-110" for="site_description">Descripción del lugar</label>
+         <textarea type="text" name="site_description" id="site_description" placeholder="Descripción del lugar" required
                    class="form-control">{{isset($setting) ? $setting->site_description :old('site_description')}}</textarea>
          <span class="text-danger">{{ $errors->first('site_description') }}</span>
       </div>
@@ -67,7 +67,7 @@
                @endif
             </div>
             <div class="form-group {{ $errors->has('site_logo') ? 'has-error' : '' }}">
-               <label class="bolder bigger-110" for="site_logo">Site Logo</label>
+               <label class="bolder bigger-110" for="site_logo">Logotipo del sitio</label>
 
                <input type="file" name="site_logo" id="site_logo" class="form-control">
                <span class="text-danger">{{ $errors->first('site_logo') }}</span>
@@ -81,7 +81,7 @@
                @endif
             </div>
             <div class="form-group {{ $errors->has('site_icon') ? 'has-error' : '' }}">
-               <label class="bolder bigger-110" for="site_icon">Site icon</label>
+               <label class="bolder bigger-110" for="site_icon">Icono del sitio</label>
 
                <input type="file" name="site_icon" id="site_icon" class="form-control">
                <span class="text-danger">{{ $errors->first('site_icon') }}</span>
@@ -93,10 +93,10 @@
       <div class="form-group">
          <div class="btn-group btn-group-justified">
             <div class="btn-group">
-               <input type="submit" class="btn btn-info " value="SAVE">
+               <input type="submit" class="btn btn-info " value="GUARDAR">
             </div>
             <div class="btn-group">
-               <a class="btn btn-danger" onclick="history.back()">BACK</a>
+               <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
             </div>
          </div>
       </div>

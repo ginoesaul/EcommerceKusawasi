@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-Users List
+   LISTA DE USUARIOS
 @endsection
 @section('extra_css')
 @endsection
@@ -11,11 +11,11 @@ Users List
          <th class="center">
             ID
          </th>
-         <th class="center">Name</th>
-         <th class="center">Email</th>
-         <th class="center">Role</th>
-         <th class="center">Created Date</th>
-         <th class="center">Operations</th>
+         <th class="center">Nombre</th>
+         <th class="center">Correo</th>
+         <th class="center">Rol</th>
+         <th class="center">Fecha de creación</th>
+         <th class="center">Operaciones</th>
       </tr>
       </thead>
       <tbody class="table_data">
