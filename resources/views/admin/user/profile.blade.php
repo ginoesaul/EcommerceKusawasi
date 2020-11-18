@@ -22,12 +22,12 @@
 
                         <a href="{{ route('user.edit',$user->user_id) }}" class="btn btn-sm btn-block btn-success">
                            <i class="ace-icon fa fa-plus-circle bigger-120"></i>
-                           <span class="bigger-110">Edit this User</span>
+                           <span class="bigger-110">Editar este usuario</span>
                         </a>
                         @if ($user->address)
                            <a href="{{ route('admin.address.edit',$user->user_id) }}" class="btn btn-sm btn-block btn-primary">
                               <i class="ace-icon fa fa-envelope-o bigger-110"></i>
-                              <span class="bigger-110">Edit Address</span>
+                              <span class="bigger-110">Editar Correo</span>
                            </a>
                         @endif
                      </div><!-- /.col -->
@@ -50,19 +50,19 @@
                            @if ($user->isOnline())
                               <span class="label label-success arrowed-in-right">
                               <i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
-                              online
+                              En línea
                               </span>
                            @else
                               <span class="label label-grey arrowed-in-right">
                               <i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
-                              off-line
+                              Fuera de Línea
                               </span>
                            @endif
                         </h4>
 
                         <div class="profile-user-info">
                            <div class="profile-info-row">
-                              <div class="profile-info-name"> Email</div>
+                              <div class="profile-info-name"> Correo</div>
 
                               <div class="profile-info-value">
                                  <span>{{ $user->email }}</span>
@@ -70,7 +70,7 @@
                            </div>
 
                            <div class="profile-info-row">
-                              <div class="profile-info-name"> Joined</div>
+                              <div class="profile-info-name"> Unir</div>
 
                               <div class="profile-info-value">
                                  <span>{{ $user->created_at }}</span>
@@ -78,7 +78,7 @@
                            </div>
 
                            <div class="profile-info-row">
-                              <div class="profile-info-name"> Updated</div>
+                              <div class="profile-info-name"> Actualizar</div>
 
                               <div class="profile-info-value">
                                  <span>{{ $user->updated_at }}</span>
@@ -86,22 +86,22 @@
                            </div>
 
                            <div class="profile-info-row">
-                              <div class="profile-info-name"> Default Address </div>
+                              <div class="profile-info-name"> Dirección incorrecta</div>
 
                               @if ($address = $user->address)
                                  <div class="row">
                                     <div class="col-sm-4">
                                        <ul>
-                                          <li>NAME :</li>
-                                          <li>SURNAME:</li>
-                                          <li>STATE :</li>
-                                          <li>CITY :</li>
-                                          <li>AREA :</li>
-                                          <li>AVENUE :</li>
-                                          <li>STREET :</li>
+                                          <li>NOMBRE :</li>
+                                          <li>APELLIDO:</li>
+                                          <li>PROVINCIA :</li>
+                                          <li>CIUDAD :</li>
+                                          <li>ÁREA :</li>
+                                          <li>AVENIDA :</li>
+                                          <li>CALLE :</li>
                                           <li>NOM :</li>
-                                          <li>PHONE NUMBER :</li>
-                                          <li>POSTAL CODE :</li>
+                                          <li>CELULAR :</li>
+                                          <li>CÓDIGO POSTAL :</li>
                                        </ul>
                                     </div>
                                     <div class="col-sm-8">
@@ -122,17 +122,17 @@
                               @else
                                  <div class="profile-info-value">
                                     <i class="fa fa-map-marker light-orange bigger-110"></i>
-                                    <b>WITHOUT SAVED ADDRESS</b>
+                                    <b>SIN DIRECCIÓN GUARDADA</b>
                                  </div>
                               @endif
 
                            </div>
 
                            {{--                           <div class="profile-info-row">--}}
-                           {{--                              <div class="profile-info-name"> Last Online </div>--}}
+                           {{--                              <div class="profile-info-name"> Última conexión </div>--}}
 
                            {{--                              <div class="profile-info-value">--}}
-                           {{--                                 <span>3 hours ago</span>--}}
+                           {{--                                 <span>hace 3 horas</span>--}}
                            {{--                              </div>--}}
                            {{--                           </div>--}}
                         </div>
@@ -150,18 +150,18 @@
                         <th class="center">
                            ID
                         </th>
-                        <th class="center">Order Status</th>
-                        <th class="center">Track Code</th>
-                        <th class="center">Payments</th>
-                        <th class="center">Address</th>
-                        <th class="center">Customer User</th>
-                        <th class="center">Client Name</th>
-                        <th class="center">Client Phone, Email</th>
-                        {{--         <th class="center">Employee Name</th>--}}
-                        <th class="center">Total Price</th>
-                        <th class="center">Gift Card</th>
-                        <th class="center">Date</th>
-                        <th class="center">Operations</th>
+                        <th class="center">Estado del pedido</th>
+                        <th class="center">Código de seguimiento</th>
+                        <th class="center">Pagos</th>
+                        <th class="center">Direción</th>
+                        <th class="center">Usuario del cliente</th>
+                        <th class="center">Nombre del cliente</th>
+                        <th class="center">Celular del cliente, Correo</th>
+                        {{--         <th class="center">Nombre del empleado</th>--}}
+                        <th class="center">Precio total</th>
+                        <th class="center">Tarjeta de regalo</th>
+                        <th class="center">Fecha</th>
+                        <th class="center">Operaciones</th>
                      </tr>
                      </thead>
                      <tbody class="table_data">
