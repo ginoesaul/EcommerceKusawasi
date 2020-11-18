@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Compare
+   Comparación
 @endsection
 @section('extra_css')
 @endsection
@@ -12,7 +12,7 @@
          <!-- row-img -->
          <tr>
             <td>
-               Product
+               Producto
             </td>
             @if ($p_1)
                <td>
@@ -50,13 +50,13 @@
                            </a>
                         </p>
                         <p>
-                           <strong>Description</strong>
+                           <strong>Descripción</strong>
                         </p>
                         <p>
                            {{ $p_1->description }}
                         </p>
                         <p>
-                           Activity
+                           Actividad
                         </p>
                         <p>
                            N/A
@@ -77,7 +77,7 @@
                            <img src="{{ $p_2->cover }}" alt="product image" class="img-thumbnail">
                         </a>
                         @if($p_2->is_off)
-                           <div class="label-sale">Sale<br>{{ $p_2->off }}% Off</div>
+                           <div class="label-sale">Venta<br>{{ $p_2->off }}% Off</div>
                         @endif
                      </div>
 
@@ -103,13 +103,13 @@
                            </a>
                         </p>
                         <p>
-                           <strong>Description</strong>
+                           <strong>Descripción</strong>
                         </p>
                         <p>
                            {{ $p_2->description }}
                         </p>
                         <p>
-                           Activity
+                           Actividad
                         </p>
                         <p>
                            N/A
@@ -126,7 +126,7 @@
          </tr>
          <tr>
             <td>
-               BRAND
+               MARCAS
             </td>
             <td>
                @if ($p_1)
@@ -145,7 +145,7 @@
          </tr>
          <tr>
             <td>
-               Description
+               Descripción
             </td>
             <td>
                @if ($p_1)
@@ -160,7 +160,7 @@
          </tr>
          <tr>
             <td>
-               Availability
+               Disponibilidad
             </td>
             <td>
                @if ($p_1)
@@ -175,10 +175,10 @@
             <td>
                @if ($p_2)
                   @if($p_2->status == 1)
-                     <span class="color-base">In stock</span>
+                     <span class="color-base">En stock</span>
                   @else
-                     <span class="color-red">Out stock</span>
-                     <span class="btn-info">Coming On :{{ $p_2->data_available }}</span>
+                     <span class="color-red">Fuera de stock</span>
+                     <span class="btn-info">Comenzamos :{{ $p_2->data_available }}</span>
                   @endif
                @endif
             </td>

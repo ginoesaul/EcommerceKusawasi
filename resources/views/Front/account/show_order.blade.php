@@ -9,8 +9,8 @@
          <div class="widget-header widget-header-large">
             <h3 class="widget-title grey lighter">
                <i class="ace-icon fa fa-leaf green"></i>
-               Track Code:<span>#{{ $order->track_code}}</span>
-               <span class="pull-right">Date: <span class="">{{ $order->created_at }}</span></span>
+               Código de pista:<span>#{{ $order->track_code}}</span>
+               <span class="pull-right">Fecha: <span class="">{{ $order->created_at }}</span></span>
             </h3>
             {{--<div class="widget-toolbar hidden-480">
                <a href="#">
@@ -25,25 +25,25 @@
                   <div class="col-sm-6">
                      <div class="row">
                         <div class="col-xs-11 label label-lg label-info arrowed-in arrowed-right">
-                           <b>Shipper Info</b>
+                           <b>Información del remitente</b>
                         </div>
                      </div>
 
                      <div>
                         <ul class="list-unstyled spaced">
                            <li>
-                              <i class="ace-icon fa fa-caret-right blue"></i>Name:
+                              <i class="ace-icon fa fa-caret-right blue"></i>Nombre:
                               <span> {{ $order->client_name }}</span>
                            </li>
 
                            <li>
                               <i class="ace-icon fa fa-caret-right blue"></i>
-                              Phone:
+                              Celular:
                               <b class="red">{{ $order->client_phone }}</b>
                            </li>
                            <li>
                               <i class="ace-icon fa fa-caret-right blue"></i>
-                              Email:
+                              Correo:
                               <b class="red">{{ $order->client_email }}</b>
                            </li>
 
@@ -51,7 +51,7 @@
 
                            <li>
                               <i class="ace-icon fa fa-caret-right blue"></i>
-                              <b>Gift Card:</b>
+                              <b>Tarjeta de regalo:</b>
                               @if ($gift = $order->giftCard)
                                  <span>{{ $gift->gift_name }}</span>
                                  <ul>
@@ -59,12 +59,12 @@
                                        <b>Gift Price:</b>
                                        <span class="badge badge-primary">{{ $gift->gift_amount }}</span>
                                     </li>
-                                    <li><b>Gift Code :</b>
+                                    <li><b>Código de regalo :</b>
                                        <span class="badge badge-primary">{{ $gift->gift_code }}</span>
                                     </li>
                                  </ul>
                               @else
-                                 <span class="badge badge-warning">NO GIFT CARD</span>
+                                 <span class="badge badge-warning">NO HAY TARJETA DE REGALO</span>
                               @endif
 
                            </li>
@@ -82,16 +82,16 @@
                         <div class="row">
                            <div class="col-sm-6 col-xs-6 col-md-6">
                               <ul class="list-unstyled">
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NAME :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>SURNAME:</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>STATE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CITY :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>AREA :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>AVENUE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>STREET :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NOMBRE :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>APELLIDO:</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>PROVINCIA :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CIUDAD :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>ÁREA :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>AVENIDA :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CALLE :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>NOM :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>PHONE NUMBER:</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>POSTAL CODE :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NÚMERO CELULAR:</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CÓDIGO POSTAL :</li>
                               </ul>
                            </div>
                            <div class="col-sm-6 col-xs-6 col-md-6">
@@ -119,27 +119,27 @@
                   <div class="panel @if ($payment->status) panel-success @else panel-danger @endif ">
                      <div class="panel-heading">
                         <div class="panel-title">
-                           <span class="h4">Payment Info:</span>
+                           <span class="h4">Información de pago:</span>
                            @if ($payment->status )
-                              <span class="label label-success label-large">PAID</span>
+                              <span class="label label-success label-large">PAGADO</span>
                            @else
-                              <span class="label label-danger label-large">NOT-PAID</span>
+                              <span class="label label-danger label-large">NO PAGADO</span>
                            @endif
                         </div>
                      </div>
                      <div class="panel-body">
                         <ul class="list-unstyled">
-                           <li><i class="ace-icon fa fa-caret-right blue"></i>Status :
+                           <li><i class="ace-icon fa fa-caret-right blue"></i>ESTADO :
                               <b>{{ $payment->payment_status }}</b></li>
-                           <li><i class="ace-icon fa fa-caret-right blue"></i>sub total:<b>{{ $payment->sub_total }}</b>
+                           <li><i class="ace-icon fa fa-caret-right blue"></i>Sub total:<b>{{ $payment->sub_total }}</b>
                            </li>
-                           <li><i class="ace-icon fa fa-caret-right blue"></i>Date :<b>{{ $payment->created_at }}</b>
+                           <li><i class="ace-icon fa fa-caret-right blue"></i>Fecha :<b>{{ $payment->created_at }}</b>
                            </li>
                         </ul>
                      </div>
                   </div>
                @else
-                  <h2><span>Payment:</span><span class="label label-warning">NOTHING PAID</span></h2>
+                  <h2><span>Pago:</span><span class="label label-warning">NADA DE PAGOS</span></h2>
                @endif
 
 
@@ -150,13 +150,13 @@
                         <th class="center">
                            #
                         </th>
-                        <th class="center">Product Name</th>
-                        <th class="center">Size</th>
+                        <th class="center">Nombre del producto</th>
+                        <th class="center">Tamaño</th>
                         <th class="center">Color</th>
-                        <th class="center">Attributes</th>
-                        <th class="center">Product Price</th>
-                        <th class="center">Quantity</th>
-                        <th class="center">Create Date</th>
+                        <th class="center">Atributos</th>
+                        <th class="center">Precio del producto</th>
+                        <th class="center">Calidad</th>
+                        <th class="center">Fecha creada</th>
                      </tr>
                      </thead>
                      <tbody>
@@ -177,7 +177,7 @@
                         </tr>
                      @empty
                         <tr>
-                           <td colspan="10">No Data</td>
+                           <td colspan="10">No hay datos</td>
                         </tr>
                      @endforelse
                      </tbody>
@@ -189,11 +189,11 @@
                <div class="row">
                   <div class="col-sm-5 pull-right">
                      <h4 class="pull-right">
-                        Total amount :
+                        Monto total :
                         <span class="red">{{ $order->total_price }}</span>
                      </h4>
                   </div>
-                  <div class="col-sm-7 pull-left"><b>Extra Information:</b>
+                  <div class="col-sm-7 pull-left"><b>Extra Información:</b>
                      <p class="">
                         {{ $order->details }}
                      </p>

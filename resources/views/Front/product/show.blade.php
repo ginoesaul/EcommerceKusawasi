@@ -220,8 +220,7 @@
                      <span class="plus-btn"></span>
                   </div>
                   <a href="#" id="add_to_cart" class="btn btn-lg btn-addtocart add_to_cart" style="">
-                     <span class="icon icon-shopping_basket"></span>SHOP
-                     NOW!
+                     <span class="icon icon-shopping_basket"></span>¡COMPRA AHORA!
                   </a>
                </div>
 
@@ -232,16 +231,16 @@
                         @if($product->favorited())
                            <a href="#" id="unfavorites" data-id="{{ $product->product_id }}">
                               <span id="dislike_span" class="fa fa-heart"></span>
-                              <span class="text">Delete from WISHLIST</span>
+                              <span class="text">Borrar de favoritos</span>
                            </a>
                         @else
                            <a href="#" id="favorite" data-id="{{ $product->product_id }}">
                               <span id="like_span" class="fa fa-heart-o"></span>
-                              <span class="text">ADD TO WISHLIST</span>
+                              <span class="text">Añadir a favoritos</span>
                            </a>
                         @endif
                      @else
-                        <i>for wish List please<a href="{{ route('login') }}">login</a></i>
+                        <i>para la lista de deseos por favor<a href="{{ route('login') }}">iniciar sesión</a></i>
                      @endauth
                   </li>
                   <li class="text-left">
@@ -250,11 +249,11 @@
                         <span id="compare_text" class="text">
                               {{--@if (request()->cookie('P_compare_1') == $product->product_id
                                     or request()->cookie('P_compare_2') == $product->product_id )
-                                  already in compare list
+                                    ya en la lista comparativa
                                  @else
-                                 ADD TO COMPARE
+                                 AGREGAR PARA COMPARAR
                               @endif--}}
-                              ADD TO COMPARE
+                              AGREGAR PARA COMPARAR
                            </span>
                      </a>
                   </li>
@@ -282,26 +281,26 @@
       <div class="tt-product-page__tabs tt-tabs">
          <div class="tt-tabs__head">
             <ul>
-               <li data-active="true"><span>DESCRIPTION</span></li>
-               <li><span>SHOPPING METHOD</span></li>
+               <li data-active="true"><span>DESCRIPCIÓN</span></li>
+               <li><span>MÉTODO DE COMPRA</span></li>
                @if ($product->has_size)
-                  <li><span>SIZING GUIDE</span></li>
+                  <li><span>GUÍA DE TALLAS</span></li>
                @endif
                <li><span>TAGS</span></li>
-               <li><span>REVIEWS</span></li>
+               <li><span>REVISIONES</span></li>
             </ul>
             <div class="tt-tabs__border"></div>
          </div>
          <div class="tt-tabs__body">
             <div>
-               <span class="tt-tabs__title">DESCRIPTION</span>
+               <span class="tt-tabs__title">DESCRIPCIÓN</span>
                <div class="tt-tabs__content">
-                  <h5 class="tab-title">DESCRIPTION</h5>
+                  <h5 class="tab-title">DESCRIPCIÓN</h5>
                   <P>
                      {{ $product->description }}
                   </P>
                   <ul class="list-simple-dot">
-                     <li><span class="font-weight-600">Made In :</span> {{ $product->made_in }}</li>
+                     <li><span class="font-weight-600">Hecho en :</span> {{ $product->made_in }}</li>
                      @forelse($product->attributes as $attribute)
                         <li>
                            <span class="badge-grey font-weight-600">{{ $attribute->attr_name }} : </span>
@@ -316,29 +315,28 @@
                </div>
             </div>
             <div>
-               <span class="tt-tabs__title">SHOPPING METHOD</span>
+               <span class="tt-tabs__title">MÉTODO DE COMPRA</span>
                <div class="tt-tabs__content">
-                  <h5 class="tab-title">SHOPPING METHOD</h5>
-                  <h6><span class="color-base icon icon-local_shipping"></span> Shipping and Delivery</h6>
-                  We're dedicated to delivering your purchase as quickly and affordably as possible. We offer a range of
-                  delivery and pickup options, so you can choose the shipping method that best meets your needs.
+                  <h5 class="tab-title">MÉTODO DE COMPRA</h5>
+                  <h6><span class="color-base icon icon-local_shipping"></span> ya en la lista de comparación</h6>
+                  Estamos dedicados a entregar su compra de la manera más rápida y económica posible. Ofrecemos una variedad de opciones 
+                  de entrega y recogida, para que pueda elegir el método de envío que mejor se adapte a sus necesidades.
                   <div class="divider"></div>
-                  <h6><span class="color-base icon icon-payment"></span> Payment Methods</h6>
-                  Every country and shopper has their prefered method to pay online. Offering your buyers safe and
-                  convenient payment choices can help your sale go smoothly, earn you positive Feedback, and bring them
-                  back for more.
+                  <h6><span class="color-base icon icon-payment"></span> Métodos de Pago</h6>
+                  Cada país y comprador tiene su método preferido para pagar en línea. Ofrecer a sus compradores opciones de pago seguras y 
+                  convenientes puede ayudar a que su venta se realice sin problemas, obtener comentarios positivos y traerlos de vuelta por más.
                </div>
             </div>
             @if ($product->has_size)
                <div>
-                  <span class="tt-tabs__title">SIZING GUIDE</span>
+                  <span class="tt-tabs__title">GUÍA DE TAMAÑO</span>
                   <div class="tt-tabs__content">
-                     <h5 class="tab-title">CLOTHING - SINGLE SIZE CONVERSION (CONTINUED)</h5>
+                     <h5 class="tab-title"> VENTA DE UTENSILIOS DE CASA </h5>
                      <div class="table-responsive">
                         <table class="table table-parameters">
                            <tbody>
                            <tr>
-                              <td>UK</td>
+                              <td>Reino Unido</td>
                               <td>18</td>
                               <td>20</td>
                               <td>22</td>
@@ -346,7 +344,7 @@
                               <td>26</td>
                            </tr>
                            <tr>
-                              <td>European</td>
+                              <td>Europeo</td>
                               <td>46</td>
                               <td>48</td>
                               <td>50</td>
@@ -354,7 +352,7 @@
                               <td>54</td>
                            </tr>
                            <tr>
-                              <td>US</td>
+                              <td>Estados Unidos</td>
                               <td>14</td>
                               <td>16</td>
                               <td>18</td>
@@ -394,11 +392,11 @@
             </div>
             <!-- COMMENTS -->
             <div id="">
-               <span class="tt-tabs__title badge-">REVIEWS</span>
+               <span class="tt-tabs__title badge-">REVISIONES</span>
                <div class="tt-tabs__content">
-                  <h5 class="right tab-title">CUSTOMER REVIEWS</h5>
+                  <h5 class="right tab-title">OPINIONES DE LOS USUARIOS</h5>
                   <h6 id="comment_answer"></h6>
-                  <h6>Write a review</h6>
+                  <h6>Escribe una reseña</h6>
                   @comments([
                   'model' => $product,
                   'approved' => true
@@ -412,7 +410,7 @@
    <div class="divider"></div>
 
    <div class="">
-      <h3 class="block-title small">YOU MAY ALSO BE INTERESTED IN THE FOLLOWING PRODUCT(S)</h3>
+      <h3 class="block-title small">TAMBIÉN PUEDE ESTAR INTERESADO EN LOS SIGUIENTES PRODUCTOS</h3>
       <div class="row">
          <div class="carousel-products-2 carouselTab slick-arrow-top slick-arrow-top2">
             @forelse($related_products as $product)
