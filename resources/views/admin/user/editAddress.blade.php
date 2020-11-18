@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Edit Address
+   Editar Dirección
 @endsection
 @section('extra_css')
 @endsection
@@ -12,48 +12,48 @@
          <div class="row">
             <div class="col-sm-6">
                <div class="form-group required">
-                  <label for="name" class=" control-label">First Name: <span>*</span></label>
+                  <label for="name" class=" control-label">Primer Nombre: <span>*</span></label>
                   <input type="text" value="{{  $address->name }}" name="name" class="form-control" id="name" required>
                </div>
                <div class="form-group required">
-                  <label for="number" class="control-label">Number: <span>*</span></label>
+                  <label for="number" class="control-label">Número: <span>*</span></label>
                   <input type="number" value="{{  $address->number  }}" name="number" class="form-control" id="number" required>
                </div>
                <div class="form-group required">
-                  <label for="area" class=" control-label">Area: </label>
+                  <label for="area" class=" control-label">Área: </label>
                   <input type="text" name="area"  value="{{$address->area }}" class="form-control" id="area">
                </div>
                <div class="form-group required">
-                  <label for="city" class=" control-label">City: <span>*</span></label>
+                  <label for="city" class=" control-label">Ciudad: <span>*</span></label>
                   <input type="text" name="city" value="{{  $address->city  }}" class="form-control" id="city" required>
                </div>
                <div class="form-group required">
-                  <label for="postal_code" class=" control-label">Zip/Postal Code: <span>*</span></label>
+                  <label for="postal_code" class=" control-label">Código Postal: <span>*</span></label>
                   <input type="text" class="form-control" value="{{  $address->postal_code }}" name="postal_code" id="postal_code" required>
                </div>
             </div>
             <div class="col-sm-6">
                <div class="form-group required">
-                  <label for="surname" class=" control-label">Last Name: <span>*</span></label>
+                  <label for="surname" class=" control-label">Apellido: <span>*</span></label>
                   <div class="">
                      <input type="text" name="surname" value="{{ $address->surname }}" class="form-control" id="surname" required>
                   </div>
                </div>
                <div class="form-group required">
-                  <label for="street" class=" control-label">Street: <span>*</span></label>
+                  <label for="street" class=" control-label">Calle: <span>*</span></label>
                   <input type="text" name="street" value="{{  $address->street  }}" class="form-control" id="street">
                </div>
                <div class="form-group required">
-                  <label for="avenue" class=" control-label">Avenue:</label>
+                  <label for="avenue" class=" control-label">Avenida:</label>
                   <input type="text" name="avenue" value="{{  $address->avenue  }}" class="form-control" id="avenue">
                </div>
                <div class="form-group required">
-                  <label for="state" class=" control-label">State/Province: <span>*</span></label>
+                  <label for="state" class=" control-label">Provincia: <span>*</span></label>
                   <input type="text" name="state" value="{{  $address->state  }}" class="form-control" id="state" required>
                </div>
                <div class="form-group required">
-                  <label for="phone_number" class=" control-label">Phone Number: <span>*</span>
-                     <small>Like +905534676564</small></label>
+                  <label for="phone_number" class=" control-label">Celular: <span>*</span>
+                     <small>Como +905534676564</small></label>
                   <input type="text" name="phone_number" value="{{  $address->phone_number  }}" class="form-control" id="phone_number" required>
                </div>
 
@@ -65,7 +65,7 @@
                      <input type="submit" class="btn btn-info " value="SAVE">
                   </div>
                   <div class="btn-group">
-                     <a class="btn btn-danger" onclick="history.back()">BACK</a>
+                     <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
                   </div>
                </div>
             </div>

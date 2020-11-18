@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   My Shopping cart
+   Mi cesta de la compra
 @endsection
 @section('extra_css')
 @endsection
@@ -70,26 +70,25 @@
                      </td>
                   </tr>
                @empty
-                  <center><h2>your Cart is empty</h2></center>
+                  <center><h2>su carro está vacío</h2></center>
                @endforelse
                </tbody>
             </table>
             <div class="shopping-cart-btns">
                @if (Cart::count() > 0)
                   <div class="pull-right">
-                     <a class="btn-link" href="#"><span class="icon icon-cached color-base"></span>UPDATE CART</a>
+                     <a class="btn-link" href="#"><span class="icon icon-cached color-base"></span>CARRITO DE ACTUALIZACIÓN</a>
                      <div class="clearfix visible-xs visible-sm"></div>
-                     <a class="btn-link" href="{{ route('cart.clear') }}"><span class="icon icon-delete"></span>CLEAR
-                        SHOPPING CART</a>
+                     <a class="btn-link" href="{{ route('cart.clear') }}"><span class="icon icon-delete"></span>CARRITO DE LA COMPRA</a>
                   </div>
                   <div class="pull-left">
-                     <a class="btn-link" href=""><span class="icon icon-keyboard_arrow_left"></span>CONTINUE SHOPPING
+                     <a class="btn-link" href=""><span class="icon icon-keyboard_arrow_left"></span>SEGUIR COMPRANDO
                      </a>
                   </div>
                @else
                   <div class="pull-left">
                      <a class="btn-link load_page" href="{{ route('front.productsList') }}" ><span
-                                class="icon icon-keyboard_arrow_left"></span>CONTINUE SHOPPING
+                                class="icon icon-keyboard_arrow_left"></span>SEGUIR COMPRANDO
                      </a>
                   </div>
                @endif

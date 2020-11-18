@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Your Session Expired
+   Tu sesión ha expirado
 @endsection
 @section('extra_css')
 @endsection
@@ -8,12 +8,12 @@
    <div class="offset-80">
       <div class="on-duty-box">
 
-         <h1 class="block-title large"> Your session has expired!</h1>
+         <h1 class="block-title large"> ¡Tu sesión ha expirado!</h1>
          <h1 class="text-danger">440</h1>
          <div class="description">
-            Please try one of the following pages:
+            Por favor, intente una de las siguientes páginas:
          </div>
-         <a class="btn btn-border color-default" href="{{ route('front.checkout') }}">Check Out</a>
+         <a class="btn btn-border color-default" href="{{ route('front.checkout') }}">Compruébalo.</a>
       </div>
    </div>
 
