@@ -1,39 +1,39 @@
 @extends('layout.front.index')
 @section('title')
-   Profile
+   Perfil
 @endsection
 @section('extra_css')
 @endsection
 @section('content')
    <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-         <h4>Account Details</h4>
+         <h4>Detalles de la Cuenta</h4>
          <div class="responsive-table">
             <table class="table table-params">
                <tbody>
                <tr>
-                  <td>Name:</td>
+                  <td>Nombre:</td>
                   <td>{{ $user->name }}</td>
                </tr>
                <tr>
-                  <td>E-mail:</td>
+                  <td>Correo:</td>
                   <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                </tr>
                <tr>
-                  <td>joined:</td>
+                  <td>Unido:</td>
                   <td>{{ $user->created_at }}</td>
                </tr>
                </tbody>
             </table>
          </div>
-         {{--            <a href="#" class="btn">VIEW ADDRESSES (1)</a>--}}
-         <a href="{{ route('front.myOrders') }}" class="click_me btn ">MY ORDERS</a>
+         {{--            <a href="#" class="btn">VER DIRECCIONES (1)</a>--}}
+         <a href="{{ route('front.myOrders') }}" class="click_me btn ">MIS ORDENES</a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
          <div class="panel panel-default">
             <div class="panel-heading">
-               <span class="panel-title">Default Address</span>
+               <span class="panel-title">Dirección por defecto</span>
                <a href="{{ route('front.address.edit') }}" class="pull-right btn btn-primary btn-xs ">
                   {{ $address  ? 'Edit Address' : 'Add New Address' }}
                </a><br><br>
@@ -43,16 +43,16 @@
                   <div class="row">
                      <div class="col-sm-5 col-lg-6">
                         <ul>
-                           <li>NAME :</li>
-                           <li>SURNAME:</li>
-                           <li>STATE :</li>
-                           <li>CITY :</li>
+                           <li>NOMBRE :</li>
+                           <li>APELLIDO:</li>
+                           <li>PROVINCIA :</li>
+                           <li>CIUDAD :</li>
                            <li>AREA :</li>
-                           <li>AVENUE :</li>
-                           <li>STREET :</li>
+                           <li>AVENIDA :</li>
+                           <li>CALLE :</li>
                            <li>NOM :</li>
-                           <li>PHONE NUMBER :</li>
-                           <li>POSTAL CODE :</li>
+                           <li>NÚMERO CELULAR :</li>
+                           <li>CÓDIGO POSTAL :</li>
                         </ul>
                      </div>
                      <div class="col-sm-7 col-lg-6">
@@ -73,7 +73,7 @@
                      </div>
                   </div>
                @else
-                  <h4>YOU DONT HAVE SAVED ADDRESS</h4>
+                  <h4>NO TIENES UNA DIRECCIÓN GUARDADA</h4>
                @endif
             </div>
          </div>
