@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Add new User
+   Añadir un nuevo usuario
 @endsection
 @section('extra_css')
 @endsection
