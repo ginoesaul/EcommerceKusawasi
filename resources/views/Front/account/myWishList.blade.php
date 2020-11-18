@@ -1,25 +1,25 @@
 @extends('layout.front.index')
 @section('title')
-   My Wish List
+   Mi lista de favoritos
 @endsection
 @section('extra_css')
 @endsection
 @section('content')
    <!-- Breadcrumb End-->
    <div class="row">
-      <h2 class="text-center title">My Wish List</h2>
+      <h2 class="text-center title">Mi lista de favoritos</h2>
       <!--Middle Part Start-->
       <div class="col-sm-12">
          <div class="table-responsive">
             <table class="table table-bordered table-hover">
                <thead>
                <tr>
-                  <td class="text-center">Product</td>
-                  <td class="text-center">name</td>
-                  <td class="text-center">Status</td>
-                  <td class="text-center">Brand</td>
-                  <td class="text-center">Price</td>
-                  <td class="text-center">Operation</td>
+                  <td class="text-center">Producto</td>
+                  <td class="text-center">Nombre</td>
+                  <td class="text-center">Estado</td>
+                  <td class="text-center">Marca</td>
+                  <td class="text-center">Precio</td>
+                  <td class="text-center">Operaciones</td>
                </tr>
                </thead
                <tbody>
@@ -36,9 +36,9 @@
                      </td>
 
                      @if($product->status == 1)
-                        <td class="text-right text-success">Available</td>
+                        <td class="text-right text-success">Disponible</td>
                      @else
-                        <td class="text-right text-danger"> Not Available</td>
+                        <td class="text-right text-danger"> No Disponible</td>
                      @endif
                      <td class="text-center">
                         <img src="{{ $product->brands->src }}" class="img-thumbnail" alt="brand logo">
@@ -60,7 +60,7 @@
                @empty
                   <tr>
                      <td colspan="6">
-                        Your wish list is empty!
+                        ¡Su lista de favoritos está vacio!
                      </td>
                   </tr>
                @endforelse

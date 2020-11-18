@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Edit Address
+   Editar Dirección
 @endsection
 @section('extra_css')
 @endsection
@@ -18,59 +18,59 @@
       <div class="row">
          <div class="col-sm-6">
             <div class="form-group required">
-               <label for="name" class=" control-label">First Name: <span>*</span></label>
+               <label for="name" class=" control-label">Primer Nombre: <span>*</span></label>
                <input type="text" value="{{ $address ? $address->name  : ''}}" name="name" class="form-control"
                       id="name" required>
             </div>
             <div class="form-group required">
-               <label for="number" class="control-label">Number: <span>*</span></label>
+               <label for="number" class="control-label">Número: <span>*</span></label>
                <input type="number" value="{{ $address ? $address->number  : '' }}" name="number" class="form-control"
                       id="number" required>
             </div>
             <div class="form-group required">
-               <label for="area" class=" control-label">Area: </label>
+               <label for="area" class=" control-label">Área: </label>
                <input type="text" name="area" value="{{ $address ? $address->area  : '' }}" class="form-control"
                       id="area">
             </div>
             <div class="form-group required">
-               <label for="city" class=" control-label">City: <span>*</span></label>
+               <label for="city" class=" control-label">Ciudad: <span>*</span></label>
                <input type="text" name="city" value="{{ $address ? $address->city  : '' }}" class="form-control"
                       id="city" required>
             </div>
             <div class="form-group required">
-               <label for="postal_code" class=" control-label">Zip/Postal Code: <span>*</span></label>
+               <label for="postal_code" class=" control-label">Código Postal: <span>*</span></label>
                <input type="text" class="form-control" value="{{ $address ? $address->postal_code : ''  }}"
                       name="postal_code" id="postal_code" required>
             </div>
-            <button class="btn btn-primary btn-lg pull-left" id="edit_address" type="submit">EDIT ADDRESS</button>
+            <button class="btn btn-primary btn-lg pull-left" id="edit_address" type="submit">EDITAR DIRECCIÓN</button>
 
          </div>
          <div class="col-sm-6">
             <div class="form-group required">
-               <label for="surname" class=" control-label">Last Name: <span>*</span></label>
+               <label for="surname" class=" control-label">Apellidos: <span>*</span></label>
                <div class="">
                   <input type="text" name="surname" value="{{ $address ? $address->surname : '' }}" class="form-control"
                          id="surname" required>
                </div>
             </div>
             <div class="form-group required">
-               <label for="street" class=" control-label">Street: <span>*</span></label>
+               <label for="street" class=" control-label">Calle: <span>*</span></label>
                <input type="text" name="street" value="{{ $address ? $address->street : '' }}" class="form-control"
                       id="street">
             </div>
             <div class="form-group required">
-               <label for="avenue" class=" control-label">Avenue:</label>
+               <label for="avenue" class=" control-label">Avenida:</label>
                <input type="text" name="avenue" value="{{ $address ? $address->avenue : '' }}" class="form-control"
                       id="avenue">
             </div>
             <div class="form-group required">
-               <label for="state" class=" control-label">State/Province: <span>*</span></label>
+               <label for="state" class=" control-label">Provincia: <span>*</span></label>
                <input type="text" name="state" value="{{ $address ? $address->state : '' }}" class="form-control"
                       id="state" required>
             </div>
             <div class="form-group required">
-               <label for="phone_number" class=" control-label">Phone Number: <span>*</span>
-                  <small>Like +905534676564</small>
+               <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
+                  <small> +905534676564</small>
                </label>
                <input type="text" name="phone_number" value="{{ $address ? $address->phone_number : ''}}"
                       class="form-control" id="phone_number" required>

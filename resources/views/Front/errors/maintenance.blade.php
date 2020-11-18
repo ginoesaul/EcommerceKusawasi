@@ -5,15 +5,15 @@
    <meta name="viewport"
          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Server is on maintenance</title>
+   <title>El servidor está en mantenimiento</title>
 </head>
 <body>
 <div style="text-align: center;margin-top: 10%">
    <div>
       <h1 style="color: green;font-size: 3rem"><b>503</b></h1>
-      <h1 style="font-size: 5rem">Server is on maintenance!</h1>
+      <h1 style="font-size: 5rem">¡El servidor está en mantenimiento!</h1>
       <div>
-         <h2>Please check again later</h2>
+         <h2>Por favor, compruébelo más tarde.</h2>
       </div>
    </div>
 </div>
