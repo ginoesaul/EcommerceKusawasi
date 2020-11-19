@@ -27,7 +27,7 @@
             </table>
          </div>
          {{--            <a href="#" class="btn">VER DIRECCIONES (1)</a>--}}
-         <a href="{{ route('front.myOrders') }}" class="click_me btn ">MIS ORDENES</a>
+         <a href="{{ route('front.myOrders') }}" class="click_me btn ">MIS PEDIDOS</a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 

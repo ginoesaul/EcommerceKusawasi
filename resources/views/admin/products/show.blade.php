@@ -1,4 +1,5 @@
 @extends('layout.admin.index')
+
 @section('extra_css')
    <!-- the script in this page wont work with pjax so i hava to reload it  -->
    @if (env('APP_AJAX'))
@@ -10,6 +11,7 @@
    @endif
    <link rel="stylesheet" href="{{ asset('admin-assets/css/w3.css') }}">
 @endsection
+
 @section('content')
    <div class="hr dotted"></div>
    <div>
@@ -20,7 +22,7 @@
                   <a href="{{ ($product->cover) }}" target="_blank">
                      <img id="avatar"
                           class="editable img-responsive editable-click editable-empty"
-                          alt="Alex's Avatar" src="{{ ($product->cover) }}"></a>
+                          alt="Avatar" src="{{ ($product->cover) }}"></a>
                </span>
                <div class="space-4"></div>
                <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
@@ -67,7 +69,7 @@
                </div>
                @else
                <div class="clearfix">
-                  <h2 class="text-danger bolder">WITHOUT PHOTO</h2>
+                  <h2 class="text-danger bolder">SIN FOTO</h2>
                </div>
             @endif
 
@@ -75,13 +77,13 @@
                <div class="grid2">
                   <span class="bigger-175 blue">25</span>
                   <br>
-                  Followers
+                  Flores
                </div>
 
                <div class="grid2">
                   <span class="bigger-175 blue">12</span>
                   <br>
-                  Following
+                  Siguiendo
                </div>
             </div>--}}
             @can('product-edit')
@@ -89,7 +91,7 @@
                <div class="profile-contact-links align-left ">
                   <a href="{{route('product.edit',$product->product_id)}}" class="btn btn-link">
                      <i class="ace-icon fa fa-plus-circle bigger-120 warning"></i>
-                     Edit product
+                     Editar el producto
                   </a>
                </div>
 
@@ -97,7 +99,7 @@
                <div class="profile-contact-links align-left ">
                   <a href="{{ route('attribute.edit',$product->product_id) }}" class="btn btn-link">
                      <i class="ace-icon fa fa-plus-circle bigger-120 green"></i>
-                     Edit Attributes
+                     Editar los atributos
                   </a>
                </div>
             @endcan
@@ -111,33 +113,33 @@
                <span class="btn btn-app btn-sm btn-light no-hover">
                   <span class="line-height-1 bigger-170 blue"> {{ $product->quantity }} </span>
                   <br>
-                  <span class="line-height-1 smaller-90"> Quantity </span>
+                  <span class="line-height-1 smaller-90"> Cantidad </span>
                </span>
 
                <span class="btn btn-app btn-sm btn-yellow no-hover">
                   <span class="line-height-1 bigger-170"> {{ $product->weight }} </span>
 
                   <br>
-                  <span class="line-height-1 smaller-90"> Weight </span>
+                  <span class="line-height-1 smaller-90"> Peso </span>
                </span>
 
                <span class="btn btn-app btn-sm btn-pink no-hover">
                   <span class="line-height-1 bigger-170"> {{ $product->photos()->count() }} </span>
                   <br>
-                  <span class="line-height-1 smaller-90"> Photos </span>
+                  <span class="line-height-1 smaller-90"> Fotos </span>
                </span>
 
                <span class="btn btn-app btn-sm btn-grey no-hover">
                   <span class="line-height-1 bigger-170"> {{ $comments->count() }} </span>
 
                   <br>
-                  <span class="line-height-1 smaller-90"> Reviews </span>
+                  <span class="line-height-1 smaller-90"> Reseñas </span>
                </span>
                <span class="btn btn-app btn-sm btn-success no-hover">
                   <span class="line-height-1 bigger-170"> {{ $categories->count() }} </span>
 
                   <br>
-                  <span class="line-height-1 smaller-90"> Categories </span>
+                  <span class="line-height-1 smaller-90"> Categorías </span>
                </span>
 
 
@@ -147,7 +149,7 @@
 
             <div class="profile-user-info profile-user-info-striped">
                <div class="profile-info-row">
-                  <div class="profile-info-name">Product Name</div>
+                  <div class="profile-info-name">Nombre del producto</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="username">{{ $product->product_name }}</span>
@@ -163,7 +165,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name"> Buy Price</div>
+                  <div class="profile-info-name"> Precio de compra</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="age">{{ $product->buy_price }}</span>
@@ -171,7 +173,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Sell Price</div>
+                  <div class="profile-info-name">Precio de venta</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="age">{{ $product->sale_price }}</span>
@@ -180,19 +182,19 @@
 
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Discount</div>
+                  <div class="profile-info-name">Descuento</div>
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="age">
                         @if($product->is_off)
-                           <span class='label label-warning smaller-80'>HAS-OFF</span>
+                           <span class='label label-warning smaller-80'>SE HA DESCONECTADO</span>
                         @else
-                           <span class="label label-default smaller-80">NOT OFF</span>
+                           <span class="label label-default smaller-80">NO APAGADO</span>
                         @endif</span>
                   </div>
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Off Price</div>
+                  <div class="profile-info-name">Precio de descuento</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="age">{{ $product->off_price }}</span>
@@ -200,7 +202,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Colors</div>
+                  <div class="profile-info-name">Colores</div>
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="about">
                          @foreach($colors as $color)
@@ -212,7 +214,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Categories</div>
+                  <div class="profile-info-name">Categorías</div>
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="about">
                         @foreach($categories as $category)
@@ -223,7 +225,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Tags</div>
+                  <div class="profile-info-name">Etiquetas</div>
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="about">
                         @foreach($product->tags as $tag)
@@ -234,7 +236,7 @@
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name">Attributes</div>
+                  <div class="profile-info-name">Atributos</div>
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="about">
                         @forelse($product->attributes as $attribute)
@@ -243,29 +245,29 @@
                               <span class='label label-default'>{{ $value->value }}</span>
                            @endforeach
                         @empty
-                           <b>NO ATTRIBUTES</b>
+                           <b>NO HAY ATRIBUTOS</b>
                         @endforelse
                      </span>
                   </div>
                </div>
 
                <div class="profile-info-row">
-                  <div class="profile-info-name"> Created Date</div>
+                  <div class="profile-info-name"> Fecha de creación</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="signup">{{ $product->created_at }}</span>
                   </div>
                </div>
                <div class="profile-info-row">
-                  <div class="profile-info-name"> Updated Date</div>
+                  <div class="profile-info-name"> Fecha de actualización</div>
 
                   <div class="profile-info-value">
                      <span class="editable editable-click" id="signup">{{ $product->updated_at }}</span>
                   </div>
                </div>
             </div>
-            <h2>Comments</h2>
-            <h6>red color not approved yet </h6>
+            <h2>Comentarios</h2>
+            <h6>el color rojo no está aprobado todavía </h6>
             <div class="col-sm-6">
                @forelse($comments as $comment)
                   <div class="well well-lg"
@@ -281,7 +283,7 @@
                      {{$comment->comment}}
                   </div>
                @empty
-                  no comments yet
+                  no hay comentarios todavía
                @endforelse
                {{ $comments->links() }}
             </div>

@@ -5,17 +5,17 @@
 @section('extra_css')
 @endsection
 @section('content')
-   <center><h2>{{ isset($track) ? "Tracking Order" : 'Order History ' }}</h2></center>
+   <center><h2>{{ isset($track) ? "Seguimiento del pedido" : 'Historial de los Pedidos ' }}</h2></center>
    <table class="table-order-history">
       <thead>
       <tr>
-         <th>Track Code</th>
-         <th>Date</th>
-         <th>Payment Status</th>
-         <th>Fulfillment Status</th>
-         <th>Gift Card</th>
-         <th>Total Price</th>
-         <th>show orders</th>
+         <th>Código de seguimiento</th>
+         <th>Fecha</th>
+         <th>Estado de pago</th>
+         <th>Estado de cumplimiento</th>
+         <th>Tarjeta de regalo</th>
+         <th>Precio total</th>
+         <th>Mostrar las Ordenes</th>
       </tr>
       </thead>
       <tbody>
