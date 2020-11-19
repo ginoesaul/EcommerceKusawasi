@@ -31,26 +31,26 @@
                   </h1>
 
                   <hr/>
-                  <h3 class="lighter smaller">For more information please contact Admin!</h3>
+                  <h3 class="lighter smaller">Para más información, por favor contacte con la administración.</h3>
 
                   <div>
                      <div class="space"></div>
-                     <h4 class="smaller">Try one of the following:</h4>
+                     <h4 class="smaller">Pruebe uno de los siguientes:</h4>
 
                      <ul class="list-unstyled spaced inline bigger-110 margin-15">
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Re-check the url for typos
+                           Vuelve a comprobar la url para ver si hay errores tipográficos.
                         </li>
 
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Read the faq
+                           Lea las preguntas frecuentes
                         </li>
 
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Tell us about it
+                           Háblenos de ello
                         </li>
                      </ul>
                   </div>
@@ -61,7 +61,7 @@
                   <div class="center">
                      <a href="javascript:history.back()" class="btn btn-grey">
                         <i class="ace-icon fa fa-arrow-left"></i>
-                        Go Back
+                        Regresa
                      </a>
 
                      <a href="{{ route('admin.dashboard') }}" class="btn btn-primary">

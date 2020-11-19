@@ -6,19 +6,19 @@
       <td class="center order_status" >
          @switch($order->order_status)
             @case(0)
-            <span class="label label-grey arrowed bolder smaller-90">NOT Complete</span>
+            <span class="label label-grey arrowed bolder smaller-90">No completado</span>
             @break
             @case(1)
-            <span class="label label-danger arrowed bolder smaller-90">NOT Sent Yet</span>
+            <span class="label label-danger arrowed bolder smaller-90">NO enviado aún</span>
             @break
             @case(2)
-            <span class="label label-warning arrowed-right bolder smaller-90">Has Sent</span>
+            <span class="label label-warning arrowed-right bolder smaller-90">Ha enviado</span>
             @break
             @case(3)
-            <span class="label label-success arrowed-in bolder smaller-90">Delivered</span>
+            <span class="label label-success arrowed-in bolder smaller-90">Entregado</span>
             @break
             @case(5)
-            <span class="label label-yellow bolder smaller-90">Canceled</span>
+            <span class="label label-yellow bolder smaller-90">Cancelado</span>
             @break
          @endswitch
       </td>
@@ -26,24 +26,24 @@
       <td class="center">
          @if ($order->payment)
             @if ($order->payment->status )
-               <span class="label label-success label-large">VALID</span>
+               <span class="label label-success label-large">VALIDO</span>
             @else
-               <span class="label label-danger label-large">INVALID</span>
+               <span class="label label-danger label-large">INVALIDO</span>
             @endif
          @else
-            <span class="label label-warning label-large">NOTHING</span>
+            <span class="label label-warning label-large">NADA</span>
          @endif
       </td>
       <td class="center">
          <a href="#addr{{$order->order_id}}" class="bolder" data-toggle="modal">
-            <b><i class="fa fa-book bigger-250"></i>Address</b>
+            <b><i class="fa fa-book bigger-250"></i>Dirección</b>
          </a>
       </td>
       <td class="center">
          @if($order->user_id)
             <a href="{{ route('user.show',$order->users->user_id)}}">{{ $order->users->name}}</a>
          @else
-            <span class="label label-default">GUEST</span>
+            <span class="label label-default">INVITADO</span>
          @endif
       </td>
       <td class="center">{{ $order->client_name }}</td>
@@ -60,7 +60,7 @@
                {{ $gift->gift_name }}
             </a>
          @else
-            <i>NO GIFTCARD</i>
+            <i>NO HAY TARJETA DE REGALO</i>
          @endif
       </td>
       <td>{{ $order->created_at }}
@@ -163,15 +163,15 @@
                </div>
                <div class="modal-body">
                   <ul>
-                     <li><b>Gift Price:</b>{{ $gift->gift_amount }}</li>
-                     <li><b>Gift Code :</b>{{ $gift->gift_code }}</li>
+                     <li><b>Precio de regalo:</b>{{ $gift->gift_amount }}</li>
+                     <li><b>Código de regalo:</b>{{ $gift->gift_code }}</li>
                   </ul>
                </div>
 
                <div class="modal-footer">
                   <button class="btn btn-sm btn-danger pull-right" data-dismiss="modal">
                      <i class="ace-icon fa fa-times"></i>
-                     Close
+                     CERRAR
                   </button>
                </div>
             </div>
@@ -185,23 +185,23 @@
          <div class="modal-content">
             <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-               <h3 class="smaller lighter blue no-margin">{{ ($address)  ? ($address->name) : 'NO ADDRESS' }}</h3>
+               <h3 class="smaller lighter blue no-margin">{{ ($address)  ? ($address->name) : 'SIN DIRECCIÓN' }}</h3>
             </div>
             <div class="modal-body">
                @if(($address) )
                   <div class="row">
                      <div class="col-sm-4">
                         <ul class="list-unstyled  spaced">
-                           <li>NAME :</li>
-                           <li>SURNAME:</li>
-                           <li>STATE :</li>
-                           <li>CITY :</li>
-                           <li>AREA :</li>
-                           <li>AVENUE :</li>
-                           <li>STREET :</li>
+                           <li>NOMBRE :</li>
+                           <li>APELLIDO:</li>
+                           <li>PROVINCIA :</li>
+                           <li>CIUDAD :</li>
+                           <li>ÁREA :</li>
+                           <li>AVENIDA :</li>
+                           <li>CALLE :</li>
                            <li>NOM :</li>
-                           <li>PHONE NUMBER :</li>
-                           <li>POSTAL CODE :</li>
+                           <li>CELULAR :</li>
+                           <li>CÓDIGO POSTAL :</li>
                         </ul>
                      </div>
                      <div class="col-sm-8">
@@ -221,14 +221,14 @@
                   </div>
 
                @else
-                  <h2 class="danger bolder h2"> NO ADDRESS!</h2>
+                  <h2 class="danger bolder h2">¡SIN DIRECCIÓN!</h2>
                @endif
             </div>
 
             <div class="modal-footer">
                <button class="btn btn-sm btn-danger pull-right" data-dismiss="modal">
                   <i class="ace-icon fa fa-times"></i>
-                  Close
+                  CERRAR
                </button>
             </div>
          </div>
@@ -238,6 +238,6 @@
    <!-- /.POP UP MODELS -->
 @empty
    <tr class="center">
-      <td colspan="12">No Data</td>
+      <td colspan="12">No hay datos</td>
    </tr>
 @endforelse
