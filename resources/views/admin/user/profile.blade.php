@@ -43,7 +43,7 @@
                                     {{ $role }}
                                  @endforeach
                               @else
-                                 Normal user>
+                                 Usuario Normal
                               @endif
                            </span>
 

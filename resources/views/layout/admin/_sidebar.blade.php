@@ -48,22 +48,22 @@
       </li>
 
       @include('layout.admin._menu',
-         ['menu_name' => 'Orders', 'number' => 'orders' , 'gate' => 'order' ,
+         ['menu_name' => 'Pedidos', 'number' => 'orders' , 'gate' => 'order' ,
          'icon' => 'fa-pencil-square-o','subMenu' => 'Not Sent Orders','secondSubMenu' => 'All Orders',
          'route_create' => 'order.not_sent' ,'route_list' => 'order.index'])
 
       @include('layout.admin._menu',
-      ['menu_name' => 'Payments', 'number' => 'payments' ,'gate' => 'order-edit','icon' => 'fa-credit-card',
+      ['menu_name' => 'Pagos', 'number' => 'payments' ,'gate' => 'order-edit','icon' => 'fa-credit-card',
       'subMenu' => 'Failed Payment','secondSubMenu' => 'All Payment',
       'route_create' => 'payment.failed' ,'route_list' => 'payment.index'])
 
       @include('layout.admin._menu',
-      ['menu_name' => 'Comments', 'number' => 'comments' ,'gate' => '-','icon' => 'fa-comment',
+      ['menu_name' => 'Comentarios', 'number' => 'comments' ,'gate' => '-','icon' => 'fa-comment',
       'subMenu' => 'All reviews','secondSubMenu' => 'Not Approved ',
       'route_create' => 'comments.index' ,'route_list' => 'comments.new'])
 
       @include('layout.admin._menu',
-     ['menu_name' => 'Users', 'number' => 'users'  ,'gate' => '-', 'icon' => 'fa-user',
+     ['menu_name' => 'Usuarios', 'number' => 'users'  ,'gate' => '-', 'icon' => 'fa-user',
      'subMenu' => 'All Users','secondSubMenu' => 'Add User',
      'route_create' => 'user.index' ,'route_list' => 'user.create'])
 
@@ -82,23 +82,23 @@
       @can('product-list')
 
          @include('layout.admin._menu',
-         ['menu_name' => 'Products', 'number' => 'products' ,'gate' => 'product','icon' => 'fa-globe', 'route_create' => 'product.create' ,'route_list' => 'product.index'])
+         ['menu_name' => 'Productos', 'number' => 'products' ,'gate' => 'product','icon' => 'fa-globe', 'route_create' => 'product.create' ,'route_list' => 'product.index'])
 
          @include('layout.admin._menu',
-           ['menu_name' => 'Attributes', 'number0' => '' , 'gate' => '-' , 'icon' => 'fa-globe',
+           ['menu_name' => 'Atributos', 'number0' => '' , 'gate' => '-' , 'icon' => 'fa-globe',
            'subMenu' => 'Create New','secondSubMenu' => 'Attach to product',
            'route_create' => 'attribute.create' ])
 
          @include('layout.admin._menu',
-         ['menu_name' => 'Categories','gate' => 'product','icon' => 'fa-list', 'number' => 'categories_count' , 'route_create' => 'category.create' ,'route_list' => 'category.index'])
+         ['menu_name' => 'Categorias','gate' => 'product','icon' => 'fa-list', 'number' => 'categories_count' , 'route_create' => 'category.create' ,'route_list' => 'category.index'])
 
          @include('layout.admin._menu',
-         ['menu_name' => 'Brands', 'number' => 'brands' ,'gate' => 'product' ,'icon' => 'fa-lemon-o', 'route_create' => 'brand.create' ,'route_list' => 'brand.index'])
+         ['menu_name' => 'Marcas', 'number' => 'brands' ,'gate' => 'product' ,'icon' => 'fa-lemon-o', 'route_create' => 'brand.create' ,'route_list' => 'brand.index'])
 
       @endcan
       @can('gift-list')
          @include('layout.admin._menu',
-         ['menu_name' => 'Gift cards', 'number' => 'gift_cards','gate' => 'gift' ,'icon' => 'fa-gift', 'route_create' => 'giftCard.create' ,'route_list' => 'giftCard.index'])
+         ['menu_name' => 'Tarjetas de regalo', 'number' => 'gift_cards','gate' => 'gift' ,'icon' => 'fa-gift', 'route_create' => 'giftCard.create' ,'route_list' => 'giftCard.index'])
       @endcan
 
       @can('role-list')

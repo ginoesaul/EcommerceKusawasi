@@ -224,7 +224,7 @@
                   <li>
                      <a href="{{ route("user.show",auth()->id()) }}">
                         <i class="ace-icon fa fa-user"></i>
-                        Perfils
+                        Perfil
                      </a>
                   </li>
 
@@ -234,7 +234,7 @@
                      <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                        <span class="glyphicon glyphicon-log-out"></span>{{ __('Logout') }}
+                        <span class="glyphicon glyphicon-log-out"></span>{{ __('Cerrar Sesión') }}
                      </a>
                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

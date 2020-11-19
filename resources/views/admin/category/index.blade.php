@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Category List
+   Lista de las categorias
 @stop
 @section('extra_css')
    <link rel="stylesheet" href="{{ asset('admin-assets/css/treeview/style.min.css') }}"/>

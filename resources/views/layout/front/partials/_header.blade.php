@@ -37,7 +37,7 @@
                      {{--                           <li>Bienvenido <b>{{ auth()->user()->name }}</b></li>--}}
                      <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>Mi perfil</a></li>
                      <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>Favoritos</a></li>
-                     <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis ordenes</a></li>
+                     <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis Pedidos</a></li>
                      <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -198,7 +198,7 @@
 {{--                           <li>Welcome <b>{{ auth()->user()->name }}</b></li>--}}
                            <li><a href="{{ route('front.profile') }}"><span class="icon icon-person"></span>Mi perfil</a></li>
                            <li><a href="{{ route('my_favorites') }}"><span class="icon icon-favorite_border"></span>Favoritos</a></li>
-                           <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis ordenes</a></li>
+                           <li><a href="{{ route('front.myOrders') }}"><span class="icon icon-list"></span>Mis Pedidos</a></li>
                            <li>
                               <a href="{{ route('logout') }}"
                                  onclick="event.preventDefault();
