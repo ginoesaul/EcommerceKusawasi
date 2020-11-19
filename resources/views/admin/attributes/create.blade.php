@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Create New Attribute
+   Crear Nuevo Atributo
 @endsection
 @section('extra_css')
    <link rel="stylesheet" href="{{ asset('admin-assets/css/chosen.min.css') }}"/>
@@ -13,12 +13,12 @@
       <div class="row">
          <div class="col-sm-6">
             @if (isset($product))
-               <span class="h3">product Name:</span><span class="h2 bolder"><a
+               <span class="h3">Nombre del producto:</span><span class="h2 bolder"><a
                           href="{{ route('product.show',$product->product_id) }}">{{ $product->product_name }}</a></span>
                <input class="product_id" type="hidden" value="{{$product->product_id}}" name="product_id">
             @else
                <div class="form-group">
-                  <label for="form-field-select-3">Choose a Product:</label>
+                  <label for="form-field-select-3">Escoge un producto:</label>
                   <br/>
                   <select class="chosen-select form-control product_id" name="product_id" id="form-field-select-3"
                           data-placeholder="Choose a Product">
@@ -26,7 +26,7 @@
                      @forelse($products as $product)
                         <option value="{{ $product->product_id }}">{{ $product->product_name }}</option>
                      @empty
-                        <option disabled="">NO DATA</option>
+                        <option disabled="">NO HAY DATOS</option>
                      @endforelse
                   </select>
                </div>
@@ -34,23 +34,23 @@
          </div>
          <div class="col-sm-6">
             <div class="form-group">
-               <label for="attr_name" class="">Attribute Name:</label>
+               <label for="attr_name" class="">Nombre de latributo:</label>
                <input type="text" name="attr_name" id="attr_name" class="form-control"/>
             </div>
          </div>
       </div>
-      <div class="center h3">Add Attribute Value:</div>
+      <div class="center h3">Añadir el valor del atributo del producto:</div>
       <div class="row">
 
          <div class="col-sm-3">
-            <button class="btn btn-info" id="add_val">Add Value</button>
-            <input class="btn btn-success" type="submit" value="SAVE">
+            <button class="btn btn-info" id="add_val">Añadir valor</button>
+            <input class="btn btn-success" type="submit" value="GUARDAR">
          </div>
          <div class="col-sm-6" id="div_value">
 
             <div id="widget_value" class="widget-box">
                <div class="widget-header">
-                  <h4 class="widget-title">Value:</h4>
+                  <h4 class="widget-title">Valor:</h4>
                   <span class="widget-toolbar">
                      <a href="#" data-action="collapse">
                         <i class="ace-icon fa fa-chevron-up"></i>
@@ -65,7 +65,7 @@
                      <div class="form-group">
                         <label for="value"></label>
                         <input type="text" id="value" name="value[]" class="input form-control valuesCreate"
-                               placeholder="Value">
+                               placeholder="Valor">
                      </div>
                   </div>
                </div>

@@ -95,7 +95,7 @@
                      <!-- visible-xs -->
                      <div class="visible-mobil-block visible-xs visible-sm">
                         <p>
-                           <strong>MARCAS</strong>
+                           <strong>Marcas</strong>
                         </p>
                         <p>
                            <a href="{{ route('front.lists', ['list' => 'brands' , 'slug' => $p_2->brands->brand_slug ]) }}">
@@ -126,7 +126,7 @@
          </tr>
          <tr>
             <td>
-               MARCAS
+               Marcas
             </td>
             <td>
                @if ($p_1)

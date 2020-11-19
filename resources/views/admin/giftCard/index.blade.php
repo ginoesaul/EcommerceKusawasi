@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Gift Cards List
+   Lista de Tarjeta de Regalo
 @stop
 @section('extra_css')
 @stop
@@ -12,11 +12,11 @@
          <th class="center">
             #
          </th>
-         <th class="center">Name</th>
-         <th class="center">Status</th>
-         <th class="center">Amount</th>
-         <th class="center">Code</th>
-         <th class="center">operations</th>
+         <th class="center">Nombre</th>
+         <th class="center">Provincia</th>
+         <th class="center">Cantidad</th>
+         <th class="center">Código</th>
+         <th class="center">operaciones</th>
       </tr>
       </thead>
       <tbody>
@@ -35,12 +35,12 @@
                   @if($gift->status == 1)
                      <a href="#" class="green bigger-140 show-details-btn" title="Active" disabled="">
                         <i class="ace-icon fa fa-angle-double-up"></i>
-                        <span class="sr-only">Active</span>
+                        <span class="sr-only">Activo</span>
                      </a>
                   @else
                      <a href="#" class="red bigger-140 show-details-btn" title="De Active" disabled="">
                         <i class="ace-icon fa fa-angle-double-down"></i>
-                        <span class="sr-only">De Active</span>
+                        <span class="sr-only">No activo/span>
                      </a>
                   @endif
                </div>
@@ -67,7 +67,7 @@
          </tr>
       @empty
          <tr>
-            <td colspan="3">No Data</td>
+            <td colspan="3">No hay Datos</td>
          </tr>
       @endforelse
       </tbody>
