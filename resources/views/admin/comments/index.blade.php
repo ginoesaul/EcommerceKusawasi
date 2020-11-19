@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Comments Lists
+   Listas de comentarios
 @stop
 @section('extra_css')
 @stop
@@ -9,12 +9,12 @@
    <table class="table table-hover table-bordered">
       <thead>
       <tr class="center">
-         <th class="center">COMMENTS</th>
-         <th class="center">USER</th>
-         <th class="center">PRODUCT</th>
-{{--         <th class="center">STAR</th>--}}
-         <th class="center">Created At</th>
-         <th class="center">OPERATIONS</th>
+         <th class="center">COMENTARIOS</th>
+         <th class="center">USUARIOS</th>
+         <th class="center">PRODUCTO</th>
+{{--         <th class="center">ESTRELLA</th>--}}
+         <th class="center">Creado en</th>
+         <th class="center">OPERACIÓN</th>
       </tr>
       </thead>
       <tbody>
@@ -72,7 +72,7 @@
          </tr>
       @empty
          <tr>
-            <td class="center bolder red" colspan="6">No Comments</td>
+            <td class="center bolder red" colspan="6">No hay comentarios</td>
          </tr>
       @endforelse
       </tbody>
