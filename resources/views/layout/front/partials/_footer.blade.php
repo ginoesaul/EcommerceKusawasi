@@ -28,7 +28,7 @@
             </div>
             <div class="col-sm-6 col-md-3">
                <div class="mobile-collapse">
-                  <h4 class="mobile-collapse_title visible-xs">FREE RETURNS</h4>
+                  <h4 class="mobile-collapse_title visible-xs">DEVOLUCIONES GRATUITAS</h4>
                   <div class="mobile-collapse_content">
                      <a href="#" class="services-block">
                         <span class="icon icon-assignment_return"></span>
