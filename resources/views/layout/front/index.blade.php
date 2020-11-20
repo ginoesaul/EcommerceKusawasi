@@ -72,7 +72,7 @@
       <div class="modal-content ">
          <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
-            <h4 class="modal-title text-center text-uppercase">Track Order</h4>
+            <h4 class="modal-title text-center text-uppercase">Seguimiento de mi pedido</h4>
          </div>
 
             <div class="modal-body">
@@ -86,13 +86,13 @@
                            <span class="icon icon-art_track"></span>
                         </span>
                            <input type="hidden" value="" name="input">
-                           <input type="text" maxlength="8" minlength="8" pattern="\d*"  name="code" id="track_code" class="form-control" placeholder="Tracking Code:" required>
-                        <i>ONLY NUMBERS</i>
+                           <input type="text" maxlength="8" minlength="8" pattern="\d*"  name="code" id="track_code" class="form-control" placeholder="Código de seguimiento:" required>
+                        <i>SOLO NÚMEROS</i>
                         </div>
                      </div>
                      <button type="submit" class="btn btn-full">
                         <span class="icon icon-track_changes"></span>
-                        Track
+                        BUSCAR
                      </button>
                   </form>
                </div>

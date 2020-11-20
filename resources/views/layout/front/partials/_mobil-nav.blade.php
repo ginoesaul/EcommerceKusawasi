@@ -1,8 +1,8 @@
 <nav class="panel-menu mm-right">
    <ul>
-      <li><a href="{{ route('home') }}" class="load_page">Inicio</a></li>
+      <li><a href="{{ route('home') }}" class="load_page">INICIO</a></li>
       <li>
-         <a href="{{ route('front.productsList') }}" class="load_page">Productos</a>
+         <a href="{{ route('front.productsList') }}" class="load_page">PRODUCTOS</a>
          <ul>
             @forelse($categories as $category)
                <li><a href="{{ route('front.lists',['list' => 'categories','slug' => "$category->category_slug", ]) }}"

@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Gift Cards Create
+   Crear tarjetas de regalo
 @stop
 @section('extra_css')
 @stop
@@ -8,29 +8,29 @@
    <form id="gift_form" action="{{ route('giftCard.store') }}" method="post">
       {{ csrf_field() }}
       <div class="form-group {{ $errors->has('gift_name') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_name">Gift Card Name</label>
-         <input type="text" name="gift_name" maxlength="21" id="gift_name" placeholder="gift Card Name"
+         <label class="bolder bigger-110" for="gift_name">Nombre de la tarjeta de regalo</label>
+         <input type="text" name="gift_name" maxlength="21" id="gift_name" placeholder="Nombre de la tarjeta de regalo"
                 value="{{ old('gift_name')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_name') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('status') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="status">Gift Card Status:</label><br>
+         <label class="bolder bigger-110" for="status">Estado de la tarjeta de regalo:</label><br>
          <input type="checkbox" name="status" id="status" class="ace ace-switch ace-switch-3" checked>
          <span class="lbl"></span>
          <span class="text-danger">{{ $errors->first('status') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('gift_code') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_code">Gift Card Code</label>
-         <input type="text" name="gift_code" maxlength="21" id="gift_code" placeholder="gift Card Code"
+         <label class="bolder bigger-110" for="gift_code">Código de la tarjeta de regalo</label>
+         <input type="text" name="gift_code" maxlength="21" id="gift_code" placeholder="Código de la tarjeta de regalo"
                 value="{{old('gift_code')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_code') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('gift_amount') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_amount">Gift Card Amount</label>
-         <input type="number" name="gift_amount" maxlength="21" id="gift_amount" placeholder="gift Card Amount"
+         <label class="bolder bigger-110" for="gift_amount">Cantidad de la tarjeta de regalo</label>
+         <input type="number" name="gift_amount" maxlength="21" id="gift_amount" placeholder="Cantidad de la tarjeta de regalo"
                 value="{{old('gift_amount')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_amount') }}</span>
       </div>
@@ -39,10 +39,10 @@
       <div class="form-group">
          <div class="btn-group btn-group-justified">
             <div class="btn-group">
-               <button type="submit" class="btn btn-info ">SAVE</button>
+               <button type="submit" class="btn btn-info ">GUARDAR</button>
             </div>
             <div class="btn-group">
-               <a class="btn btn-danger" onclick="history.back()">BACK</a>
+               <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
             </div>
          </div>
       </div>

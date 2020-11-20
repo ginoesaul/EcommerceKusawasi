@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Edit Attribute
+   Editar Atributos
 @endsection
 @section('extra_css')
 @endsection
@@ -12,32 +12,32 @@
       <div class="space-10"></div>
       <div class="form-group row">
          <div class="col-sm-6">
-            <label for="attr" class="bolder">Attributes:</label>
+            <label for="attr" class="bolder">Atributoss:</label>
             <select class="form-control select2" name="attr_id" id="attr">
-               <option disabled selected>Choose Attributes</option>
+               <option disabled selected>Escoger Atibutos</option>
                @forelse ($attributes as $attr)
                   <option value="{{$attr->attr_id}}">{{ $attr->attr_name }}</option>
                @empty
-                  <option disabled>NO data</option>
+                  <option disabled>No haydatoss</option>
                @endforelse
             </select>
          </div>
          <div class="col-sm-6">
-            <label for="attr_name">Attribute Name</label>
+            <label for="attr_name">Nombre del atributo</label>
             <input type="text" name="attr_name" id="attr_name" class="form-control">
          </div>
       </div>
 
       <div class="row">
          <div class="col-sm-3">
-            <button class="btn btn-info" id="add_val">Add Value</button>
-            <input class="btn btn-success" id="submit" type="submit" value="SAVE">
+            <button class="btn btn-info" id="add_val">Añadir valor</button>
+            <input class="btn btn-success" id="submit" type="submit" value="GUARDAR">
             <div class="space-2"></div>
             <button class="btn btn-danger" data-id="" id="destroy_attr" title="delete attribute and its values"
-                    disabled="">DELETE
+                    disabled="">ELIMINAR
             </button>
             <a href="{{ route('attribute.createNew',$id) }}" class="btn btn-warning bolder" id="destroy_attr"
-               title="add new attribute">New Attribute</a>
+               title="add new attribute">Nuevo atributo</a>
          </div>
          <div class="col-sm-6" id="div_value">
             @include('admin.attributes._data')
@@ -93,7 +93,7 @@
            $("#destroy_attr").click(function (e) {
                e.preventDefault();
                var id = $(this).data("id");
-               if (!confirm('ARE YOU SURE TO DELETE IT?')) {
+               if (!confirm('¿ESTAS SEGURO QUE QUIERES ELIMINARLO?')) {
                    return false
                }
                $.ajaxSetup({
@@ -142,7 +142,7 @@
                    })
                        .done(function (data) {
                            if (data.html == "") {
-                               $('.preview').html("No more records found");
+                               $('.preview').html("No se han encontrado más registros");
                                return;
                            }
                            // console.log(data.html);
@@ -162,7 +162,7 @@
        function deleteValue(elem) {
            // elem.preventDefault();
            var value_id = $(elem).data('id');
-           if (!confirm('ARE YOU SURE TO DELETE IT?')) {
+           if (!confirm('¿ESTAS SEGURO QUE QUIERES EIMINARLO?')) {
                return false
            }
            var id = value_id;

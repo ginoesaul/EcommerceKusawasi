@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Order List
+   Lista de los pedidos
 @stop
 @section('extra_css')
 @stop
@@ -12,14 +12,14 @@
       @csrf
       <input type="hidden" value="orders" name="search_kind">
       <span class="input-icon">
-         <input type="number" placeholder="Search ..." class="nav-search-input"
+         <input type="number" placeholder="Buscando ..." class="nav-search-input"
                 autocomplete="off" name="search"/>
          <i class="ace-icon fa fa-search nav-search-icon"></i>
          <button type="submit" class="btn btn-sm">
             <span class="fa fa-search"></span>
          </button>
       </span>
-      <span><i>search for <b>TRACK CODE</b></i></span>
+      <span><i>Buscar por <b>CODIGO DE SEGUIMIENTO</b></i></span>
    </form>
    <div class="">
       <table id="simple-table" class="table table-bordered table-hover table-responsive">
@@ -28,18 +28,18 @@
             <th class="center">
                ID
             </th>
-            <th class="center">Order Status</th>
-            <th class="center">Track Code</th>
-            <th class="center">Payments</th>
-            <th class="center">Address</th>
-            <th class="center">Customer User</th>
-            <th class="center">Client Name</th>
-            <th class="center">Client Phone, Email</th>
-            {{--         <th class="center">Employee Name</th>--}}
-            <th class="center">Total Price</th>
-            <th class="center">Gift Card</th>
-            <th class="center">Date</th>
-            <th class="center">Operations</th>
+            <th class="center">Estado del pedido</th>
+            <th class="center">Código de seguimiento</th>
+            <th class="center">Pagos</th>
+            <th class="center">Dirección</th>
+            <th class="center">Clientes</th>
+            <th class="center">Nombre del cliente</th>
+            <th class="center">Celuar y correo del cliente</th>
+            {{--         <th class="center">Nombre del empleado</th>--}}
+            <th class="center">Precio Total</th>
+            <th class="center">Tarjeta de regalo</th>
+            <th class="center">Fecha</th>
+            <th class="center">Operaciones</th>
          </tr>
          </thead>
          <tbody class="table_data">
@@ -63,7 +63,7 @@
            <!-- SENT -->
            $(".sent_me").click(function (e) {
                e.preventDefault();
-               if (!confirm('DO YOU WANT TO CHANGE STATUS?')) {
+               if (!confirm('¿QUIERES CAMBIAR EL ESTADO?')) {
                    return false
                }
                var obj = $(this); // first store $(this) in obj

@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Brands
+   Marcas
 @stop
 @section('content')
 
@@ -11,23 +11,23 @@
       {{ isset($brand) ? method_field('PUT') : '' }}
       {{ csrf_field() }}
       <div class="form-group {{ $errors->has('brand_name') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="brand_name">Brand Name</label>
-         <input type="text" name="brand_name" maxlength="21" id="brand_name" placeholder="Brand Name"
+         <label class="bolder bigger-110" for="brand_name">Nombre de las marcas</label>
+         <input type="text" name="brand_name" maxlength="21" id="brand_name" placeholder="Nombre de las marcas"
                 value="{{ isset($brand) ? $brand->brand_name : old('brand_name')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('brand_name') }}</span>
       </div>
       <div class="form-group {{ $errors->has('brand_slug') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="brand_slug">Brand Slug</label>
-         <input type="text" name="brand_slug" maxlength="21" id="brand_slug" placeholder="Brand Slug"
+         <label class="bolder bigger-110" for="brand_slug">Slug de la marca</label>
+         <input type="text" name="brand_slug" maxlength="21" id="brand_slug" placeholder="Slug de la marca"
                 value="{{isset($brand) ? $brand->brand_slug :old('brand_slug')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('brand_slug') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('brand_description') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="brand_description">Description</label>
-         <textarea type="text" name="brand_description" id="brand_description" placeholder="Brand Slug" required
+         <label class="bolder bigger-110" for="brand_description">Descripción</label>
+         <textarea type="text" name="brand_description" id="brand_description" placeholder="Descripción" required
                    class="form-control">{{isset($brand) ? $brand->brand_description :old('brand_description')}}</textarea>
          <span class="text-danger">{{ $errors->first('brand_description') }}</span>
       </div>
@@ -35,9 +35,9 @@
       @if (isset($brand) && $brand->brand_image != null)
          <input type="hidden" name="brand_image" value="{{ $brand->brand_image }}">
       @endif
-      <img id="show_image" src="{{ isset($brand) ? $brand->src : '' }}" alt="" width="200" height="100" class="img-responsive img-thumbnail">
+      <img id="show_image" src="{{ isset($brand) ? $brand->src : '' }}" alt="marca" width="200" height="100" class="img-responsive img-thumbnail">
       <div class="form-group {{ $errors->has('brand_image') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="brand_image">Brand Image</label>
+         <label class="bolder bigger-110" for="brand_image">Imagen de la marca</label>
          <input type="file" name="brand_image" id="brand_image">
          <span class="text-danger">{{ $errors->first('brand_image') }}</span>
       </div>
@@ -45,10 +45,10 @@
       <div class="form-group">
          <div class="btn-group btn-group-justified">
             <div class="btn-group">
-               <input type="submit" class="btn btn-info " value="SAVE">
+               <input type="submit" class="btn btn-info " value="GUARDAR">
             </div>
             <div class="btn-group">
-               <a class="btn btn-danger" onclick="history.back()">BACK</a>
+               <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
             </div>
          </div>
       </div>
@@ -99,7 +99,7 @@
                       //show loading image ,reset forms ,clear gallery
                       $(".preview").toggle();
                      @if(!isset($brand)) $("#brand_form")[0].reset(); @endif
-                     alert('{{ !isset($brand) ? 'new brand has created successfully' : "brand has updated successfully" }}');
+                     alert('{{ !isset($brand) ? 'new brand has created successfully' : "la marca se ha actualizado con éxito" }}');
                   },
                   error: function (request, status, error) {
                       $(".preview").toggle();

@@ -13,8 +13,8 @@
             @csrf
             <div class="btn-group">
                <select name="sort_category" id="sort_category" class="form-control">
-                  <option value="" disabled="" selected="">ORDER BY @lang('models/categories.singular'):</option>
-                  <option value="{{ null }}">ALL @lang('models/categories.plural'):</option>
+                  <option value="" disabled="" selected="">ORDENAR POR @lang('models/categories.singular'):</option>
+                  <option value="{{ null }}">TODO @lang('models/categories.plural'):</option>
                   @foreach($index_categories as $category)
                      <option value="{{ $category->category_slug }}">{{ $category->category_name }}</option>
                   @endforeach
@@ -23,28 +23,28 @@
 
             <div class="btn-group">
                <select name="sort" id="sort" class="form-control">
-                  {{--            <option value="product_id" disabled="" selected="">SORT BY:</option>--}}
-                  <option value="product_id">Sort By Default</option>
-                  <option value="created_at">New Products</option>
-                  <option value="buy_price">Buy Price</option>
-                  <option value="sale_price">Sale Price</option>
+                  {{--            <option value="product_id" disabled="" selected="">ORDENADO POR:</option>--}}
+                  <option value="product_id">Ordenar por defecto</option>
+                  <option value="created_at">Nuevos Productos</option>
+                  <option value="buy_price">Precio de compra</option>
+                  <option value="sale_price">Precio de venta</option>
                </select>
             </div>
 
             <div class="btn-group">
                <select name="dcs" class="form-control">
-                  <option value="desc">High to lower</option>
-                  <option value="asc">Low to higher</option>
+                  <option value="desc">Descendente</option>
+                  <option value="asc">Ascendente</option>
                </select>
             </div>
 
             <div class="btn-group">
-               <label for="status">ONLY ACTIVE</label>
+               <label for="status">SOLO ACTIVO</label>
                <input type="checkbox" name="status" id="status">
             </div>
 
             <button class=" btn btn-success btn-sm" type="submit">
-               FILTER
+               FILTRAR
             </button>
 
          </form>
@@ -60,7 +60,7 @@
             <span><i>@lang('ext.search') : <b>@lang('models/products.fields.product_name')</b> @lang('ext.and') <b>@lang('models/products.fields.sku')</b></i></span>
             <input type="hidden" value="products" name="search_kind">
             <span class="input-icon">
-               <input type="text" placeholder="Search ..." class="nav-search-input"
+               <input type="text" placeholder="Buscando..." class="nav-search-input"
                       autocomplete="off" name="search"/>
                <i class="ace-icon fa fa-search nav-search-icon"></i>
                <button type="submit" class="btn btn-sm">
@@ -80,12 +80,12 @@
             <th>@lang('models/products.fields.buy_price')</th>
             <th>@lang('models/products.fields.sale_price')</th>
             <th>@lang('models/products.fields.status')</th>
-            {{--         <th>Available Date</th>--}}
+            {{--         <th>Fecha disponible</th>--}}
             <th class="center">@lang('models/products.fields.is_off')?</th>
-            {{--         <th class="smaller-80">Price Of Off</th>--}}
+            {{--         <th class="smaller-80">Precio de descuento</th>--}}
             <th class="smaller-80">@lang('models/categories.plural')</th>
             <th class="smaller-80">@lang('models/colors.plural')</th>
-            {{--         <th class="smaller-80">Made In</th>--}}
+            {{--         <th class="smaller-80">Hecho en</th>--}}
             <th class="smaller-80">@lang('models/products.fields.description')</th>
             <th>@lang('models/products.fields.cover')</th>
             <th class="smaller-80">@lang('models/products.fields.created_at')</th>
