@@ -15,7 +15,7 @@
          <th>Estado de cumplimiento</th>
          <th>Tarjeta de regalo</th>
          <th>Precio total</th>
-         <th>Mostrar las órdenes</th>
+         <th>Mostrar órdenes</th>
       </tr>
       </thead>
       <tbody>
@@ -47,7 +47,7 @@
                <div class="th-title visible-xs">Estado de cumplimiento</div>
                @switch($order->order_status)
                   @case(0)
-                  <span class="label badge-normal ">Incompleto</span>
+                  <span class="label badge-normal ">INCOMPLETO</span>
                   @break
                   @case(1)
                   <span class="label label-default arrowed bolder ">Todavía no se ha enviado.</span>
