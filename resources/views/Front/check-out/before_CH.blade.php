@@ -11,7 +11,7 @@
             <div class="">
                <div class="form-group">
                   <div class="">
-                     <a href="{{ route('front.checkout') }}" style="background-color: #1d78cb;"  class="btn btn-full bg-brown load_page">Continuar como invitado<span class="icon icon-keyboard_arrow_right"></span></a>
+                     <a href="{{ route('front.checkout') }}" style="background-color: #2C7A7B;"  class="btn btn-full bg-brown load_page">Continuar como invitado<span class="icon icon-keyboard_arrow_right"></span></a>
                   </div>
                </div>
 

@@ -26,12 +26,12 @@
       <td class="center">
          @if ($order->payment)
             @if ($order->payment->status )
-               <span class="label label-success label-large">VALIDO</span>
+               <span class="label label-success label-large">VÁLIDO</span>
             @else
-               <span class="label label-danger label-large">INVALIDO</span>
+               <span class="label label-danger label-large">INVÁLIDO</span>
             @endif
          @else
-            <span class="label label-warning label-large">NADA</span>
+            <span class="label label-warning label-large">VACÍO</span>
          @endif
       </td>
       <td class="center">
@@ -60,7 +60,7 @@
                {{ $gift->gift_name }}
             </a>
          @else
-            <i>NO HAY TARJETA DE REGALO</i>
+            <i>No hay tarjeta de regalo.</i>
          @endif
       </td>
       <td>{{ $order->created_at }}
@@ -193,13 +193,13 @@
                      <div class="col-sm-4">
                         <ul class="list-unstyled  spaced">
                            <li>NOMBRE :</li>
-                           <li>APELLIDO:</li>
+                           <li>APELLIDO :</li>
                            <li>PROVINCIA :</li>
                            <li>CIUDAD :</li>
                            <li>ÁREA :</li>
                            <li>AVENIDA :</li>
                            <li>CALLE :</li>
-                           <li>NOM :</li>
+                           <li>NUM :</li>
                            <li>CELULAR :</li>
                            <li>CÓDIGO POSTAL :</li>
                         </ul>
@@ -221,7 +221,7 @@
                   </div>
 
                @else
-                  <h2 class="danger bolder h2">¡SIN DIRECCIÓN!</h2>
+                  <h2 class="danger bolder h2">¡Sin dirección!</h2>
                @endif
             </div>
 
@@ -238,6 +238,6 @@
    <!-- /.POP UP MODELS -->
 @empty
    <tr class="center">
-      <td colspan="12">No hay datos</td>
+      <td colspan="12">No hay datos.</td>
    </tr>
 @endforelse
