@@ -55,7 +55,7 @@
                   <label for="checkBox2">
                      <span class="check"></span>
                      <span class="box"></span>
-                     Remember me
+                     Recordar usuario
                   </label>
                </div>
                <div class="pull-right">
@@ -70,7 +70,7 @@
                   <button type="submit" class="btn btn-lg" >INICIAR SESIÓN</button>
                </div>
                <div class="pull-right">
-                  <a  href="{{ route('register') }}" class="btn btn-lg btn-inversion">REGISTRATE</a>
+                  <a  href="{{ route('register') }}" class="btn btn-lg btn-inversion">REGÍSTRESE</a>
                </div>
 
                <div class="text-center"></div>
