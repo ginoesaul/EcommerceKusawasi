@@ -80,7 +80,7 @@
          <div class="stepwizard-step col-xs-3">
             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
             <p>
-               <small>Revisar</small>
+               <small>Revisión</small>
             </p>
          </div>
          <div class="stepwizard-step col-xs-3">
@@ -144,7 +144,7 @@
                            <span id="error-gift" class="invalid-feedback font-weight-bolder" role="alert"></span>
                         </div>
                      @else()
-                        <h5>Para usar la tarjeta de regalo, por favor, <a href="{{ route('login') }}">Iniciar Sesión</a></h5>
+                        <h5>Para usar la tarjeta de regalo, por favor, <a href="{{ route('login') }}">iniciar sesión.</a></h5>
                      @endauth
                   </div>
                   @if (\Cart::count() > 0)
@@ -170,7 +170,7 @@
                <div class="row">
                   <div class="col-sm-6">
                      <div class="form-group required">
-                        <label for="name" class=" control-label">Primer nombre: <span>*</span></label>
+                        <label for="name" class=" control-label">Nombre: <span>*</span></label>
                         <input type="text" value="{{ isset($address) ? $address->name : '' }}" name="name"
                                class="form-control" id="name" required>
                      </div>
@@ -313,7 +313,7 @@
 
          <div class="container-fluid">
             <div class="checkout-box">
-               <h3>ENVIE A:</h3>
+               <h3>ENVIAR A:</h3>
                <div class="checkout-box-content">
                   <p id="ship_addr"></p>
                </div>
