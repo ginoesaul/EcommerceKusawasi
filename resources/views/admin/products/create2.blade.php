@@ -96,7 +96,7 @@
 
          <div class="col-xs-12 col-lg-12 col-md-12">
             <div class="col-xs-6">
-               <input type="submit" class="btn btn-success btn-block" id="" value="SAVE">
+               <input type="submit" class="btn btn-success btn-block" id="" value="GUARDAR">
             </div>
             <div class="col-xs-6">
                <input type="reset" class="btn btn-warning btn-block" value="Reset!">
