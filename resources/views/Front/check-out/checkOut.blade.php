@@ -68,7 +68,7 @@
          <div class="stepwizard-step col-xs-3">
             <a href="#step-1" type="button" class="btn btn-success btn-circle" disabled="disabled">1</a>
             <p>
-               <small>Navegante</small>
+               <small>Cliente</small>
             </p>
          </div>
          <div class="stepwizard-step col-xs-3">
@@ -99,7 +99,7 @@
          <input type="hidden" id="input1" name="input" value="">
          <div class=" setup-content" id="step-1">
             <div class="panel-heading">
-               <h2 class="panel-title">Navegante</h2>
+               <h2 class="panel-title">Cliente</h2>
             </div>
 
             <div class="row">
@@ -114,8 +114,8 @@
                </div>
                <div class="col-sm-4">
                   <div class="form-group required">
-                     <label for="inputStreet" class=" control-label">Número telefónico: <span>*</span>
-                        <small> +905534676564</small>
+                     <label for="inputStreet" class=" control-label">Número telefónico: <span></span>
+                        <small> Ejemplo 987654321</small>
                      </label>
                      <input type="text" name="client_phone" class="form-control" id="clientPhoneNumber"
                             required value="{{ isset($address) ? $address->phone_number : '' }}">
@@ -232,7 +232,7 @@
                      </div>
                      <div class="form-group required">
                         <label for="phone_number" class="control-label">Número de celular: <span></span>
-                           <small> ejemplo +905534676564</small>
+                           <small> ejemplo 987654321</small>
                         </label>
                         <input type="text" name="phone_number" value="{{ isset($address) ? $address->phone_number : '' }}"
                                class="form-control" id="phone_number" required>

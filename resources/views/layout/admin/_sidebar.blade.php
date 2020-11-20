@@ -98,7 +98,7 @@
       @endcan
       @can('gift-list')
          @include('layout.admin._menu',
-         ['menu_name' => 'Tarjetas de regalo', 'number' => 'gift_cards','gate' => 'gift' ,'icon' => 'fa-gift', 'route_create' => 'giftCard.create' ,'route_list' => 'giftCard.index'])
+         ['menu_name' => 'Gift Card', 'number' => 'gift_cards','gate' => 'gift' ,'icon' => 'fa-gift', 'route_create' => 'giftCard.create' ,'route_list' => 'giftCard.index'])
       @endcan
 
       @can('role-list')
