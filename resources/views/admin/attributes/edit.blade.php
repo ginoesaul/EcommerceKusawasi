@@ -31,7 +31,7 @@
       <div class="row">
          <div class="col-sm-3">
             <button class="btn btn-info" id="add_val">Añadir valor</button>
-            <input class="btn btn-success" id="submit" type="submit" value="SAVE">
+            <input class="btn btn-success" id="submit" type="submit" value="GUARDAR">
             <div class="space-2"></div>
             <button class="btn btn-danger" data-id="" id="destroy_attr" title="delete attribute and its values"
                     disabled="">ELIMINAR

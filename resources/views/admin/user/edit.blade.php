@@ -40,7 +40,7 @@
       <div class="form-group">
          <div class="btn-group btn-group-justified">
             <div class="btn-group">
-               <input type="submit" class="btn btn-info " value="SAVE">
+               <input type="submit" class="btn btn-info " value="GUARDAR">
             </div>
             <div class="btn-group">
                <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
