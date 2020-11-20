@@ -56,7 +56,7 @@
                   <a href="{{ route('front.lists',['list' => 'categories','slug' => "$category->category_slug", ]) }}">{{ $category->category_name }}</a>
                </li>
             @empty
-               <li>Nada aún</li>
+               <li>Vacío.</li>
             @endforelse
          </ul>
       </div>

@@ -25,7 +25,7 @@
                <select name="sort" id="sort" class="form-control">
                   {{--            <option value="product_id" disabled="" selected="">ORDENADO POR:</option>--}}
                   <option value="product_id">Ordenar por defecto</option>
-                  <option value="created_at">Nuevos Productos</option>
+                  <option value="created_at">Nuevos productos</option>
                   <option value="buy_price">Precio de compra</option>
                   <option value="sale_price">Precio de venta</option>
                </select>
@@ -80,12 +80,12 @@
             <th>@lang('models/products.fields.buy_price')</th>
             <th>@lang('models/products.fields.sale_price')</th>
             <th>@lang('models/products.fields.status')</th>
-            {{--         <th>Available Date</th>--}}
+            {{--         <th>Fecha disponible</th>--}}
             <th class="center">@lang('models/products.fields.is_off')?</th>
-            {{--         <th class="smaller-80">Price Of Off</th>--}}
+            {{--         <th class="smaller-80">Precio de descuento</th>--}}
             <th class="smaller-80">@lang('models/categories.plural')</th>
             <th class="smaller-80">@lang('models/colors.plural')</th>
-            {{--         <th class="smaller-80">Made In</th>--}}
+            {{--         <th class="smaller-80">Hecho en</th>--}}
             <th class="smaller-80">@lang('models/products.fields.description')</th>
             <th>@lang('models/products.fields.cover')</th>
             <th class="smaller-80">@lang('models/products.fields.created_at')</th>

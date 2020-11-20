@@ -12,13 +12,13 @@
       <div class="space-10"></div>
       <div class="form-group row">
          <div class="col-sm-6">
-            <label for="attr" class="bolder">Atributoss:</label>
+            <label for="attr" class="bolder">Atributos:</label>
             <select class="form-control select2" name="attr_id" id="attr">
-               <option disabled selected>Escoger Atibutos</option>
+               <option disabled selected>Escoger atributos</option>
                @forelse ($attributes as $attr)
                   <option value="{{$attr->attr_id}}">{{ $attr->attr_name }}</option>
                @empty
-                  <option disabled>No haydatoss</option>
+                  <option disabled>No hay datos.</option>
                @endforelse
             </select>
          </div>
@@ -93,7 +93,7 @@
            $("#destroy_attr").click(function (e) {
                e.preventDefault();
                var id = $(this).data("id");
-               if (!confirm('¿ESTAS SEGURO QUE QUIERES ELIMINARLO?')) {
+               if (!confirm('¿Estás seguro que quiere eliminarlo?')) {
                    return false
                }
                $.ajaxSetup({
@@ -142,7 +142,7 @@
                    })
                        .done(function (data) {
                            if (data.html == "") {
-                               $('.preview').html("No se han encontrado más registros");
+                               $('.preview').html("No se encontraron más registros.");
                                return;
                            }
                            // console.log(data.html);
@@ -162,7 +162,7 @@
        function deleteValue(elem) {
            // elem.preventDefault();
            var value_id = $(elem).data('id');
-           if (!confirm('¿ESTAS SEGURO QUE QUIERES EIMINARLO?')) {
+           if (!confirm('¿Está seguro que quiere eliminarlo?')) {
                return false
            }
            var id = value_id;

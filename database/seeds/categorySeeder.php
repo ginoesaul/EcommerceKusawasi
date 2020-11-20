@@ -28,7 +28,7 @@ class categorySeeder extends Seeder
                 'Jueguetes',
                 'Nursery',
                 'Household',
-                'Grocery'
+                'Decoraciones'
             ];
             $index = array_rand($names);
 

@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Lista de las marcas
+   Lista de marcas
 @stop
 @section('extra_css')
 @stop
@@ -14,7 +14,7 @@
          </th>
          <th class="center">Nombre</th>
          <th class="center">Slug</th>
-         <th class="center">Foto</th>
+         <th class="center">Imagen</th>
          <th class="center">Descripción</th>
          <th class="center">Operaciones</th>
       </tr>
@@ -32,7 +32,7 @@
             <td class="">{{ $brand->brand_name }}</td>
             <td class="">{{ $brand->brand_slug }}</td>
             <td class="center">
-               <img src="{{ $brand->src }}" alt="imagen de marca" class="img-responsive img-thumbnail" >
+               <img src="{{ $brand->src }}" alt="Imagen de marca" class="img-responsive img-thumbnail" >
             </td>
             <td class="">{{ $brand->brand_description }}</td>
             <td class="center">
@@ -55,7 +55,7 @@
          </tr>
       @empty
          <tr>
-            <td colspan="3">No hay datos</td>
+            <td colspan="3">No hay datos.</td>
          </tr>
       @endforelse
       </tbody>
