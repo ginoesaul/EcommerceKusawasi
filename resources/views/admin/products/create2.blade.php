@@ -6,7 +6,7 @@
 @endsection
 @section('content')
    <div class="bolder center text-info">
-      <h5>please choose photo and others options</h5>
+      <h5>Por favor, elija imagen y otras opciones.</h5>
    </div>
    <form action="{{ route('product.store2') }}" method="post" enctype="multipart/form-data" id="product-form2">
       @csrf
@@ -16,7 +16,7 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
-                     <h4 class="widget-title">Categories</h4>
+                     <h4 class="widget-title">Categorías</h4>
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>
@@ -39,7 +39,7 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
-                     <h4 class="widget-title">Colors of product</h4>
+                     <h4 class="widget-title">Color de producto</h4>
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>
@@ -82,7 +82,7 @@
          <div class="form-group col-xs-12 col-lg-12 col-md-12">
             <div class="col-xs-6">
                <!-- file input -->
-               <label for="photos">Photos</label>
+               <label for="photos">Imagen</label>
                <label class="ace-file-input">
                   <input type="file" name="photos[]" id="gallery-photo-add" multiple>
                   <span class="ace-file-container" data-title="Choose"><span class="ace-file-name"

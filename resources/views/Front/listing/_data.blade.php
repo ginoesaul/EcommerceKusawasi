@@ -10,13 +10,13 @@
                <a href="{{ route('front.show',$product->product_slug) }}" class="load_page">
                   <img src="{{ $product->thumbnail }}" alt="product image" class="img-thumbnail">
                   @if($product->is_off == 1)
-                     <div class="label-sale ">En venta<br>{{ $product->off }}% de descuento</div>
+                     <div class="label-sale ">En venta<br>{{ $product->off }} % de descuento</div>
                   @endif
                   @if($product->created_at > $data)
                      <div class="label-new">Nuevo</div>
                   @endif
                   @if($product->status != 1)
-                     <div class="label-sale">¡próximamente!</div>
+                     <div class="label-sale">¡Próximamente!</div>
                   @endif
                </a>
             </div>

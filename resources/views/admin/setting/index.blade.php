@@ -81,7 +81,7 @@
                @endif
             </div>
             <div class="form-group {{ $errors->has('site_icon') ? 'has-error' : '' }}">
-               <label class="bolder bigger-110" for="site_icon">Icono del sitio</label>
+               <label class="bolder bigger-110" for="site_icon">Ícono del sitio</label>
 
                <input type="file" name="site_icon" id="site_icon" class="form-control">
                <span class="text-danger">{{ $errors->first('site_icon') }}</span>

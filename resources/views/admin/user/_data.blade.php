@@ -33,6 +33,6 @@
    </tr>
 @empty
    <tr>
-      <td colspan="6">No hay datos</td>
+      <td colspan="6">No hay datos.</td>
    </tr>
 @endforelse

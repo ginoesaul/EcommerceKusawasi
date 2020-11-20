@@ -10,9 +10,9 @@
          <h3>Código : {{ $track_code }}</h3>
          <h1 class="block-title large text-danger"> ¡Error en el pago!</h1>
          <div class="description">
-            Intenta una de las siguientes páginas:
+            Intente una de las siguientes páginas:
          </div>
-         <a class="btn btn-border color-default" href="{{ route('home') }}">HOME PAGE</a>
+         <a class="btn btn-border color-default" href="{{ route('home') }}">PÁGINA DE INICIO</a>
       </div>
    </div>
 
