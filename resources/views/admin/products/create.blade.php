@@ -85,7 +85,7 @@
          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
 
-               <label><h4>Available ? </h4>
+               <label><h4>¿Disponible? </h4>
                   <input type="checkbox" name="status" id="status" onclick="showMe()"
                          class="ace ace-switch ace-switch-5"
                          {{ old('status') == 'on' ? 'checked': '' }} checked>
@@ -110,7 +110,7 @@
 
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12">
                <div class="available0" style="display:none ">
-                  <label for="data_available"><b>nombre del producto</b></label>
+                  <label for="data_available"><b>Nombre del producto</b></label>
                   <input id="data_available" name="data_available" class="form-control"
                          value="{{ old('data_available') }}"
                          type="date"/>
