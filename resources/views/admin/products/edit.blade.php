@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Edit Products
+   Editar Productos
 @stop
 @section('extra_css')
    <!-- the script in this page wont work with pjax so i hava to reload it  -->
@@ -116,7 +116,7 @@
                      <span class="help-button" title="Escriba su etiqueta y presione enter">?</span>
                   </div>
                   <label>
-                     <h4>Has Size ? </h4>
+                     <h4>¿Tiene tamaño?</h4>
                      <input type="checkbox" name="has_size" id="has_size" class="ace ace-switch ace-switch-5"
                              {{ $product->has_size == 1 ? 'checked' :'' }}>
                      <span class="lbl"></span>

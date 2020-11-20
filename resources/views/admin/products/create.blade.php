@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Create new Product
+   Crear Nuevo Producto
 @stop
 @section('extra_css')
 @stop

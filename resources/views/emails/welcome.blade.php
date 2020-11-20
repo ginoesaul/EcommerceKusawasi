@@ -246,7 +246,7 @@
                                     <div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
                                        <a href="{{ route('front.profile',auth()->id()) }}"
                                           style="color: #ffffff; text-decoration: none; margin: 0px; text-align: center; vertical-align: baseline; border: 4px solid #6fb3e0; padding: 4px 9px; font-size: 15px; line-height: 21px; background-color: #6fb3e0;">&nbsp;
-                                          My profile &nbsp;</a>
+                                          Mi perfil &nbsp;</a>
                                     </div>
                                     <table class="table-space" height="16"
                                            style="height: 16px; font-size: 0px; line-height: 0; width: 378px; background-color: #ffffff;"
