@@ -49,28 +49,28 @@
 
       @include('layout.admin._menu',
          ['menu_name' => 'Pedidos', 'number' => 'orders' , 'gate' => 'order' ,
-         'icon' => 'fa-pencil-square-o','subMenu' => 'Not Sent Orders','secondSubMenu' => 'All Orders',
+         'icon' => 'fa-pencil-square-o','subMenu' => 'Pedidos no enviados','secondSubMenu' => 'Todos los ordenes',
          'route_create' => 'order.not_sent' ,'route_list' => 'order.index'])
 
       @include('layout.admin._menu',
       ['menu_name' => 'Pagos', 'number' => 'payments' ,'gate' => 'order-edit','icon' => 'fa-credit-card',
-      'subMenu' => 'Failed Payment','secondSubMenu' => 'All Payment',
+      'subMenu' => 'Pago fallido','secondSubMenu' => 'Todos los pagos',
       'route_create' => 'payment.failed' ,'route_list' => 'payment.index'])
 
       @include('layout.admin._menu',
       ['menu_name' => 'Comentarios', 'number' => 'comments' ,'gate' => '-','icon' => 'fa-comment',
-      'subMenu' => 'All reviews','secondSubMenu' => 'Not Approved ',
+      'subMenu' => 'Todas las críticas','secondSubMenu' => 'No aprobado ',
       'route_create' => 'comments.index' ,'route_list' => 'comments.new'])
 
       @include('layout.admin._menu',
      ['menu_name' => 'Usuarios', 'number' => 'users'  ,'gate' => '-', 'icon' => 'fa-user',
-     'subMenu' => 'All Users','secondSubMenu' => 'Add User',
+     'subMenu' => 'Todos los usuarios','secondSubMenu' => 'Añadir usuario',
      'route_create' => 'user.index' ,'route_list' => 'user.create'])
 
       @can('role-list')
          @include('layout.admin._menu',
         ['menu_name' => 'Roles', 'numbe0r' => '' ,'gate' => 'role','icon' => 'fa-check-square-o',
-        'subMenu' => 'Role List','secondSubMenu' => 'Add Role',
+        'subMenu' => 'Lista de Roles','secondSubMenu' => 'Añadir Roles',
         'route_create' => 'roles.index' ,'route_list' => 'roles.create'])
       @endcan
       <li class="">
@@ -86,7 +86,7 @@
 
          @include('layout.admin._menu',
            ['menu_name' => 'Atributos', 'number0' => '' , 'gate' => '-' , 'icon' => 'fa-globe',
-           'subMenu' => 'Create New','secondSubMenu' => 'Attach to product',
+           'subMenu' => 'Crear nuevo','secondSubMenu' => 'Adjuntar al producto',
            'route_create' => 'attribute.create' ])
 
          @include('layout.admin._menu',
