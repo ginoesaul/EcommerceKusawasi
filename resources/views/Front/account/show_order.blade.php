@@ -86,10 +86,10 @@
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>APELLIDO:</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>PROVINCIA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CIUDAD :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>ÁREA :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>DISTRITO :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>AVENIDA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CALLE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NUM :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CANTIDAD :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>NÚMERO CELULAR:</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CÓDIGO POSTAL :</li>
                               </ul>
