@@ -26,7 +26,7 @@
                      @forelse($products as $product)
                         <option value="{{ $product->product_id }}">{{ $product->product_name }}</option>
                      @empty
-                        <option disabled="">NO HAY DATOS</option>
+                        <option disabled="">No hay datos.</option>
                      @endforelse
                   </select>
                </div>
@@ -34,7 +34,7 @@
          </div>
          <div class="col-sm-6">
             <div class="form-group">
-               <label for="attr_name" class="">Nombre de latributo:</label>
+               <label for="attr_name" class="">Nombre del atributo:</label>
                <input type="text" name="attr_name" id="attr_name" class="form-control"/>
             </div>
          </div>
@@ -43,7 +43,7 @@
       <div class="row">
 
          <div class="col-sm-3">
-            <button class="btn btn-info" id="add_val">Añadir valor</button>
+            <button class="btn btn-info" id="add_val">Añadir valor:</button>
             <input class="btn btn-success" type="submit" value="GUARDAR">
          </div>
          <div class="col-sm-6" id="div_value">

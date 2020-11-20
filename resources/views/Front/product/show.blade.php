@@ -103,7 +103,7 @@
                      @if($product->status == 1)
                         <span class="color-base">En venta</span>
                      @else
-                        <span class="color-red">Fuera de venta</span>
+                        <span class="color-red">Fuera de stock</span>
                         <span class="btn-info">Comenzamos:{{ $product->data_available }}</span>
                      @endif
                   </div>
@@ -132,7 +132,7 @@
                      </span>
                @endfor
                <a href="#review1">{{ $product->comments->count() }} Comentarios</a>
-               <a href="#review1">Añadir tus comentarios</a>
+               <a href="#review1">Añada sus comentarios</a>
             </div>
             <!-- /RATING -->
             <div class="row">
@@ -163,7 +163,7 @@
                   <!-- SIZE -->
                   @if ($product->has_size)
                         <div class="wrapper">
-                           <div class="title-options">SIZE<span class="color-required">*</span></div>
+                           <div class="title-options">TAMAÑO<span class="color-required">*</span></div>
                            <ul class="tags-list _size">
                               <li><a href="#" size="XS">XS</a></li>
                               <li><a href="#" size="S">S</a></li>
@@ -209,7 +209,7 @@
                      <span class="plus-btn"></span>
                   </div>
                   <a href="#" id="add_to_cart" class="btn btn-lg btn-addtocart add_to_cart" style="">
-                     <span class="icon icon-shopping_basket"></span>¡COMPRA AHORA!
+                     <span class="icon icon-shopping_basket"></span>¡COMPRE AHORA!
                   </a>
                </div>
 
@@ -220,18 +220,18 @@
                         @if($product->favorited())
                            <a href="#" id="unfavorites" data-id="{{ $product->product_id }}">
                               <span id="dislike_span" class="fa fa-heart"></span>
-                              <span class="text">Borrar de favoritos</span>
+                              <span class="text">Borrar de Favoritos</span>
                            </a>
                         @else
                            <a href="#" id="favorite" data-id="{{ $product->product_id }}">
                               <span id="like_span" class="fa fa-heart-o"></span>
-                              <span class="text">Añadir a favoritos</span>
+                              <span class="text">Añadir a Favoritos</span>
                            </a>
                         @endif
                      @else
                         <hr>
                         <hr>
-                        <i>para acceder a la lista de deseos por favor <a href="{{ route('login') }}">iniciar sesión</a></i>
+                        <i>Para acceder a la lista de deseos, por favor, <a href="{{ route('login') }}">iniciar sesión.</a></i>
                      @endauth
                   </li>
                   

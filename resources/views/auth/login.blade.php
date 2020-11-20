@@ -11,7 +11,7 @@
             <h2>REGISTRAR</h2>
             <div class="extra-indent-bottom">
                <p>Al crear una cuenta en nuestra tienda, podrá realizar el proceso de pago más rápido, 
-               almacenar múltiples direcciones de envío, ver y rastrear sus pedidos en su cuenta y más..</p>
+               almacenar múltiples direcciones de envío, ver y rastrear sus pedidos en su cuenta y más.</p>
             </div>
             <div class="">
                <a href="{{ route('register') }}" class="btn btn-border color-default">CREAR UNA CUENTA</a>
@@ -70,7 +70,7 @@
                         <li>
                            @if (Route::has('password.request'))
                               <a class="btn btn-link" href="{{ route('password.request') }}">
-                                 {{ __('¿Olvidaste tu contraseña?') }}
+                                 {{ __('¿Olvidó su contraseña?') }}
                               </a>
                            @endif
                         </li>

@@ -22,12 +22,12 @@
 
                         <a href="{{ route('user.edit',$user->user_id) }}" class="btn btn-sm btn-block btn-success">
                            <i class="ace-icon fa fa-plus-circle bigger-120"></i>
-                           <span class="bigger-110">Editar este usuario</span>
+                           <span class="bigger-110">Editar usuario</span>
                         </a>
                         @if ($user->address)
                            <a href="{{ route('admin.address.edit',$user->user_id) }}" class="btn btn-sm btn-block btn-primary">
                               <i class="ace-icon fa fa-envelope-o bigger-110"></i>
-                              <span class="bigger-110">Editar Correo</span>
+                              <span class="bigger-110">Editar correo electrónico</span>
                            </a>
                         @endif
                      </div><!-- /.col -->
@@ -62,7 +62,7 @@
 
                         <div class="profile-user-info">
                            <div class="profile-info-row">
-                              <div class="profile-info-name"> Correo</div>
+                              <div class="profile-info-name"> Correo electrónico</div>
 
                               <div class="profile-info-value">
                                  <span>{{ $user->email }}</span>
@@ -93,13 +93,13 @@
                                     <div class="col-sm-4">
                                        <ul>
                                           <li>NOMBRE :</li>
-                                          <li>APELLIDO:</li>
+                                          <li>APELLIDO :</li>
                                           <li>PROVINCIA :</li>
                                           <li>CIUDAD :</li>
                                           <li>ÁREA :</li>
                                           <li>AVENIDA :</li>
                                           <li>CALLE :</li>
-                                          <li>NOM :</li>
+                                          <li>NUM :</li>
                                           <li>CELULAR :</li>
                                           <li>CÓDIGO POSTAL :</li>
                                        </ul>
@@ -156,7 +156,7 @@
                         <th class="center">Direción</th>
                         <th class="center">Usuario del cliente</th>
                         <th class="center">Nombre del cliente</th>
-                        <th class="center">Celular del cliente, Correo</th>
+                        <th class="center">Celular del cliente, correo electrónico</th>
                         {{--         <th class="center">Nombre del empleado</th>--}}
                         <th class="center">Precio total</th>
                         <th class="center">Tarjeta de regalo</th>

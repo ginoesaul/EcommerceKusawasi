@@ -1,6 +1,10 @@
 @extends('layout.admin.index' )
 @section('title')
-   Create new Product
+<<<<<<< HEAD
+   Crear Nuevo Producto
+=======
+   Crear producto
+>>>>>>> Urpi
 @stop
 @section('extra_css')
 @stop
@@ -12,7 +16,7 @@
          @csrf
          <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="form-group col-md-6 col-lg-6 col-xs-12">
-               <label class="control-label no-padding-right" for="product_name"> Nombre del Producto </label>
+               <label class="control-label no-padding-right" for="product_name"> Nombre del producto </label>
                <div class="clearfix">
                   <input placeholder="Nombre del producto" name="product_name" value="{{ old('product_name') }}"
                          id="product_name" class="form-control" type="text">
@@ -26,10 +30,10 @@
                </div>
             </div>
             <div class="form-group col-md-6 col-lg-6 col-xs-12">
-               <label class=" control-label no-padding-right" for="brand_id">Escoge tu marca</label>
+               <label class=" control-label no-padding-right" for="brand_id">Escoja su marca</label>
                <div class="clearfix">
                   <select name="brand_id" id="brand_id" class="form-control">
-                     <option value="" disabled selected>Escoge tu marca</option>
+                     <option value="" disabled selected>Escoja su marca</option>
                      @foreach($brands as $brand)
                         <option {{ old('brand_id') == $brand->brand_id ? 'selected' : '' }} value="{{ $brand->brand_id }}">{{ $brand->brand_name }}</option>
                      @endforeach
