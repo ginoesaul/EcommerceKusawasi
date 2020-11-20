@@ -86,8 +86,8 @@
                            <span class="icon icon-art_track"></span>
                         </span>
                            <input type="hidden" value="" name="input">
-                           <input type="text" maxlength="8" minlength="8" pattern="\d*"  name="code" id="track_code" class="form-control" placeholder="Código de seguimiento:" required>
-                        <i>SOLO NÚMEROS</i>
+                           <input type="text" maxlength="8" minlength="8" pattern="\d*"  name="code" id="track_code" class="form-control" placeholder="Código de seguimiento" required>
+                        <i>Solo números.</i>
                         </div>
                      </div>
                      <button type="submit" class="btn btn-full">

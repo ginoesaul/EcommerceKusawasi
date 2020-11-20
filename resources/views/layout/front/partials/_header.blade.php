@@ -203,7 +203,7 @@
                               <a href="{{ route('logout') }}"
                                  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                 <span class="glyphicon glyphicon-log-out"></span>{{ __('Cerrar Sesión') }}
+                                 <span class="glyphicon glyphicon-log-out"></span>{{ __('Cerrar sesión') }}
                               </a>
 
                               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -242,13 +242,13 @@
                                           <div class="cart-total">TOTAL:  <span id="cart_sub"> {{ Cart::subtotal() }}</span></div>
                                        </div>
                                        @auth
-                                          <a href="{{ route('front.checkout') }}" class="btn icon-btn-left "><span class="icon icon-check_circle"></span>CHECKOUT</a>
+                                          <a href="{{ route('front.checkout') }}" class="btn icon-btn-left "><span class="icon icon-check_circle"></span>PAGAR</a>
                                        @else
-                                          <a href="{{ route('front.inter.checkout') }}" class="btn icon-btn-left "><span class="icon icon-check_circle"></span>CHECKOUT</a>
+                                          <a href="{{ route('front.inter.checkout') }}" class="btn icon-btn-left "><span class="icon icon-check_circle"></span>PAGAR</a>
                                        @endauth
                                     </div>
                                     <div class="pull-left">
-                                       <a href="{{ route('cart.index') }}" class="btn icon-btn-left "><span class="icon icon-shopping_basket"></span>VER CARRO</a>
+                                       <a href="{{ route('cart.index') }}" class="btn icon-btn-left "><span class="icon icon-shopping_basket"></span>VER CARRITO DE COMPRAS</a>
                                     </div>
                                  </div>
                                  @endif
