@@ -12,7 +12,7 @@
    <!-- center col -->
       <div class="col-md-9 col-lg-10 col-xl-10">
          <div class="pull-left hidden-lg hidden-md">
-            <a class="btn slide-column-open" href="#">FILTER</a>
+            <a class="btn slide-column-open" href="#">FILTRO</a>
             <hr>
          </div>
          <div class="product-listing row" id="product_data">

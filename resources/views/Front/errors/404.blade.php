@@ -8,7 +8,7 @@
    <div class="offset-80">
       <div class="on-duty-box">
          <img src="{{ asset('front-assets/error_404.png') }}" alt="pagina no encontrada" height="100px">
-         <h1 class="block-title large"> Ooops, no podemos encontrar lo que estás buscando. Por favor, inténtelo de nuevo.</h1>
+         <h1 class="block-title large"> Lo sentimos, no podemos encontrar lo que está buscando. Por favor, inténtelo de nuevo.</h1>
          <div class="description">
          Por favor, intente una de las siguientes páginas:
          </div>
