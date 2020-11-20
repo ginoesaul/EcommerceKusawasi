@@ -123,7 +123,7 @@
                </div>
                <div class="col-sm-5">
                   <div class="form-group required">
-                     <label for="email" class="control-label">E-mail: <span>*</span></label>
+                     <label for="email" class="control-label">Correo: <span>*</span></label>
                      <input type="email" name="client_email" class="form-control" id="clientEmail"
                             required value="{{ auth()->check() ? auth()->user()->email : '' }}">
                   </div>
@@ -136,7 +136,7 @@
                   <div class="form-group">
                      @auth()
                         <div id="off_div" class="form-group">
-                           <label for="giftCode" class="control-label ">Código de regalo: <span>*</span></label>
+                           <label for="giftCode" class="control-label ">Cupones: <span>*</span></label>
                            <input type="text" name="giftCode" class="form-control" id="giftCode">
                            <button class="btn btn-border color-default" data-loading-text="loading ..."
                                    id="apply_gift">APLICAR DESCUENTO
@@ -175,12 +175,12 @@
                                class="form-control" id="name" required>
                      </div>
                      <div class="form-group required">
-                        <label for="number" class="control-label">Número: <span>*</span></label>
+                        <label for="number" class="control-label">Cantidad: <span>*</span></label>
                         <input type="number" value="{{ isset($address) ? $address->number : '' }}" name="number"
                                class="form-control" id="number" required>
                      </div>
                      <div class="form-group required">
-                        <label for="area" class=" control-label">Área: </label>
+                        <label for="area" class=" control-label">Distrito: </label>
                         <input type="text" name="area" value="{{ isset($address) ? $address->area : '' }}"
                                class="form-control" id="area" maxlength="15">
                      </div>
@@ -231,8 +231,8 @@
                                class="form-control" id="state" required>
                      </div>
                      <div class="form-group required">
-                        <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
-                           <small> +905534676564</small>
+                        <label for="phone_number" class="control-label">Número de celular: <span></span>
+                           <small> ejemplo +905534676564</small>
                         </label>
                         <input type="text" name="phone_number" value="{{ isset($address) ? $address->phone_number : '' }}"
                                class="form-control" id="phone_number" required>
@@ -251,14 +251,14 @@
       <div class="setup-content" id="step-3">
          <div class="">
             <input type="hidden" id="input3" name="input" value="">
-            <h3>Review</h3>
+            <h3>Revisión</h3>
             <table class="table table-hover table-bordered">
                <thead>
                <tr>
                   <td class="center">Foto</td>
                   <td class="center">Nombre del producto</td>
                   <td class="center">Precio</td>
-                  <td class="center">qty</td>
+                  <td class="center">Cantidad</td>
                </tr>
                </thead>
                <tbody>
@@ -313,7 +313,7 @@
 
          <div class="container-fluid">
             <div class="checkout-box">
-               <h3>SHIP TO:</h3>
+               <h3>ENVIE A:</h3>
                <div class="checkout-box-content">
                   <p id="ship_addr"></p>
                </div>
