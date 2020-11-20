@@ -1,6 +1,10 @@
 @extends('layout.admin.index' )
 @section('title')
+<<<<<<< HEAD
+   Crear Nuevo Producto
+=======
    Crear producto
+>>>>>>> Urpi
 @stop
 @section('extra_css')
 @stop

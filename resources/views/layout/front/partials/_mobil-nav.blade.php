@@ -12,7 +12,7 @@
                   @endif
                </li>
             @empty
-               <li>NADA AÚN</li>
+            No existe ningún producto por el momento.
             @endforelse
          </ul>
       </li>
@@ -22,6 +22,7 @@
             @forelse($special_offers as $product)
                <li><a href="{{ route('front.show',$product->product_slug) }}">{{ $product->product_name }}</a></li>
             @empty
+            No hay ofertas especiales por el momento.
             @endforelse
 
          </ul>
@@ -32,6 +33,7 @@
             @forelse($popular_products as $product)
                <li><a href="{{ route('front.show',$product->product_slug) }}">{{ $product->product_name }}</a></li>
             @empty
+            No hay productos populares por el momento.
             @endforelse
          </ul>
 
@@ -43,7 +45,7 @@
                <li><a href="{{ route('front.lists', ['list' => 'brands' , 'slug' => $brand->brand_slug ]) }}"
                       class="load_page">{{ $brand->brand_name }}</a></li>
             @empty
-               <b>NO HAY INFORMACIÓN</b>
+            No existe ninguna marca por el momento.
             @endforelse
          </ul>
       </li>
