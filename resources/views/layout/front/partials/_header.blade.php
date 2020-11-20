@@ -108,7 +108,7 @@
                   <li class="active"><a href="index.html">Inicio</a></li>
                   <li><a href="faqs.html">Delivery</a></li>
                   <li><a href="blog_listing.html">Blog</a></li>
-                  <li><a href="contact.html">Contacts</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
                </ul>
             </div>
             <!-- /mini-menu -->
