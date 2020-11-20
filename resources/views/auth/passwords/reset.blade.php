@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Resetabelcer Contraseña') }}</div>
+                <div class="card-header">{{ __('Restablecer Contraseña') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
