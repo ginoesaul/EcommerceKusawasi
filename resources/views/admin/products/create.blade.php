@@ -12,24 +12,24 @@
          @csrf
          <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="form-group col-md-6 col-lg-6 col-xs-12">
-               <label class="control-label no-padding-right" for="product_name"> Product Name </label>
+               <label class="control-label no-padding-right" for="product_name"> Nombre del Producto </label>
                <div class="clearfix">
-                  <input placeholder="Product Name" name="product_name" value="{{ old('product_name') }}"
+                  <input placeholder="Nombre del producto" name="product_name" value="{{ old('product_name') }}"
                          id="product_name" class="form-control" type="text">
                </div>
             </div>
             <div class="form-group col-md-6 col-lg-6 col-xs-12">
-               <label class="control-label no-padding-right" for="made_in"> Made IN: </label>
+               <label class="control-label no-padding-right" for="made_in"> Hecho en: </label>
                <div class="clearfix">
-                  <input placeholder="Made IN" name="made_in" value="{{ old('made_in') }}" id="made_in"
+                  <input placeholder="Hecho en" name="made_in" value="{{ old('made_in') }}" id="made_in"
                          class="form-control" type="text">
                </div>
             </div>
             <div class="form-group col-md-6 col-lg-6 col-xs-12">
-               <label class=" control-label no-padding-right" for="brand_id">Choose your brands</label>
+               <label class=" control-label no-padding-right" for="brand_id">Escoge tu marca</label>
                <div class="clearfix">
                   <select name="brand_id" id="brand_id" class="form-control">
-                     <option value="" disabled selected>Choose your brands</option>
+                     <option value="" disabled selected>Escoge tu marca</option>
                      @foreach($brands as $brand)
                         <option {{ old('brand_id') == $brand->brand_id ? 'selected' : '' }} value="{{ $brand->brand_id }}">{{ $brand->brand_name }}</option>
                      @endforeach
@@ -37,9 +37,9 @@
                </div>
             </div>
             <div class="form-group col-md-6 col-lg-6  col-xs-12">
-               <label class=" control-label no-padding-right" for="product_slug"> Product Slug </label>
+               <label class=" control-label no-padding-right" for="product_slug"> Slug del Producto </label>
                <div class="clearfix">
-                  <input placeholder="Product Slug" id="product_slug" name="product_slug"
+                  <input placeholder="Slug del Producto" id="product_slug" name="product_slug"
                          value="{{ old('product_slug') }}" class="form-control" type="text">
                </div>
             </div>
@@ -47,36 +47,36 @@
 
          <div class="form-group col-xs-12 col-md-12 col-lg-12">
             <div class="form-group col-xs-6 col-md-6 col-lg-3">
-               <label class=" control-label no-padding-right" for="sale_price"> Sell Price </label>
+               <label class=" control-label no-padding-right" for="sale_price"> Precio de venta </label>
                <div class="clearfix">
-                  <input placeholder="Sell Price" name="sale_price" value="{{ old('sale_price') }}" id="sale_price"
+                  <input placeholder="Precio de venta" name="sale_price" value="{{ old('sale_price') }}" id="sale_price"
                          class="form-control" min="0" type="number">
                </div>
             </div>
             <div class="form-group col-xs-6 col-md-6 col-lg-3">
-               <label class=" control-label no-padding-right" for="buy_price"> Buy Price </label>
+               <label class=" control-label no-padding-right" for="buy_price"> Precio de compra </label>
                <div class="clearfix">
-                  <input placeholder="Buy Price" name="buy_price" value="{{ old('buy_price') }}" id="buy_price"
+                  <input placeholder="Precio de compra" name="buy_price" value="{{ old('buy_price') }}" id="buy_price"
                          class="form-control" min="0" type="number">
                </div>
             </div>
             <div class="form-group col-xs-6 col-md-6 col-lg-3">
-               <label class=" control-label no-padding-right" for="quantity">Quantity</label>
+               <label class=" control-label no-padding-right" for="quantity">Cantidad</label>
                <div class="clearfix">
-                  <input placeholder="Quantity" type="number" value="{{ old("quantity") }}" min="0" name="quantity"
+                  <input placeholder="Cantidad" type="number" value="{{ old("quantity") }}" min="0" name="quantity"
                          class="form-control" id="quantity">
                </div>
             </div>
             <div class="form-group col-xs-6 col-md-6 col-lg-3">
-               <label for="weight">Weight</label>
+               <label for="weight">Peso</label>
                <div class="clearfix">
-                  <input placeholder="weight" type="number" value="{{ old("weight") }}" min="0" name="weight"
+                  <input placeholder="Peso" type="number" value="{{ old("weight") }}" min="0" name="weight"
                          class="form-control" id="weight">
                </div>
             </div>
          </div>
          <div class="col-xs-12 form-group col-md-12 col-lg-12">
-            <label for="description">Description</label>
+            <label for="description">Descripción</label>
             <div class="clearfix">
                   <textarea id="description" rows="6" class="form-control"
                             name="description">{{ old('description') }}</textarea>
@@ -99,7 +99,7 @@
                </label>
                <div class="form-group">
                   <label class="" for="has_size">
-                     <h4>Has Size ? </h4>
+                     <h4>¿Tiene tamaño? </h4>
                      <input type="checkbox" name="has_size" id="has_size"
                             class="ace ace-switch ace-switch-5 form-control"
                              {{ old('has_size') == 'on' ? 'checked': '' }}>
@@ -110,14 +110,14 @@
 
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12">
                <div class="available0" style="display:none ">
-                  <label for="data_available"><b>Available Date</b></label>
+                  <label for="data_available"><b>nombre del producto</b></label>
                   <input id="data_available" name="data_available" class="form-control"
                          value="{{ old('data_available') }}"
                          type="date"/>
                </div>
 
                <div class="div-discount" style="display:none ">
-                  <label for="off_price"><b>Amount of Discount:</b></label>
+                  <label for="off_price"><b>Cantidad de descuento:</b></label>
                   <input id="off_price" name="off_price" class="form-control" min="0" value="{{ old('off_price',0) }}"
                          type="number">
                </div>
@@ -128,7 +128,7 @@
          <div class="center col-xs-6 col-sm-6 col-lg-6 col-md-6">
 
             <div class="form-group {{ $errors->has('cover') ? 'has-error' : '' }}">
-               <label class="bolder bigger-110 " for="brand_image">Cover</label>
+               <label class="bolder bigger-110 " for="brand_image">Cubrir</label>
 
                <input type="file" name="cover" class="form-control" id="cover">
 
@@ -140,10 +140,10 @@
          <div class="form-group">
             <div class="btn-group btn-group-justified">
                <div class="btn-group">
-                  <input type="submit" class="btn btn-info " value="SAVE">
+                  <input type="submit" class="btn btn-info " value="GUARDAR">
                </div>
                <div class="btn-group">
-                  <a class="btn btn-danger" onclick="history.back()">BACK</a>
+                  <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
                </div>
             </div>
          </div>
