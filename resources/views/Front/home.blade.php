@@ -72,9 +72,9 @@
    <hr>
    <hr>
    
-   <hr>
+   <hr> 
    <!-- PRODUCTS -->
-   <div class="container" style="margin-top: -0.0rem">
+   <!--<div class="container" style="margin-top: -0.0rem">
       <div class="row">
          <div class="filter-isotop">
             <div class="grid" id="products_data">
@@ -87,32 +87,32 @@
             <div class="divider"></div>
          </div>
       </div>
-   </div>
-   <!-- /PRODUCTS -->
+   </div> 
+   <!-/PRODUCTS -->
 
-   <input type="hidden" id="lastPage" value="{{ $products->lastPage() }}">
+    <input type="hidden" id="lastPage" value="{{ $products->lastPage() }}">
 @endsection
 @section('extra_js')
    <script type="text/javascript">
        var page = 1;
        $(window).scroll(function () {
-           if ($(window).scrollTop() +
-               ($('#product_data').height() + $('#footer').height() + 900) >= $(document).height()) {
-               page++;
+          // if ($(window).scrollTop() +
+              // ($('#product_data').height() + $('#footer').height() + 900) >= $(document).height()) {
+               //page++;
                //this will avoid send more request when all data has loaded
-               if (page > $("#lastPage").val()) {
-                   $('.ajax-load').hidden;
-                   $('#load').show();
-                   return;
-               }
+               //if (page > $("#lastPage").val()) {
+                  // $('.ajax-load').hidden;
+                  // $('#load').show();
+                   //return;
+              // }
                //avoid to show more than 3 page
-               if (page === 3){
-                   return;
-               }
+               //if (page === 3){
+                   //return;
+               }//
                // console.log(page);
-               loadMoreData(page);
-           }
-           function loadMoreData(page) {
+              // loadMoreData(page);
+           //}
+           /*function loadMoreData(page) {
 
                $.ajax(
                    {
@@ -129,12 +129,12 @@
                            return;
                        }
                        $('.ajax-load').hide();
-                       $("#products_data").append(data.html);
+                      // $("#products_data").append(data.html);
                    })
                    .fail(function (jqXHR, ajaxOptions, thrownError) {
                        console.log(jqXHR);
                    });
-           }
+           }*/
        });
    </script>
 @endsection
