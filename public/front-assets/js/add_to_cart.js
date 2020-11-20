@@ -105,7 +105,7 @@ function deleteCart(e) {
             $("#cart_div").load(location.href + " #cart_div");
         },
         error: function (xhr) {
-            alert('error, server not respond...');
+            alert('error, el servidor no responde...');
         }
     });
 }
@@ -133,7 +133,7 @@ function editCart(e){
         console.log(jqXHR);
         console.log(ajaxOptions);
         console.log(thrownError);
-        alert('error, server not respond...');
+        alert('error, el servidor no responde...');
     });
 }
 

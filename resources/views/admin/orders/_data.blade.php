@@ -196,10 +196,10 @@
                            <li>APELLIDO :</li>
                            <li>PROVINCIA :</li>
                            <li>CIUDAD :</li>
-                           <li>ÁREA :</li>
+                           <li>DISTRITO :</li>
                            <li>AVENIDA :</li>
                            <li>CALLE :</li>
-                           <li>NUM :</li>
+                           <li>CANTIDAD :</li>
                            <li>CELULAR :</li>
                            <li>CÓDIGO POSTAL :</li>
                         </ul>

@@ -74,7 +74,7 @@
    
    <hr> 
    <!-- PRODUCTS -->
-   <!--<div class="container" style="margin-top: -0.0rem">
+   <div class="container" style="margin-top: -0.0rem">
       <div class="row">
          <div class="filter-isotop">
             <div class="grid" id="products_data">
