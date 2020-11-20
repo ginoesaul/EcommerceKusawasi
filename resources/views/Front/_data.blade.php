@@ -11,19 +11,19 @@
                   href="{{ route('front.show',$product->product_slug) }}">
                   <img src="{{ $product->thumbnail }}" alt="product image" class="img-responsive img-thumbnail">
                   @if($product->is_off == 1)
-                     <div class="label-sale ">Sale<br>{{ $product->off }}% Off</div>
+                     <div class="label-sale ">Venta<br>{{ $product->off }}% de descuento</div>
                   @endif
                   @if($product->created_at > $data)
-                     <div class="label-new">New</div>
+                     <div class="label-new">Nuevo</div>
                   @endif
                   @if($product->status != 1)
-                     <div class="label-sale">coming soon!</div>
+                     <div class="label-sale">¡próximamente!</div>
                   @endif
                </a>
                <a href="{{ route('front.show',$product->product_slug) }}" class="load_page"
                   class="quick-view">
                   {{-- <span>
-                      <span class="icon icon-visibility"></span>QUICK VIEW
+                      <span class="icon icon-visibility"></span>VISTA RÁPIDA
                    </span>--}}
                </a>
                @if($product->status != 1)

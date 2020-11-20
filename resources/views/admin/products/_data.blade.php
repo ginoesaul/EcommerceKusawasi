@@ -6,7 +6,7 @@
             <span class="lbl"></span>
          </label>
       </td>
-      <td><a class="click_me bolder" data-path="/product/show" title="show product"
+      <td><a class="click_me bolder" data-path="/product/show" title="mostrar producto"
              href="{{ route('product.show',$product->product_id) }}">{{ $product->product_name }}</a>
       </td>
       <td>{{ $product->sku }}</td>
@@ -14,14 +14,14 @@
       <td>{{ $product->is_off == 1 ? number_format($product->sale_price - $product->off_price ) : number_format($product->sale_price) }}</td>
       <td class="center" style="background-color: @if($product->status) #00be67 @else #fff556 @endif">
          @if($product->status == 1)
-            <a href="#" class="green bigger-140 show-details-btn" title="Active" disabled="">
+            <a href="#" class="green bigger-140 show-details-btn" title="Activo" disabled="">
                <i class="ace-icon fa fa-angle-double-up"></i>
-               <span class="sr-only">Active</span>
+               <span class="sr-only">Activo</span>
             </a>
          @else
-            <a href="#" class="red bigger-140 show-details-btn" title="De Active" disabled="">
+            <a href="#" class="red bigger-140 show-details-btn" title="No activo" disabled="">
                <i class="ace-icon fa fa-angle-double-down"></i>
-               <span class="sr-only">De Active</span>
+               <span class="sr-only">No Activo</span>
                <small>{{ $product->data_available }}</small>
             </a>
          @endif
@@ -35,10 +35,10 @@
       {{--            <td>--}}
       <td class="center">
          @if($product->is_off == 1)
-            <span class='label label-warning smaller-80'>HAS-OFF</span>
+            <span class='label label-warning smaller-80'>APAGADO</span>
             <b>{{ number_format($product->off_price) }}</b>
          @else
-            <span class="label label-info smaller-80">NOT OFF</span>
+            <span class="label label-info smaller-80">NO APAGADO</span>
          @endif
       </td>
       {{--            <td class="smaller-80">{{ $product->is_off == 1 ? $product->off_price : '' }}</td>--}}
@@ -56,7 +56,7 @@
       {{--            <td class="smaller-80">{{ $product->made_in }}</td>--}}
       <td>{{ Str::limit($product->description,50,'...')  }}</td>
       <td>
-         <img src="{{ asset($product->cover) }}" alt="cover photo" width="80" height="100">
+         <img src="{{ asset($product->cover) }}" alt="foto de portada" width="80" height="100">
       </td>
       <td class="smaller-80">{{ $product->created_at }}</td>
       <td>
@@ -69,7 +69,7 @@
                @endcan
                @if(isset($index_categories))
                   @can('product-edit')
-                     <a class="btn btn-warning btn-xs" title="Edit"
+                     <a class="btn btn-warning btn-xs" title="Editar"
                         href="{{route('product.edit',$product->product_id)}}" data-id="{{ $product->product_id }}">
                         <i class="ace-icon fa fa-pencil bigger-120"></i></a>
                         <a class="btn btn-yellow btn-xs" title="Edit Attribute"
@@ -79,7 +79,7 @@
                   @endcan
                @else
                   @can('product-delete')
-                     <button class="btn btn-success btn-xs restore_me" title="Restore"
+                     <button class="btn btn-success btn-xs restore_me" title="Restaurar"
                              data-id="{{route('product.restore',$product->product_id)}}"><i
                                 class="ace-icon fa fa-check bigger-120"></i>
                      </button>
@@ -87,7 +87,7 @@
                @endif
             </form>
             <a class="btn btn-xs btn-info bolder"
-               title="show product"
+               title="mostrar producto"
                href="{{ route('product.show',$product->product_id) }}"><i
                        class="ace-icon fa fa-eye bigger-120"></i>
             </a>
@@ -107,7 +107,7 @@
                   @endcan
                   @if(isset($index_categories))
                      @can('product-edit')
-                        <li><a class="btn btn-warning btn-xs" title="Edit"
+                        <li><a class="btn btn-warning btn-xs" title="Editar"
                                href="{{route('product.edit',$product->product_id)}}"
                                data-id="{{ $product->product_id }}">
                               <i class="ace-icon fa fa-pencil bigger-120"></i></a>
@@ -121,7 +121,7 @@
                   @else
                      @can('product-delete')
                         <li>
-                           <a class="btn btn-success btn-xs restore_me" title="Restore"
+                           <a class="btn btn-success btn-xs restore_me" title="Restaurar"
                               data-id="{{route('product.restore',$product->product_id)}}"><i
                                       class="ace-icon fa fa-check bigger-120"></i>
                            </a>
@@ -130,7 +130,7 @@
                   @endif
                   <li>
                      <a class="btn btn-xs btn-info bolder"
-                        title="show product"
+                        title="mostrar producto"
                         href="{{ route('product.show',$product->product_id) }}"><i
                                 class="ace-icon fa fa-eye bigger-120"></i>
                      </a>
@@ -145,6 +145,6 @@
    </tr>
 @empty
    <tr>
-      <td colspan="16" class="text-capitalize">There are no date</td>
+      <td colspan="16" class="text-capitalize">No hay fecha</td>
    </tr>
 @endforelse
