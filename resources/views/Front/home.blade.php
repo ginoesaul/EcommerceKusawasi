@@ -11,8 +11,8 @@
       <div class="row">
          <div class="row indent-col-none">
             <div class="col-extra-400 col-xs-6 col-md-6">
-               <a href="listing-left-column.html" class="promo-box zoom-in design-10">
-                  <img src="{{asset('images/blc.jpg')}}" alt="">
+               <a href="listing-left-column.html" class="promo-box zoom-in design-14">
+                  <img src="{{asset('images/blc.jpg')}}" alt="imagen-categoria">
                   <div class="description point-left">
                      <div class="block-table">
                         <div class="block-table-cell">
