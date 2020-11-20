@@ -38,7 +38,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Software Actualizado</span>
+                                 <span class="pull-left">Software actualizado</span>
                                  <span class="pull-right">65%</span>
                               </div>
 
@@ -77,7 +77,7 @@
                         <li>
                            <a href="#">
                               <div class="clearfix">
-                                 <span class="pull-left">Corrección de Errores</span>
+                                 <span class="pull-left">Corrección de errores</span>
                                  <span class="pull-right">90%</span>
                               </div>
 
@@ -91,7 +91,7 @@
 
                   <li class="dropdown-footer">
                      <a href="#">
-                        See tasks with details
+                        Ver tareas con detalles
                         <i class="ace-icon fa fa-arrow-right"></i>
                      </a>
                   </li>
@@ -127,7 +127,7 @@
                         <li>
                            <a href="#">
                               <i class="btn btn-xs btn-primary fa fa-user"></i>
-                              Bob acaba de registrarse como editor ...
+                              Bob acaba de registrarse como editor.
                            </a>
                         </li>
 
@@ -136,7 +136,7 @@
                               <div class="clearfix">
                                  <span class="pull-left">
                                     <i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
-                                    New Orders
+                                    Nuevas órdenes
                                  </span>
                                  <span class="pull-right badge badge-success">+8</span>
                               </div>
@@ -175,7 +175,7 @@
                <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
                   <li class="dropdown-header">
                      <i class="ace-icon fa fa-envelope-o"></i>
-                     5 Messages
+                     5 Mensajes
                   </li>
 
                   <li class="dropdown-content">
@@ -191,7 +191,7 @@
 
                                  <span class="msg-time">
                                     <i class="ace-icon fa fa-clock-o"></i>
-                                    <span>hace un momento</span>
+                                    <span>Hace un momento</span>
                                  </span>
                               </span>
                            </a>

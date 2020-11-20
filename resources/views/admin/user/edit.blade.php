@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Editar Usuario
+   Editar usuario
 @endsection
 @section('extra_css')
 @endsection
@@ -10,14 +10,14 @@
       {{ method_field('put') }}
 
       <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="name">Nombre</label>
+         <label class="bolder bigger-110" for="name">Nombre:</label>
          <input type="text" name="name" maxlength="21" id="name" placeholder="Name"
                 value="{{isset($user->name) ? $user->name : old('name')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('name') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="email">Correo:</label>
+         <label class="bolder bigger-110" for="email">Correo electrónico:</label>
          <input type="email" name="email" maxlength="21" id="email" placeholder="Email"
                 value="{{isset($user->email) ? $user->email : old('email')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('email') }}</span>
@@ -49,7 +49,7 @@
       </div>
       @if ($user->address)
          <div class="form-group">
-            <a href="{{ route('admin.address.edit',$user->user_id) }}" class="btn btn-lg btn-success">Editar Dirección</a>
+            <a href="{{ route('admin.address.edit',$user->user_id) }}" class="btn btn-lg btn-success">Editar dirección</a>
          </div>
       @endif
 

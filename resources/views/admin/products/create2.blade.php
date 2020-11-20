@@ -6,7 +6,11 @@
 @endsection
 @section('content')
    <div class="bolder center text-info">
+<<<<<<< HEAD
       <h5>por favor elija la foto y otras opciones</h5>
+=======
+      <h5>Por favor, elija imagen y otras opciones.</h5>
+>>>>>>> Urpi
    </div>
    <form action="{{ route('product.store2') }}" method="post" enctype="multipart/form-data" id="product-form2">
       @csrf
@@ -39,7 +43,11 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
+<<<<<<< HEAD
                      <h4 class="widget-title">Colores de producto</h4>
+=======
+                     <h4 class="widget-title">Color de producto</h4>
+>>>>>>> Urpi
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>
@@ -82,7 +90,11 @@
          <div class="form-group col-xs-12 col-lg-12 col-md-12">
             <div class="col-xs-6">
                <!-- file input -->
+<<<<<<< HEAD
                <label for="photos">Fotos</label>
+=======
+               <label for="photos">Imagen</label>
+>>>>>>> Urpi
                <label class="ace-file-input">
                   <input type="file" name="photos[]" id="gallery-photo-add" multiple>
                   <span class="ace-file-container" data-title="Choose"><span class="ace-file-name"

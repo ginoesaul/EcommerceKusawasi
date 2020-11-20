@@ -1,6 +1,10 @@
 @extends('layout.admin.index' )
 @section('title')
+<<<<<<< HEAD
    Editar Productos
+=======
+   Editar producto
+>>>>>>> Urpi
 @stop
 @section('extra_css')
    <!-- the script in this page wont work with pjax so i hava to reload it  -->
@@ -24,18 +28,18 @@
          @endif
          <div class="col-xs-12">
             <div class="form-group col-xs-3">
-               <label class="control-label no-padding-right" for="product_name"> Nombre del productos</label>
+               <label class="control-label no-padding-right" for="product_name"> Nombre del producto</label>
                <input placeholder="Nombre del producto" name="product_name"
                       value="{{ old('product_name',$product->product_name) }}" id="product_name" class="form-control"
                       type="text">
             </div>
             <div class="form-group col-xs-3">
-               <label class="control-label no-padding-right" for="made_in"> Hecho en: </label>
+               <label class="control-label no-padding-right" for="made_in"> Procedencia </label>
                <input placeholder="Hecho en" name="made_in" value="{{ old('made_in',$product->made_in) }}" id="made_in"
                       class="form-control" type="text">
             </div>
             <div class="form-group col-xs-3">
-               <label for="brand_id">Escoge tu marca</label>
+               <label for="brand_id">Escoja su marca</label>
                <select name="brand_id" id="brand_id" class="form-control">
                   @foreach($brands as $brand)
                      <option {{ $product->brand_id == $brand->brand_id ? "selected" : '' }} value="{{ $brand->brand_id }}">{{ $brand->brand_name }}</option>
@@ -109,11 +113,11 @@
                <label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Entrada de etiqueta</label>
                <div class="col-sm-9">
                   <div class="inline">
-                     <input type="text" name="tags" id="form-field-tags" placeholder="Ingrese etiquetas ..."
+                     <input type="text" name="tags" id="form-field-tags" placeholder="Ingrese etiquetas."
                             value="<?php foreach ($product->tags as $tag) {
                                 echo $tag->tag_name . ',';
                             } ?>"/>
-                     <span class="help-button" title="Escriba su etiqueta y presione enter">?</span>
+                     <span class="help-button" title="Escriba su etiqueta y presione enter.">?</span>
                   </div>
                   <label>
                      <h4>¿Tiene tamaño?</h4>
@@ -132,7 +136,7 @@
                <label class="ace-file-input">
                   <input type="file" name="photos[]" id="gallery-photo-add" multiple>
                   <span class="ace-file-container" data-title="Choose"><span class="ace-file-name"
-                                                                             data-title="No hay fotos..."><i
+                                                                             data-title="No hay fotos."><i
                                 class=" ace-icon fa fa-upload"></i></span></span>
                </label>
             </div>
@@ -184,7 +188,7 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
-                     <h4 class="widget-title">Categorias</h4>
+                     <h4 class="widget-title">Categorías</h4>
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>

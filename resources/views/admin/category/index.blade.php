@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Lista de las categorias
+   Lista de categorías
 @stop
 @section('extra_css')
    <link rel="stylesheet" href="{{ asset('admin-assets/css/treeview/style.min.css') }}"/>
@@ -67,12 +67,12 @@
                   dataType: "Json",
                   data: {"id": id},
                   success: function ($results) {
-                      alert('category has been successfully deleted');
+                      alert('Se ha eliminado con éxito con la categoría.);
                         location.reload();
                       // console.log($results);
                   },
                   error: function (xhr) {
-                      alert('error, category not deleted');
+                      alert('Error, la categoría no ha sido eliminada.');
                       console.log(xhr.responseText);
                   }
               });

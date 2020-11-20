@@ -7,7 +7,7 @@
 @section('content')
    <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-         <h4>Detalles de la Cuenta</h4>
+         <h4>Detalles de la cuenta</h4>
          <div class="responsive-table">
             <table class="table table-params">
                <tbody>
@@ -50,7 +50,7 @@
                            <li>AREA :</li>
                            <li>AVENIDA :</li>
                            <li>CALLE :</li>
-                           <li>NOM :</li>
+                           <li>NUM :</li>
                            <li>NÚMERO CELULAR :</li>
                            <li>CÓDIGO POSTAL :</li>
                         </ul>
@@ -73,7 +73,7 @@
                      </div>
                   </div>
                @else
-                  <h4>NO TIENES UNA DIRECCIÓN GUARDADA</h4>
+                  <h4>NO TIENE UNA DIRECCIÓN GUARDADA.</h4>
                @endif
             </div>
          </div>

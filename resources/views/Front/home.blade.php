@@ -17,7 +17,7 @@
                      <div class="block-table">
                         <div class="block-table-cell">
                            <div class="title color-defaulttext2">BAÑO, COCINA Y LIMPIEZA</div>
-                           <span class="btn btn-lg btn-underline color-base">¡COMPRA AHORA!</span>
+                           <span class="btn btn-lg btn-underline color-base">¡COMPRAR AHORA!</span>
                         </div>
                      </div>
                   </div>
@@ -30,7 +30,7 @@
                      <div class="block-table">
                         <div class="block-table-cell">
                            <div class="title color-defaulttext2">ELECTROHOGAR</div>
-                           <span class="btn btn-lg btn-underline color-base">¡COMPRA AHORA!</span>
+                           <span class="btn btn-lg btn-underline color-base">¡COMPRAR AHORA!</span>
                         </div>
                      </div>
                   </div>
@@ -45,7 +45,7 @@
                      <div class="block-table">
                         <div class="block-table-cell">
                            <div class="title color-defaulttext2">DECORACIÓN E ILUMINACIÓN</div>
-                           <span class="btn btn-lg btn-underline color-base">¡COMPRA AHORA!</span>
+                           <span class="btn btn-lg btn-underline color-base">¡COMPRAR AHORA!</span>
                         </div>
                      </div>
                   </div>
