@@ -19,13 +19,13 @@ class categorySeeder extends Seeder
 
         for ($i = 0 ; $i < 5  ; $i++ ){
             $names = [
-                'Gear',
-                'Clothing',
-                'Shoes',
-                'Diapering',
-                'Feeding',
-                'Bath',
-                'Toys',
+                'Baño',
+                'Cuarto',
+                'Decoraciones',
+                'Herramientas',
+                'Limpieza',
+                'Cocina',
+                'Jueguetes',
                 'Nursery',
                 'Household',
                 'Grocery'
