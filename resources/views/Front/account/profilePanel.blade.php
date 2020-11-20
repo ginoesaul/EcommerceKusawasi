@@ -35,7 +35,7 @@
             <div class="panel-heading">
                <span class="panel-title">Dirección por defecto</span>
                <a href="{{ route('front.address.edit') }}" class="pull-right btn btn-primary btn-xs ">
-                  {{ $address  ? 'Edit Address' : 'Add New Address' }}
+                  {{ $address  ? 'Editar dirección' : 'Añadir nueva dirección' }}
                </a><br><br>
             </div>
             <div class="panel-body">
@@ -47,10 +47,10 @@
                            <li>APELLIDO:</li>
                            <li>PROVINCIA :</li>
                            <li>CIUDAD :</li>
-                           <li>AREA :</li>
+                           <li>DISTRITO :</li>
                            <li>AVENIDA :</li>
                            <li>CALLE :</li>
-                           <li>NUM :</li>
+                           <li>CANTIDAD :</li>
                            <li>NÚMERO CELULAR :</li>
                            <li>CÓDIGO POSTAL :</li>
                         </ul>
