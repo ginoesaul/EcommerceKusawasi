@@ -60,7 +60,11 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
         //add phone validation
         jQuery.validator.addMethod("phone", function (phone_number, element) {
             phone_number = phone_number.replace(/\s+/g, "");
+<<<<<<< HEAD
             return this.optional(element) || phone_number.length > 9;
+=======
+            return this.optional(element) || phone_number.length < 10 && phone_number.length > 8;
+>>>>>>> Urpi
         }, "Por favor, especifique un número de teléfono válido");
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {
