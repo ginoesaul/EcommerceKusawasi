@@ -1,11 +1,11 @@
 @extends('layout.front.index')
 @section('title')
-   Mis ordenes
+   Mis órdenes
 @endsection
 @section('extra_css')
 @endsection
 @section('content')
-   <center><h2>{{ isset($track) ? "Seguimiento del pedido" : 'Historial de los Pedidos ' }}</h2></center>
+   <center><h2>{{ isset($track) ? "Seguimiento del pedido" : 'Historial de pedidos ' }}</h2></center>
    <table class="table-order-history">
       <thead>
       <tr>
@@ -15,7 +15,7 @@
          <th>Estado de cumplimiento</th>
          <th>Tarjeta de regalo</th>
          <th>Precio total</th>
-         <th>Mostrar las Ordenes</th>
+         <th>Mostrar las órdenes</th>
       </tr>
       </thead>
       <tbody>
@@ -47,13 +47,13 @@
                <div class="th-title visible-xs">Estado de cumplimiento</div>
                @switch($order->order_status)
                   @case(0)
-                  <span class="label badge-normal ">No Completo</span>
+                  <span class="label badge-normal ">Incompleto</span>
                   @break
                   @case(1)
-                  <span class="label label-default arrowed bolder ">No se ha enviado todavía</span>
+                  <span class="label label-default arrowed bolder ">Todavía no se ha enviado.</span>
                   @break
                   @case(2)
-                  <span class="label label-warning bolder ">Ha enviado</span>
+                  <span class="label label-warning bolder ">Ha sido enviado.</span>
                   @break
                   @case(3)
                   <span class="label label-success bolder ">Entregado</span>
@@ -135,7 +135,7 @@
          </tr>
       @empty
          <tr class="text-center">
-            <td colspan="6" class="text-center center "><span class="font-weight-bolder">No se encontró nada</span></td>
+            <td colspan="6" class="text-center center "><span class="font-weight-bolder">No se encontró nada.</span></td>
          </tr>
       @endforelse
       </tbody>

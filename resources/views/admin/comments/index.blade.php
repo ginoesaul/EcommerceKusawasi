@@ -72,7 +72,7 @@
          </tr>
       @empty
          <tr>
-            <td class="center bolder red" colspan="6">No hay comentarios</td>
+            <td class="center bolder red" colspan="6">No hay comentarios.</td>
          </tr>
       @endforelse
       </tbody>

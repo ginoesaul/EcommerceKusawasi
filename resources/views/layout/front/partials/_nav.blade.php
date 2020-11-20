@@ -80,6 +80,7 @@
                         </div>
 
                      @empty
+                     No hay ofertas especiales por el momento.
                      @endforelse
                   </div>
                </div>
@@ -115,6 +116,7 @@
                            </div>
 
                         @empty
+                        No hay productos populares por el momento.
                         @endforelse
 
                      </div>
@@ -142,7 +144,7 @@
                         </div>
 
                      @empty
-                        NO EXISTEN NINGUNA MARCA
+                        No existe ninguna marca por el momento.
                      @endforelse
                   </div>
 

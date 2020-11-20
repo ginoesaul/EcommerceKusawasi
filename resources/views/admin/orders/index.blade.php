@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Lista de los pedidos
+   Lista de pedidos
 @stop
 @section('extra_css')
 @stop
@@ -19,7 +19,7 @@
             <span class="fa fa-search"></span>
          </button>
       </span>
-      <span><i>Buscar por <b>CODIGO DE SEGUIMIENTO</b></i></span>
+      <span><i>Buscar por <b>CÓDIGO DE SEGUIMIENTO</b></i></span>
    </form>
    <div class="">
       <table id="simple-table" class="table table-bordered table-hover table-responsive">
@@ -28,15 +28,15 @@
             <th class="center">
                ID
             </th>
-            <th class="center">Estado del pedido</th>
+            <th class="center">Estado de pedido</th>
             <th class="center">Código de seguimiento</th>
             <th class="center">Pagos</th>
             <th class="center">Dirección</th>
             <th class="center">Clientes</th>
             <th class="center">Nombre del cliente</th>
-            <th class="center">Celuar y correo del cliente</th>
+            <th class="center">Celular y correo electrónico del cliente</th>
             {{--         <th class="center">Nombre del empleado</th>--}}
-            <th class="center">Precio Total</th>
+            <th class="center">Precio total</th>
             <th class="center">Tarjeta de regalo</th>
             <th class="center">Fecha</th>
             <th class="center">Operaciones</th>
