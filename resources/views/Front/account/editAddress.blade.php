@@ -23,12 +23,12 @@
                       id="name" required>
             </div>
             <div class="form-group required">
-               <label for="number" class="control-label">Número: <span>*</span></label>
+               <label for="number" class="control-label">Cantidad: <span>*</span></label>
                <input type="number" value="{{ $address ? $address->number  : '' }}" name="number" class="form-control"
                       id="number" required>
             </div>
             <div class="form-group required">
-               <label for="area" class=" control-label">Área: </label>
+               <label for="area" class=" control-label">Distrito: </label>
                <input type="text" name="area" value="{{ $address ? $address->area  : '' }}" class="form-control"
                       id="area">
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="form-group required">
                <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
-                  <small> +905534676564</small>
+                  <small> Ejemplo 987654321</small>
                </label>
                <input type="text" name="phone_number" value="{{ $address ? $address->phone_number : ''}}"
                       class="form-control" id="phone_number" required>
