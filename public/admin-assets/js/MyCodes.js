@@ -65,10 +65,18 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
 =======
             return this.optional(element) || phone_number.length < 10 && phone_number.length > 8;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Urpi
         }, "Por favor, especifique un número de teléfono válido");
 =======
         }, "Por favor, especifique un número de teléfono válido.");
+>>>>>>> Joss
+=======
+        }, "Por favor, especifique un número de teléfono válido.");
+=======
+>>>>>>> Urpi
+        }, "Por favor, especifique un número de teléfono válido");
+>>>>>>> CarlosRf
 >>>>>>> Joss
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {

@@ -27,7 +27,7 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
         //add text only
         jQuery.validator.addMethod("lettersonly", function (value, element) {
             return this.optional(element) || /^[a-z," "]+$/i.test(value);
-        }, "Solo letras y espacios por favor.");
+        }, "Solo letras y espacios, por favor.");
         $form.validate({
             rules: rules,
             // message: msg,
