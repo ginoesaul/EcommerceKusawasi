@@ -54,7 +54,7 @@ $(document).on('click','.add_to_cart',function (e) {
         .done(function (data) {
             $("#cart_content").empty().append(data.html);
             $("#cart_div").load(location.href + " #cart_div");
-            $('#add_to_cart').text('Added to Cart').css("background-color", "#1B6AAA");
+            $('#add_to_cart').text('Añadir a la cesta').css("background-color", "#1B6AAA");
         })
         .fail(function (jqXHR, ajaxOptions, error) {
             console.log(jqXHR, ajaxOptions, error);
@@ -105,7 +105,7 @@ function deleteCart(e) {
             $("#cart_div").load(location.href + " #cart_div");
         },
         error: function (xhr) {
-            alert('error, server not respond...');
+            alert('error, el servidor no responde...');
         }
     });
 }
@@ -133,7 +133,7 @@ function editCart(e){
         console.log(jqXHR);
         console.log(ajaxOptions);
         console.log(thrownError);
-        alert('error, server not respond...');
+        alert('error, el servidor no responde...');
     });
 }
 

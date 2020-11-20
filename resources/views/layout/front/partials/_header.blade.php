@@ -50,7 +50,7 @@
                         </form>
                      </li>
                   @else
-                     <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar Sesión</a></li>
+                     <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar sesión</a></li>
                      <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Crear cuenta</a></li>
                   @endauth
                </ul>
@@ -75,7 +75,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  <span class="menu-text">MENU</span>
+                  <span class="menu-text">MENÚ</span>
                </div>
             </div>
          </div>
@@ -108,7 +108,7 @@
                   <li class="active"><a href="index.html">Inicio</a></li>
                   <li><a href="faqs.html">Delivery</a></li>
                   <li><a href="blog_listing.html">Blog</a></li>
-                  <li><a href="contact.html">Contacts</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
                </ul>
             </div>
             <!-- /mini-menu -->
@@ -120,7 +120,7 @@
                   <span class="icon icon-call"></span>+300-9876-2345
                </div>
                <div class="time">
-                  7 días a la semana de 9:00 am a 7:00 pm
+                  7 días a la semana de 9:00 a. m. a 7:00 p. m.
                </div>
             </div>
             <!-- /box-info -->
@@ -150,7 +150,7 @@
                   <ul class="dropdown-menu">
                      <li class="active" data-top-value="GBP"><a href="#">GBP - Libra esterlina británica</a></li>
                      <li data-top-value="EUR"><a href="#">EUR - Euro</a></li>
-                     <li data-top-value="USD"><a href="#">USD - US Dollar</a></li>
+                     <li data-top-value="USD"><a href="#">USD - US Dólar</a></li>
                   </ul>
                </div>
             </div>
@@ -211,7 +211,7 @@
                               </form>
                            </li>
                         @else
-                           <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar Sesión</a></li>
+                           <li><a href="{{ route('login') }}"  ><span class="icon icon-lock_outline"></span>Iniciar sesión</a></li>
                            <li><a href="{{ route('register') }}"><span class="icon icon-person_add"></span>Crear cuenta</a></li>
                         @endauth
                      </ul>
@@ -234,7 +234,7 @@
                                     @include('layout.front.partials._cart')
                                  </ul>
                                  @if (Cart::count() == 0)
-                                    <h4 class="empty-cart-js">Tu carrito esta vacio</h4>
+                                    <h4 class="empty-cart-js">Su carrito está vacío.</h4>
                                  @else
                                     <div class="cart-bottom">
                                     <div class="pull-right">
