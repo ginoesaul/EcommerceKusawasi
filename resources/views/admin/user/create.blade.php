@@ -53,7 +53,7 @@
       </div>
 
       <div class="form-group ">
-         <label for="password_confirm" class="bolder bigger-110">{{ __('Confirmar Contraseña') }}</label>
+         <label for="password_confirm" class="bolder bigger-110">{{ __('Confirmar contraseña') }}</label>
          <input id="password_confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
       </div>
 

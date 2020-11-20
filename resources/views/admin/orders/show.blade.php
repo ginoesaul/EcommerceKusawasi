@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Detalles de los pedidos
+   Detalles de pedidos
 @stop
 @section('extra_css')
 @stop
@@ -11,7 +11,7 @@
          <div class="widget-header widget-header-large">
             <h3 class="widget-title grey lighter">
                <i class="ace-icon fa fa-leaf green"></i>
-               Factura del cliente .
+               Factura del cliente.
             </h3>
             <span>
                @if($order->user_id)
@@ -74,10 +74,10 @@
                                  <span>{{ $gift->gift_name }}</span>
                                  <ul class="list-unstyled">
                                     <li><i class="ace-icon fa fa-caret-right blue"></i><b>Precio de regalo:</b><i class="ace-icon fa fa-caret-right green"></i>{{ $gift->gift_amount }}</li>
-                                    <li><i class="ace-icon fa fa-caret-right blue"></i><b>Código de regalo :</b><i class="ace-icon fa fa-caret-right green"></i>{{ $gift->gift_code }}</li>
+                                    <li><i class="ace-icon fa fa-caret-right blue"></i><b>Código de regalo:</b><i class="ace-icon fa fa-caret-right green"></i>{{ $gift->gift_code }}</li>
                                  </ul>
                                  @else
-                                 <span class="label label-yellow label-large">NO HAY TARJETA DE REGALO</span>
+                                 <span class="label label-yellow label-large">No hay tarjeta de regalo.</span>
                               @endif
 
                            </li>
@@ -96,14 +96,14 @@
                            <div class="col-sm-6">
                               <ul class="list-unstyled">
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>NOMBRE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>APELLIDO:</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>APELLIDO :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>PROVINCIA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CIUDAD :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>ÁREA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>AVENIDA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CALLE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NOM :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CELULAR:</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NUM :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CELULAR :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CÓDIGO POSTAL :</li>
                               </ul>
                            </div>
@@ -132,7 +132,7 @@
                   <div class="panel @if ($payment->status) panel-success @else panel-danger @endif ">
                      <div class="panel-heading">
                         <div class="panel-title">
-                           <span class="h4">Payment Info:</span>
+                           <span class="h4">Información de pago:</span>
                               @if ($payment->status )
                                  <span class="label label-success label-large">PAGADO</span>
                               @else
@@ -143,7 +143,7 @@
                      <div class="panel-body">
                         <ul class="list-unstyled">
                            <li><i class="ace-icon fa fa-caret-right blue"></i>Estado : <b>{{ $payment->payment_status }}</b></li>
-                           <li><i class="ace-icon fa fa-caret-right blue"></i>sub total:<b>{{ $payment->sub_total }}</b></li>
+                           <li><i class="ace-icon fa fa-caret-right blue"></i>Subtotal :<b>{{ $payment->sub_total }}</b></li>
                            <li><i class="ace-icon fa fa-caret-right blue"></i>Fecha :<b>{{ $payment->created_at }}</b></li>
                         </ul>
                      </div>
@@ -159,7 +159,7 @@
                      <div class="panel-body">
                         <ul class="list-unstyled">
                            <li><i class="ace-icon fa fa-caret-right blue"></i>Estado : <b>NO PAGADO</b></li>
-                           <li><i class="ace-icon fa fa-caret-right blue"></i>sub total:<b>0</b></li>
+                           <li><i class="ace-icon fa fa-caret-right blue"></i>Subtotal :<b>0</b></li>
                            <li><i class="ace-icon fa fa-caret-right blue"></i>Fecha :<b>---</b></li>
                         </ul>
                      </div>
@@ -174,7 +174,7 @@
                         <th class="center">
                            #
                         </th>
-                        <th class="center">Nombre del Producto</th>
+                        <th class="center">Nombre del producto</th>
                         <th class="center">Tamaño</th>
                         <th class="center">Color</th>
                         <th class="center">Atributos</th>
@@ -232,7 +232,7 @@
                         </tr>
                      @empty
                         <tr>
-                           <td colspan="11">No hay Datos</td>
+                           <td colspan="11">No hay datos.</td>
                         </tr>
                      @endforelse
                      </tbody>
