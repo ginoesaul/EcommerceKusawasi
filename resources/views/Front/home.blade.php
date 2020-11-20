@@ -73,8 +73,12 @@
    <hr>
    
    <hr> 
+<<<<<<< HEAD
+   <--<div class="container" style="margin-top: -0.0rem">
+=======
    <!-- PRODUCTS -->
    <div class="container" style="margin-top: -0.0rem">
+>>>>>>> 24548bdb3dc80211f0b2122ead37afcec7142de8
       <div class="row">
          <div class="filter-isotop">
             <div class="grid" id="products_data">
@@ -88,7 +92,6 @@
          </div>
       </div>
    </div> 
-   <!-/PRODUCTS -->
 
     <input type="hidden" id="lastPage" value="{{ $products->lastPage() }}">
 @endsection

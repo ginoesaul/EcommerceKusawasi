@@ -18,7 +18,7 @@
       <div class="row">
          <div class="col-sm-6">
             <div class="form-group required">
-               <label for="name" class=" control-label">Primer nombre: <span>*</span></label>
+               <label for="name" class=" control-label">Nombre: <span>*</span></label>
                <input type="text" value="{{ $address ? $address->name  : ''}}" name="name" class="form-control"
                       id="name" required>
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="form-group required">
                <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
-                  <small> Ejemplo 987654321</small>
+                  <small> Ejemplo: 987654321</small>
                </label>
                <input type="text" name="phone_number" value="{{ $address ? $address->phone_number : ''}}"
                       class="form-control" id="phone_number" required>
@@ -131,7 +131,7 @@
                    },
                };
            if (upload_ajax("{{ route('front.address.update')}}", data, "front_address_edit", rules)) {
-               alert('update successfully');
+               alert('Actualizado con éxito.');
                var pjax = new Pjax({
                    selectors: ["title", "meta[name=keywords]", "#extra_css", "#content-load", "#extra_js"]
                });

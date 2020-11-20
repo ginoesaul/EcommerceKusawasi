@@ -9,7 +9,7 @@
          <div class="widget-header widget-header-large">
             <h3 class="widget-title grey lighter">
                <i class="ace-icon fa fa-leaf green"></i>
-               Buscar Código:<span>#{{ $order->track_code}}</span>
+               Código a buscar:<span> #{{ $order->track_code}}</span>
                <span class="pull-right">Fecha: <span class="">{{ $order->created_at }}</span></span>
             </h3>
             {{--<div class="widget-toolbar hidden-480">
@@ -64,7 +64,7 @@
                                     </li>
                                  </ul>
                               @else
-                                 <span class="badge badge-warning">NO HAY TARJETA DE REGALO.</span>
+                                 <span class="badge badge-warning">NO HAY TARJETA DE REGALO</span>
                               @endif
 
                            </li>
@@ -75,7 +75,7 @@
                   <div class="col-sm-6">
                      <div class="row">
                         <div class="col-xs-11 label label-lg label-success arrowed-in arrowed-right">
-                           <b>Invoice Address</b>
+                           <b>Dirección de facturación</b>
                         </div>
                      </div>
                      @if ($address = $order->address)
@@ -139,7 +139,7 @@
                      </div>
                   </div>
                @else
-                  <h2><span>Pago:</span><span class="label label-warning">NADA DE PAGOS</span></h2>
+                  <h2><span>Pago:</span><span class="label label-warning">No hay pagos pendientes.</span></h2>
                @endif
 
 
