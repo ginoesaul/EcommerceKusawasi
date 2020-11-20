@@ -80,12 +80,12 @@
             <th>@lang('models/products.fields.buy_price')</th>
             <th>@lang('models/products.fields.sale_price')</th>
             <th>@lang('models/products.fields.status')</th>
-            {{--         <th>Available Date</th>--}}
+            {{--         <th>Fecha disponible</th>--}}
             <th class="center">@lang('models/products.fields.is_off')?</th>
-            {{--         <th class="smaller-80">Price Of Off</th>--}}
+            {{--         <th class="smaller-80">Precio de descuento</th>--}}
             <th class="smaller-80">@lang('models/categories.plural')</th>
             <th class="smaller-80">@lang('models/colors.plural')</th>
-            {{--         <th class="smaller-80">Made In</th>--}}
+            {{--         <th class="smaller-80">Hecho en</th>--}}
             <th class="smaller-80">@lang('models/products.fields.description')</th>
             <th>@lang('models/products.fields.cover')</th>
             <th class="smaller-80">@lang('models/products.fields.created_at')</th>
