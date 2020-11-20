@@ -24,18 +24,18 @@
          @endif
          <div class="col-xs-12">
             <div class="form-group col-xs-3">
-               <label class="control-label no-padding-right" for="product_name"> Product Name </label>
-               <input placeholder="Product Name" name="product_name"
+               <label class="control-label no-padding-right" for="product_name"> Nombre del productos</label>
+               <input placeholder="Nombre del producto" name="product_name"
                       value="{{ old('product_name',$product->product_name) }}" id="product_name" class="form-control"
                       type="text">
             </div>
             <div class="form-group col-xs-3">
-               <label class="control-label no-padding-right" for="made_in"> Made IN: </label>
-               <input placeholder="Made IN" name="made_in" value="{{ old('made_in',$product->made_in) }}" id="made_in"
+               <label class="control-label no-padding-right" for="made_in"> Hecho en: </label>
+               <input placeholder="Hecho en" name="made_in" value="{{ old('made_in',$product->made_in) }}" id="made_in"
                       class="form-control" type="text">
             </div>
             <div class="form-group col-xs-3">
-               <label for="brand_id">Choose your brands</label>
+               <label for="brand_id">Escoge tu marca</label>
                <select name="brand_id" id="brand_id" class="form-control">
                   @foreach($brands as $brand)
                      <option {{ $product->brand_id == $brand->brand_id ? "selected" : '' }} value="{{ $brand->brand_id }}">{{ $brand->brand_name }}</option>
@@ -43,7 +43,7 @@
                </select>
             </div>
             <div class="form-group  col-xs-3">
-               <label class=" control-label no-padding-right" for="product_slug"> Product Slug </label>
+               <label class=" control-label no-padding-right" for="product_slug"> Slug del producto</label>
                <input placeholder="Product Slug" id="product_slug" name="product_slug"
                       value="{{ old('product_slug',$product->product_slug) }}" class="form-control" type="text">
             </div>
@@ -51,35 +51,35 @@
 
          <div class="form-group col-xs-12">
             <div class="col-xs-3">
-               <label class=" control-label no-padding-right" for="sale_price"> Sale Price </label>
-               <input placeholder="Sale Price" name="sale_price" value="{{ old('sale_price',$product->sale_price) }}"
+               <label class=" control-label no-padding-right" for="sale_price"> Precio de venta </label>
+               <input placeholder="Precio de venta" name="sale_price" value="{{ old('sale_price',$product->sale_price) }}"
                       id="sale_price" class="form-control" min="0" type="number">
             </div>
             <div class="col-xs-3">
-               <label class=" control-label no-padding-right" for="buy_price"> Buy Price </label>
-               <input placeholder="Buy Price" name="buy_price" value="{{ old('buy_price',$product->buy_price) }}"
+               <label class=" control-label no-padding-right" for="buy_price"> Precio de compra </label>
+               <input placeholder="Precio de compra" name="buy_price" value="{{ old('buy_price',$product->buy_price) }}"
                       id="buy_price" class="form-control" min="0" type="number">
             </div>
             <div class="col-xs-3">
-               <label for="quantity">Quantity</label>
-               <input placeholder="Quantity" type="number" value="{{ old("quantity",$product->quantity) }}" min="0"
+               <label for="quantity">Cantidad</label>
+               <input placeholder="Cantidad" type="number" value="{{ old("quantity",$product->quantity) }}" min="0"
                       name="quantity" class="form-control" id="quantity">
             </div>
             <div class="col-xs-3">
-               <label for="weight">Weight</label>
-               <input placeholder="weight" type="number" value="{{ old("weight",$product->weight) }}" min="0"
+               <label for="weight">Peso</label>
+               <input placeholder="peso" type="number" value="{{ old("weight",$product->weight) }}" min="0"
                       name="weight" class="form-control" id="weight">
             </div>
          </div>
          <div class="col-xs-12 form-group">
-            <label for="description">Description</label>
+            <label for="description">Descripción</label>
             <textarea id="description" rows="6" class="form-control"
                       name="description">{{ old('description',$product->description) }}</textarea>
          </div>
          <div class="form-group col-xs-6">
             <div class="col-sm-4">
 
-               <label><h4>Available ? </h4>
+               <label><h4>¿Disponible?</h4>
                   <input type="checkbox" name="status" id="status" onclick=''
                          class="ace ace-switch ace-switch-5" {{ $product->status == 1 ? 'checked': '' }} >
                   <span class="lbl"></span>
@@ -93,12 +93,12 @@
             </div>
             <div class="col-sm-8">
                <div class="available0">
-                  <label for="data_available"><b>Available Date</b></label>
+                  <label for="data_available"><b>Fecha disponible</b></label>
                   <input id="data_available" name="data_available" class="form-control"
                          value="{{ old('data_available',$product->data_available) }}" type="date"/>
                </div>
                <div class="div-discount">
-                  <label for="off_price"><b>Amount of Discount:</b></label>
+                  <label for="off_price"><b>Cantidad de descuento:</b></label>
                   <input id="off_price" name="off_price" class="form-control" min="0"
                          value="{{ old('off_price',$product->off_price) }}" type="number">
                </div>
@@ -106,14 +106,14 @@
          </div>
          <div class="form-group col-xs-6">
             <div class="form-group">
-               <label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Tag input</label>
+               <label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Entrada de etiqueta</label>
                <div class="col-sm-9">
                   <div class="inline">
-                     <input type="text" name="tags" id="form-field-tags" placeholder="Enter tags ..."
+                     <input type="text" name="tags" id="form-field-tags" placeholder="Ingrese etiquetas ..."
                             value="<?php foreach ($product->tags as $tag) {
                                 echo $tag->tag_name . ',';
                             } ?>"/>
-                     <span class="help-button" title="Type your tag and press enter">?</span>
+                     <span class="help-button" title="Escriba su etiqueta y presione enter">?</span>
                   </div>
                   <label>
                      <h4>Has Size ? </h4>
@@ -128,11 +128,11 @@
          <div class="form-group col-xs-12">
             <div class="col-xs-6">
                <!-- file input -->
-               <label for="photos">Photos</label>
+               <label for="photos">Fotos</label>
                <label class="ace-file-input">
                   <input type="file" name="photos[]" id="gallery-photo-add" multiple>
                   <span class="ace-file-container" data-title="Choose"><span class="ace-file-name"
-                                                                             data-title="No Photos ..."><i
+                                                                             data-title="No hay fotos..."><i
                                 class=" ace-icon fa fa-upload"></i></span></span>
                </label>
             </div>
@@ -184,7 +184,7 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
-                     <h4 class="widget-title">Categories</h4>
+                     <h4 class="widget-title">Categorias</h4>
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>
@@ -207,7 +207,7 @@
             <div class="col-xs-6">
                <div class="widget-box">
                   <div class="widget-header">
-                     <h4 class="widget-title">Colors of product</h4>
+                     <h4 class="widget-title">Colores del producto</h4>
                      <div class="widget-toolbar">
                         <a href="#" data-action="collapse">
                            <i class="ace-icon fa fa-chevron-up"></i>
@@ -235,7 +235,7 @@
                <input type="submit" class="btn btn-success btn-block" id="submit" value="SAVE">
             </div>
             <div class="col-xs-6">
-               <a class="btn btn-danger btn-block" onclick="history.back()">Cancel</a>
+               <a class="btn btn-danger btn-block" onclick="history.back()">Cancelar</a>
             </div>
          </div>
       </form>
