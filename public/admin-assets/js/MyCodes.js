@@ -9,7 +9,7 @@
 function deleteAjax(url,cls,msg = '') {
     $("."+ cls).click(function (e) {
         e.preventDefault();
-        if (!confirm('¿ESTAS SEGURO QUE QUIERES ELIMINARLO?')) {
+        if (!confirm('¿Está seguro que quiere eliminarlo??')) {
             return false
         }
         var obj = $(this); // first store $(this) in obj
@@ -61,7 +61,7 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
         jQuery.validator.addMethod("phone", function (phone_number, element) {
             phone_number = phone_number.replace(/\s+/g, "");
             return this.optional(element) || phone_number.length < 10 && phone_number.length > 8;
-        }, "Por favor, especifique un número de teléfono válido");
+        }, "Por favor, especifique un número de teléfono válido.");
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {
             return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);

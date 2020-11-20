@@ -12,7 +12,7 @@
          <div class="row">
             <div class="col-sm-6">
                <div class="form-group required">
-                  <label for="name" class=" control-label">Primer nombre: <span>*</span></label>
+                  <label for="name" class=" control-label">Nombre: <span>*</span></label>
                   <input type="text" value="{{  $address->name }}" name="name" class="form-control" id="name" required>
                </div>
                <div class="form-group required">
@@ -53,7 +53,7 @@
                </div>
                <div class="form-group required">
                   <label for="phone_number" class=" control-label">Celular: <span>*</span>
-                     <small>Ejemplo 987654321 </small></label>
+                     <small>Ejemplo: 987654321 </small></label>
                   <input type="text" name="phone_number" value="{{  $address->phone_number  }}" class="form-control" id="phone_number" required>
                </div>
 
