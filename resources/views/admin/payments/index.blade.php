@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Payments
+   Pagos
 @endsection
 @section('extra_css')
 @endsection
@@ -8,14 +8,14 @@
    <table id="simple-table" class="table table-hover table-responsive table-bordered">
       <thead class="table-header">
       <tr class="info">
-         <td class="center">id</td>
-         <td class="center">User</td>
-         <td class="center">Order</td>
-         <td class="center">sub total</td>
-         <td class="center">Status</td>
-         <td class="center">Payment Status</td>
-         <td class="center">Data</td>
-{{--         <td class="center">Operations</td>--}}
+         <td class="center">ID</td>
+         <td class="center">Usuario</td>
+         <td class="center">Orden</td>
+         <td class="center">Subtotal</td>
+         <td class="center">Estado</td>
+         <td class="center">Estado de pago</td>
+         <td class="center">Fecha</td>
+{{--         <td class="center">Operaciones</td>--}}
       </tr>
       </thead>
       <tbody>
@@ -27,7 +27,7 @@
                @if ($payment->users)
                   <a href="{{ route('user.show',$payment->user_id) }}">{{ $payment->users->name }}</a>3
                   @else
-                  <span class="label label-default">GUEST</span>
+                  <span class="label label-default">INVITADO</span>
                @endif
             </td>
             <td class="center">
@@ -36,9 +36,9 @@
             <td class="center">{{ $payment->sub_total }}</td>
             <td class="center">
                @if ($payment->status )
-                  <span class="label label-success label-large">PAID</span>
+                  <span class="label label-success label-large">PAGADO</span>
                @else
-                  <span class="label label-danger label-large">NOT-PAID</span>
+                  <span class="label label-danger label-large">NO PAGADO</span>
                @endif
 
             </td>
@@ -50,7 +50,7 @@
 
       @empty
          <tr>
-            <td colspan="9">NO Data</td>
+            <td colspan="9">No hay datos.</td>
          </tr>
       @endforelse
       </tbody>

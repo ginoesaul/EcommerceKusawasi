@@ -1,6 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-   Crear Categoría
+   Crear categoría
 @stop
 @section('extra_css')
 @stop
@@ -25,7 +25,7 @@
          <label class="bolder bigger-110" for="Category">Padre de la categoria </label>
          <select name="parent_id" id="Category" class="form-control">
             @if(count($allCategories) == 0)
-               <option disabled="">NO HAY CATEGORIAS</option>
+               <option disabled="">No hay categorías.</option>
             @else
                <option value="">Padre de la categoria</option>
                @foreach($allCategories as $Category)

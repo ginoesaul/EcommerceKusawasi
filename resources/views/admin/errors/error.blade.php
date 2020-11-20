@@ -31,7 +31,7 @@
                   </h1>
 
                   <hr/>
-                  <h3 class="lighter smaller">Para más información, por favor contacte con la administración.</h3>
+                  <h3 class="lighter smaller">Para más información, por favor, contacte con la administración.</h3>
 
                   <div>
                      <div class="space"></div>
@@ -40,17 +40,17 @@
                      <ul class="list-unstyled spaced inline bigger-110 margin-15">
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Vuelve a comprobar la url para ver si hay errores tipográficos.
+                           Vuelva a comprobar la URL para ver si hay errores tipográficos.
                         </li>
 
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Lea las preguntas frecuentes
+                           Lea las preguntas frecuentes.
                         </li>
 
                         <li>
                            <i class="ace-icon fa fa-hand-o-right blue"></i>
-                           Háblenos de ello
+                           Háblenos de ello.
                         </li>
                      </ul>
                   </div>
