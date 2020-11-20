@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Mis órdenes
+   Mis pedidos
 @endsection
 @section('extra_css')
 @endsection
@@ -168,7 +168,7 @@
                };
                if (upload_ajax("{{ route('front.cancel.order') }}", data)) {
                    alert('your order has been canceled');
-                   $(this).closest("tr").find('.status_').empty().append('<span class="label bg-brown">Canceled</span>');
+                   $(this).closest("tr").find('.status_').empty().append('<span class="label bg-brown">Cancelado</span>');
                    $(this).closest('div').remove();
 
                }

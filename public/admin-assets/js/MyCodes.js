@@ -9,7 +9,7 @@
 function deleteAjax(url,cls,msg = '') {
     $("."+ cls).click(function (e) {
         e.preventDefault();
-        if (!confirm('ARE YOU SURE TO DELETE IT?')) {
+        if (!confirm('¿ESTAS SEGURO QUE QUIERES ELIMINARLO?')) {
             return false
         }
         var obj = $(this); // first store $(this) in obj
@@ -60,17 +60,17 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
         //add phone validation
         jQuery.validator.addMethod("phone", function (phone_number, element) {
             phone_number = phone_number.replace(/\s+/g, "");
-            return this.optional(element) || phone_number.length > 10 &&
-                phone_number.match(/^\+[0-9]{12}$/);
-        }, "Please specify a valid phone number");
+            return this.optional(element) || phone_number.length > 9 &&
+                phone_number.match(/^\+[0-9]{9}$/);
+        }, "Por favor, especifique un número de teléfono válido");
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {
-            return this.optional(element) || /^\d{10}(?:-\d{4})?$/.test(value);
-        }, "Please provide a valid postal Code.");
+            return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
+        }, "Por favor, proporcione un código postal válido.");
         //add text only
         jQuery.validator.addMethod("lettersonly", function (value, element) {
             return this.optional(element) || /^[a-z," "]+$/i.test(value);
-        }, "Letters and spaces only please");
+        }, "Solo letras y espacios por favor");
         $form.validate({
             rules: rules,
             // message: msg,
