@@ -27,7 +27,7 @@
             <div class="form-group">
                <label class="control-label"></label>
                <button type="submit" class="btn btn-primary">
-                  {{ __('Enviar enlace de restablecimiento de contraseña') }}
+                  {{ __('Enviar enlace de restablecimiento de contraseña.') }}
                </button>
             </div>
          </div>
