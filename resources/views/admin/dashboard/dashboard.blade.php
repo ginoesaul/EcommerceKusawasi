@@ -177,21 +177,21 @@
                      <div class="grid3">
                         <span class="grey">
                            <i class="ace-icon fa fa-user fa-2x blue"></i>
-                            Users</span>
+                            Usuarios</span>
                         <h4 class="bigger pull-right">{{ $menu_count['users'] }}</h4>
                      </div>
 
                      <div class="grid3">
                         <span class="grey">
                            <i class="ace-icon fa fa-user-times fa-2x purple"></i>
-                           Employees
+                           Empelados
                         </span>
                         <h4 class="bigger pull-right">{{ $employees }}</h4>
                      </div>
 
                      <div class="grid3">
                         <span class="grey"><i class="ace-icon fa fa-user-plus fa-2x red"></i>
-                           New Users
+                           Nuevo usuarios
                         </span>
                         <h4 class="bigger pull-right">{{ $new_users }}</h4>
                      </div>
@@ -209,7 +209,7 @@
             <div class="widget-header widget-header-flat">
                <h4 class="widget-title lighter">
                   <i class="ace-icon fa fa-product-hunt"></i>
-                  <b> Products:</b>
+                  <b> Productos:</b>
                </h4>
 
                <div class="widget-toolbar">
@@ -268,7 +268,7 @@
 
                         <div class="infobox-data">
                            <span class="infobox-data-number">{{ $product_news }}</span>
-                           <div class="infobox-content">productos de la semana pasada</div>
+                           <div class="infobox-content">Productos de la semana pasada</div>
                         </div>
                      </div>
 
@@ -285,7 +285,7 @@
             <div class="widget-header widget-header-flat">
                <h4 class="widget-title lighter">
                   <i class="ace-icon fa fa-product-hunt"></i>
-                  <b>Popular Products:</b>
+                  <b>Productos Populares:</b>
                </h4>
 
                <div class="widget-toolbar">

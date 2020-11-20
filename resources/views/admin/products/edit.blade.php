@@ -232,7 +232,7 @@
          </div>
          <div class="col-xs-12">
             <div class="col-xs-6">
-               <input type="submit" class="btn btn-success btn-block" id="submit" value="SAVE">
+               <input type="submit" class="btn btn-success btn-block" id="submit" value="GUARDAR">
             </div>
             <div class="col-xs-6">
                <a class="btn btn-danger btn-block" onclick="history.back()">Cancelar</a>
