@@ -4,11 +4,11 @@
          <div class="row">
             <div class="col-sm-6 col-md-3">
                <div class="mobile-collapse">
-                  <h4 class="mobile-collapse_title visible-xs">ENVIO GRATIS</h4>
+                  <h4 class="mobile-collapse_title visible-xs">ENVÍO GRATIS</h4>
                   <div class="mobile-collapse_content">
                      <a href="#" class="services-block">
                         <span class="icon icon-airplanemode_active"></span>
-                        <div class="title">Envio gratis</div>
+                        <div class="title">Envío gratis</div>
                         <p>Descuento en todos los productos</p>
                      </a>
                   </div>
@@ -28,11 +28,11 @@
             </div>
             <div class="col-sm-6 col-md-3">
                <div class="mobile-collapse">
-                  <h4 class="mobile-collapse_title visible-xs">FREE RETURNS</h4>
+                  <h4 class="mobile-collapse_title visible-xs">DEVOLUCIONES GRATUITAS</h4>
                   <div class="mobile-collapse_content">
                      <a href="#" class="services-block">
                         <span class="icon icon-assignment_return"></span>
-                        <div class="title">DEVOLUCIONES GRATIS</div>
+                        <div class="title">Devoluciones gratuitas</div>
                         <p>Devuélvelo gratis en 30 días</p>
                      </a>
                   </div>
@@ -62,6 +62,6 @@
    </div>
    <a href="#" class="back-to-top">
       <span class="icon icon-keyboard_arrow_up"></span>
-      <span class="text">VOLVER ARRIBA</span>
+      <span class="text">IR ARRIBA</span>
    </a>
 </footer>

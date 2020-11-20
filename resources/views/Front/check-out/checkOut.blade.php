@@ -105,7 +105,7 @@
             <div class="row">
                <div class="col-sm-3">
                   <div class="form-group required">
-                     <label for="client_name" class="control-label">Tu nombre: <span>*</span></label>
+                     <label for="client_name" class="control-label">Su nombre: <span>*</span></label>
                      <input type="text" name="client_name" class="form-control"
                             id="client_name" placeholder="Shipper Name" maxlength="15" minlength="3"
                             value="{{ auth()->check() ? auth()->user()->name : '' }}"
@@ -114,7 +114,7 @@
                </div>
                <div class="col-sm-4">
                   <div class="form-group required">
-                     <label for="inputStreet" class=" control-label">Número Telefónico: <span>*</span>
+                     <label for="inputStreet" class=" control-label">Número telefónico: <span>*</span>
                         <small> +905534676564</small>
                      </label>
                      <input type="text" name="client_phone" class="form-control" id="clientPhoneNumber"
@@ -123,7 +123,7 @@
                </div>
                <div class="col-sm-5">
                   <div class="form-group required">
-                     <label for="email" class="control-label">Email: <span>*</span></label>
+                     <label for="email" class="control-label">E-mail: <span>*</span></label>
                      <input type="email" name="client_email" class="form-control" id="clientEmail"
                             required value="{{ auth()->check() ? auth()->user()->email : '' }}">
                   </div>
@@ -144,13 +144,13 @@
                            <span id="error-gift" class="invalid-feedback font-weight-bolder" role="alert"></span>
                         </div>
                      @else()
-                        <h5>para usar la tarjeta de regalo, por favor <a href="{{ route('login') }}">Iniciar Sesión</a></h5>
+                        <h5>Para usar la tarjeta de regalo, por favor, <a href="{{ route('login') }}">Iniciar Sesión</a></h5>
                      @endauth
                   </div>
                   @if (\Cart::count() > 0)
                      <button class="btn btn-primary nextBtn pull-right" id="first_step" type="button">Siguiente</button>
                   @else
-                     <h4>TU CARRITO ESTÁ VACÍO</h4>
+                     <h4>SU CARRITO ESTÁ VACÍO.</h4>
                   @endif
                </div>
 
@@ -170,7 +170,7 @@
                <div class="row">
                   <div class="col-sm-6">
                      <div class="form-group required">
-                        <label for="name" class=" control-label">Primer Nombre: <span>*</span></label>
+                        <label for="name" class=" control-label">Primer nombre: <span>*</span></label>
                         <input type="text" value="{{ isset($address) ? $address->name : '' }}" name="name"
                                class="form-control" id="name" required>
                      </div>
@@ -201,7 +201,7 @@
                               <label for="def_addr">
                                  <span class="check"></span>
                                  <span class="box"></span>
-                                 guardar esta dirección como mi dirección
+                                 Guardar esta dirección como mi dirección.
                               </label>
                            </div>
                         @endauth
@@ -336,7 +336,7 @@
                   <h4>Con PayPal<i class="fa fa-paypal"></i></h4>
                </div>
                <div class="form-group">
-                  <h6 class="control-label">Redireccionar a la página de pago</h6>
+                  <h6 class="control-label">Redireccionar a la página de pago.</h6>
                   <a href="{{ route('payment') }}" class="btn pull-left" id="payment">Pago</a>
                </div>
 

@@ -11,7 +11,7 @@
             <div class="widget-header widget-header-flat widget-header-small">
                <h5 class="widget-title">
                   <i class="ace-icon fa fa-signal"></i>
-                  <b>Ordenes</b>
+                  <b>Órdenes</b>
                </h5>
             </div>
             <div class="widget-body">
@@ -25,7 +25,7 @@
 
                      <div class="infobox-data">
                         <span class="infobox-data-number">{{ $menu_count['orders']  }}</span>
-                        <div class="infobox-content">Todas las ordenes</div>
+                        <div class="infobox-content">Todas las órdenes</div>
                      </div>
 
                      {{--                        <div class="stat stat-success"></div>--}}
@@ -53,7 +53,7 @@
 
                      <div class="infobox-data">
                         <span class="infobox-data-number">{{$order_news}}</span>
-                        <div class="infobox-content">Nuevas Oredenes</div>
+                        <div class="infobox-content">Nuevas órdenes</div>
                      </div>
                   </div>
 
@@ -64,7 +64,7 @@
 
                      <div class="infobox-data">
                         <span class="infobox-data-number">{{ $order_not_complete }}</span>
-                        <div class="infobox-content">No completado </div>
+                        <div class="infobox-content">No completado.</div>
                      </div>
                      {{--                        <div class="stat stat-important">4%</div>--}}
                   </div>
@@ -144,7 +144,7 @@
 
                         <div class="infobox-data">
                            <span class="infobox-data-number">{{ $payment_failed }}</span>
-                           <div class="infobox-content">Pagos invalidos</div>
+                           <div class="infobox-content">Pagos inválidos</div>
                         </div>
                      </div>
 
@@ -184,14 +184,14 @@
                      <div class="grid3">
                         <span class="grey">
                            <i class="ace-icon fa fa-user-times fa-2x purple"></i>
-                           Empelados
+                           Empleados
                         </span>
                         <h4 class="bigger pull-right">{{ $employees }}</h4>
                      </div>
 
                      <div class="grid3">
                         <span class="grey"><i class="ace-icon fa fa-user-plus fa-2x red"></i>
-                           Nuevo usuarios
+                           Nuevos usuarios
                         </span>
                         <h4 class="bigger pull-right">{{ $new_users }}</h4>
                      </div>
@@ -333,7 +333,7 @@
 
                            <td class="hidden-480">
                               @if($product->status == 0 )
-                                 <span class="label label-danger arrowed-right arrowed-in">¡Termino!</span>
+                                 <span class="label label-danger arrowed-right arrowed-in">¡Terminó!</span>
                               @else
                                  <span class="label label-info arrowed-right arrowed-in">En venta</span>
                               @endif
@@ -341,7 +341,7 @@
                         </tr>
                      @empty
                         <tr>
-                           <td colspan="3">No hay datos</td>
+                           <td colspan="3">No hay datos.</td>
                         </tr>
                      @endforelse
 

@@ -38,7 +38,7 @@
                      @if($product->status == 1)
                         <td class="text-right text-success">Disponible</td>
                      @else
-                        <td class="text-right text-danger"> No Disponible</td>
+                        <td class="text-right text-danger"> No disponible</td>
                      @endif
                      <td class="text-center">
                         <img src="{{ $product->brands->src }}" class="img-thumbnail" alt="brand logo">
@@ -60,7 +60,7 @@
                @empty
                   <tr>
                      <td colspan="6">
-                        ¡Su lista de favoritos está vacio!
+                        ¡Su lista de favoritos está vacía!
                      </td>
                   </tr>
                @endforelse

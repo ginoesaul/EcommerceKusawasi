@@ -11,7 +11,7 @@
          <h1 class="block-title large">¡El servicio no está disponible!</h1>
          <div class="description">
             {{ $exception->getMessage() }}
-            <p>Ooops, se produjo un error en el servidor.</p> Por favor, compruébelo más tarde.
+            <p>Lo sentimos, se produjo un error en el servidor.</p> Por favor, compruébelo más tarde.
          </div>
          <a class="btn btn-border color-default" href="{{ route('home') }}">PÁGINA DE INICIO</a>
       </div>

@@ -86,13 +86,13 @@
                      <li class="text-right">
                         <a href="#" class="wishlist-link">
                            <span class="fa fa-heart-o"></span>
-                           <span class="text">Añadir a favoritos</span>
+                           <span class="text">Añadir a Favoritos</span>
                         </a>
                      </li>
                      <li class="text-left">
                         <a href="#" class="compare-link">
                            <span class="fa fa-balance-scale"></span>
-                           <span class="text">Añadir a comparar</span>
+                           <span class="text">Añadir a Comparar</span>
                         </a>
                      </li>
                      <li>
