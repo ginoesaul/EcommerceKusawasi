@@ -75,7 +75,7 @@
                   <div class="col-sm-6">
                      <div class="row">
                         <div class="col-xs-11 label label-lg label-success arrowed-in arrowed-right">
-                           <b>Invoice Address</b>
+                           <b>Dirección de facturación</b>
                         </div>
                      </div>
                      @if ($address = $order->address)

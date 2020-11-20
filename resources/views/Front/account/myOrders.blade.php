@@ -15,7 +15,7 @@
          <th>Estado de cumplimiento</th>
          <th>Tarjeta de regalo</th>
          <th>Precio total</th>
-         <th>Mostrar las órdenes</th>
+         <th>Mostrar órdenes</th>
       </tr>
       </thead>
       <tbody>

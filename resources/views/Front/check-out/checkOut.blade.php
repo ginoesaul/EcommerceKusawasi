@@ -105,16 +105,16 @@
             <div class="row">
                <div class="col-sm-3">
                   <div class="form-group required">
-                     <label for="client_name" class="control-label">Su nombre: <span>*</span></label>
+                     <label for="client_name" class="control-label">Nombre: <span>*</span></label>
                      <input type="text" name="client_name" class="form-control"
-                            id="client_name" placeholder="Shipper Name" maxlength="15" minlength="3"
+                            id="client_name" placeholder="Nombre del remitente" maxlength="15" minlength="3"
                             value="{{ auth()->check() ? auth()->user()->name : '' }}"
                             required>
                   </div>
                </div>
                <div class="col-sm-4">
                   <div class="form-group required">
-                     <label for="inputStreet" class=" control-label">Número telefónico: <span></span>
+                     <label for="inputStreet" class=" control-label">Número de celular: <span></span>
                         <small> Ejemplo: 987654321</small>
                      </label>
                      <input type="text" name="client_phone" class="form-control" id="clientPhoneNumber"
