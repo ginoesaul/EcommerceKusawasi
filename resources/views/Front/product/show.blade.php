@@ -163,7 +163,7 @@
                   <!-- SIZE -->
                   @if ($product->has_size)
                         <div class="wrapper">
-                           <div class="title-options">SIZE<span class="color-required">*</span></div>
+                           <div class="title-options">TAMAÑO<span class="color-required">*</span></div>
                            <ul class="tags-list _size">
                               <li><a href="#" size="XS">XS</a></li>
                               <li><a href="#" size="S">S</a></li>
