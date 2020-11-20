@@ -22,7 +22,7 @@
             </span>
 
             <div class="widget-toolbar no-border invoice-info">
-               <span class="invoice-info-label">Código de seguimiento:</span>
+               <span class="invoice-info-label">Código de seguimiento</span>
                <span class="red bolder">#{{ $order->track_code }}</span>
 
                <br/>
