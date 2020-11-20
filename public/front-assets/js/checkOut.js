@@ -19,15 +19,15 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
         jQuery.validator.addMethod("phone", function (phone_number, element) {
             phone_number = phone_number.replace(/\s+/g, "");
             return this.optional(element) || phone_number.length < 10 && phone_number.length > 8
-        }, "Por favor, especifique un número de teléfono válido");
+        }, "Por favor, especifique un número de teléfono válido.");
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {
             return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
-        }, "Por favor, proporcione un código postal válido");
+        }, "Por favor, proporcione un código postal válido.");
         //add text only
         jQuery.validator.addMethod("lettersonly", function (value, element) {
             return this.optional(element) || /^[a-z," "]+$/i.test(value);
-        }, "Solo letras y espacios por favor");
+        }, "Solo letras y espacios por favor.");
         $form.validate({
             rules: rules,
             // message: msg,
@@ -86,7 +86,7 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
             $(".ajax-load").hide();
         },
         error: function (request, status, error) {
-            alert('server not responding....' + error);
+            alert('Servidor no responde: ' + error);
             console.log(error,request,status);
             $(".ajax-load").hide();
         }

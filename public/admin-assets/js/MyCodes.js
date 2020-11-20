@@ -9,7 +9,7 @@
 function deleteAjax(url,cls,msg = '') {
     $("."+ cls).click(function (e) {
         e.preventDefault();
-        if (!confirm('¿ESTAS SEGURO QUE QUIERES ELIMINARLO?')) {
+        if (!confirm('¿Está seguro que quiere eliminarlo??')) {
             return false
         }
         var obj = $(this); // first store $(this) in obj
@@ -64,8 +64,12 @@ function upload_ajax(url, data, formId = null, rules = null, msg) {
             return this.optional(element) || phone_number.length > 9;
 =======
             return this.optional(element) || phone_number.length < 10 && phone_number.length > 8;
+<<<<<<< HEAD
 >>>>>>> Urpi
         }, "Por favor, especifique un número de teléfono válido");
+=======
+        }, "Por favor, especifique un número de teléfono válido.");
+>>>>>>> Joss
         //add post code validation
         jQuery.validator.addMethod("post_code", function (value, element) {
             return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);

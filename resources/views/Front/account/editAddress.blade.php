@@ -70,7 +70,7 @@
             </div>
             <div class="form-group required">
                <label for="phone_number" class=" control-label">Número de celular: <span>*</span>
-                  <small> Ejemplo 987654321</small>
+                  <small> Ejemplo: 987654321</small>
                </label>
                <input type="text" name="phone_number" value="{{ $address ? $address->phone_number : ''}}"
                       class="form-control" id="phone_number" required>
