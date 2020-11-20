@@ -16,7 +16,7 @@
          <th class="center">Provincia</th>
          <th class="center">Cantidad</th>
          <th class="center">Código</th>
-         <th class="center">operaciones</th>
+         <th class="center">Operaciones</th>
       </tr>
       </thead>
       <tbody>
