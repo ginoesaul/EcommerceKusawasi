@@ -17,7 +17,7 @@
             {{ number_format($cart->price) }}
          </div>
          <div class="qty">
-            <div class="qty-label">Qty:</div>
+            <div class="qty-label">Cantidad:</div>
             <form class="cart_edit_form" method="post" action="{{ route('cart.update') }}" data-id="{{ $cart->rowId }}">
                @csrf
                <div class="style-2 input-counter">

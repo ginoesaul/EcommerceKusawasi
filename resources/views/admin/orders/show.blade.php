@@ -15,7 +15,7 @@
             </h3>
             <span>
                @if($order->user_id)
-                  User :<a href="{{ route('user.show',$order->users->user_id)}}">{{ $order->users->name}}</a>
+                  Usuario :<a href="{{ route('user.show',$order->users->user_id)}}">{{ $order->users->name}}</a>
                @else
                   <span class="label label-default">INVITADO</span>
                @endif
@@ -99,10 +99,10 @@
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>APELLIDO :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>PROVINCIA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CIUDAD :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>ÁREA :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>DISTRITO :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>AVENIDA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CALLE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NUM :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>CANTIDAD :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CELULAR :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CÓDIGO POSTAL :</li>
                               </ul>
@@ -268,7 +268,7 @@
    @can('order-delete')
       <script>
           $(document).ready(function () {
-              deleteAjax("/admin/orders/orders-status/", "delete_me", "Order Details");
+              deleteAjax("/admin/orders/orders-status/", "delete_me", "Detalles del pedido");
           });
       </script>
    @endcan
