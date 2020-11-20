@@ -25,7 +25,7 @@
                <select name="sort" id="sort" class="form-control">
                   {{--            <option value="product_id" disabled="" selected="">ORDENADO POR:</option>--}}
                   <option value="product_id">Ordenar por defecto</option>
-                  <option value="created_at">Nuevos Productos</option>
+                  <option value="created_at">Nuevos productos</option>
                   <option value="buy_price">Precio de compra</option>
                   <option value="sale_price">Precio de venta</option>
                </select>

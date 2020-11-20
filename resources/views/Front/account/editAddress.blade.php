@@ -1,6 +1,6 @@
 @extends('layout.front.index')
 @section('title')
-   Editar Dirección
+   Editar dirección
 @endsection
 @section('extra_css')
 @endsection
@@ -18,7 +18,7 @@
       <div class="row">
          <div class="col-sm-6">
             <div class="form-group required">
-               <label for="name" class=" control-label">Primer Nombre: <span>*</span></label>
+               <label for="name" class=" control-label">Primer nombre: <span>*</span></label>
                <input type="text" value="{{ $address ? $address->name  : ''}}" name="name" class="form-control"
                       id="name" required>
             </div>

@@ -12,7 +12,7 @@
             ID
          </th>
          <th class="center">Nombre</th>
-         <th class="center">Correo</th>
+         <th class="center">Correo electrónico</th>
          <th class="center">Rol</th>
          <th class="center">Fecha de creación</th>
          <th class="center">Operaciones</th>

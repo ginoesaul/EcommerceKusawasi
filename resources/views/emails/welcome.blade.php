@@ -246,7 +246,7 @@
                                     <div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
                                        <a href="{{ route('front.profile',auth()->id()) }}"
                                           style="color: #ffffff; text-decoration: none; margin: 0px; text-align: center; vertical-align: baseline; border: 4px solid #6fb3e0; padding: 4px 9px; font-size: 15px; line-height: 21px; background-color: #6fb3e0;">&nbsp;
-                                          My profile &nbsp;</a>
+                                          Mi perfil &nbsp;</a>
                                     </div>
                                     <table class="table-space" height="16"
                                            style="height: 16px; font-size: 0px; line-height: 0; width: 378px; background-color: #ffffff;"
@@ -305,11 +305,11 @@
                                               style="font-family: Arial, sans-serif; line-height: 24px; color: #bbbbbb; font-size: 13px; font-weight: normal; text-align: center; padding: 9px; border-width: 1px 0px 0px; border-style: solid; border-color: #e3e3e3; background-color: #f5f5f5;"
                                               valign="top">
                                              <a href="{{ route('home') }}"
-                                                style="color: #428bca; text-decoration: none; background-color: transparent;">{{ env('APP_NAME') }}
+                                                style="color: #2C7A7B; text-decoration: none; background-color: transparent;">{{ env('APP_NAME') }}
                                                 &copy; {{ date('Y') }}</a>
                                              <br>
                                              {{--                                             <a href="#"--}}
-                                             {{--                                                style="color: #478fca; text-decoration: none; background-color: transparent;">twitter</a>--}}
+                                             {{--                                                style="color: #2C7A7B; text-decoration: none; background-color: transparent;">twitter</a>--}}
                                              {{--                                             .--}}
                                              {{--                                             <a href="#"--}}
                                              {{--                                                style="color: #5b7a91; text-decoration: none; background-color: transparent;">facebook</a>--}}

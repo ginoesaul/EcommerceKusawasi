@@ -64,7 +64,7 @@
                                     </li>
                                  </ul>
                               @else
-                                 <span class="badge badge-warning">NO HAY TARJETA DE REGALO</span>
+                                 <span class="badge badge-warning">NO HAY TARJETA DE REGALO.</span>
                               @endif
 
                            </li>
@@ -89,7 +89,7 @@
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>ÁREA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>AVENIDA :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CALLE :</li>
-                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NOM :</li>
+                                 <li><i class="ace-icon fa fa-caret-right blue"></i>NUM :</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>NÚMERO CELULAR:</li>
                                  <li><i class="ace-icon fa fa-caret-right blue"></i>CÓDIGO POSTAL :</li>
                               </ul>
@@ -156,7 +156,7 @@
                         <th class="center">Atributos</th>
                         <th class="center">Precio del producto</th>
                         <th class="center">Calidad</th>
-                        <th class="center">Fecha creada</th>
+                        <th class="center">Fecha de creación</th>
                      </tr>
                      </thead>
                      <tbody>
@@ -177,7 +177,7 @@
                         </tr>
                      @empty
                         <tr>
-                           <td colspan="10">No hay datos</td>
+                           <td colspan="10">No hay datos.</td>
                         </tr>
                      @endforelse
                      </tbody>
@@ -193,7 +193,7 @@
                         <span class="red">{{ $order->total_price }}</span>
                      </h4>
                   </div>
-                  <div class="col-sm-7 pull-left"><b>Extra Información:</b>
+                  <div class="col-sm-7 pull-left"><b>Información extra:</b>
                      <p class="">
                         {{ $order->details }}
                      </p>

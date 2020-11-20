@@ -99,7 +99,7 @@
                       //show loading image ,reset forms ,clear gallery
                       $(".preview").toggle();
                      @if(!isset($brand)) $("#brand_form")[0].reset(); @endif
-                     alert('{{ !isset($brand) ? 'new brand has created successfully' : "la marca se ha actualizado con éxito" }}');
+                     alert('{{ !isset($brand) ? 'new brand has created successfully' : "Marca actualizada con éxito." }}');
                   },
                   error: function (request, status, error) {
                       $(".preview").toggle();
