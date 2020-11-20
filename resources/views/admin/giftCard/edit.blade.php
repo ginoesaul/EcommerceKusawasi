@@ -10,7 +10,7 @@
       @method("PUT")
 
       <div class="form-group {{ $errors->has('gift_name') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_name">Nombre de la tarjeta de regalo</label>
+         <label class="bolder bigger-110" for="gift_name">Nombre de la tarjeta de regalo:</label>
          <input type="text" name="gift_name" maxlength="21" id="gift_name" placeholder="Nombre de la tarjeta de regalo"
                 value="{{ old('gift_name',$gift->gift_name)}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_name') }}</span>
@@ -25,14 +25,14 @@
       </div>
 
       <div class="form-group {{ $errors->has('gift_code') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_code">Código de la tarjeta de regalo</label>
+         <label class="bolder bigger-110" for="gift_code">Código de la tarjeta de regalo:</label>
          <input type="text" name="gift_code" maxlength="21" minlength="6" id="gift_code" placeholder="Código de la tarjeta de regalo"
                 value="{{old('gift_code',$gift->gift_code)}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_code') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('gift_amount') ? 'has-error' : '' }}">
-         <label class="bolder bigger-110" for="gift_amount">Cantidad de la tarjeta de regalo</label>
+         <label class="bolder bigger-110" for="gift_amount">Cantidad de la tarjeta de regalo:</label>
          <input type="number" name="gift_amount" maxlength="21" id="gift_amount" placeholder="Cantidad de la tarjeta de regalo"
                 value="{{old('gift_amount',$gift->gift_amount)}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('gift_amount') }}</span>
@@ -44,7 +44,7 @@
                <button type="submit" class="btn btn-info ">ACTUALIZAR</button>
             </div>
             <div class="btn-group">
-               <a class="btn btn-danger" onclick="history.back()">VOLCER</a>
+               <a class="btn btn-danger" onclick="history.back()">VOLVER</a>
             </div>
          </div>
       </div>

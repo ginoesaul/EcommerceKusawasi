@@ -69,7 +69,7 @@
                </div>
                @else
                <div class="clearfix">
-                  <h2 class="text-danger bolder">SIN FOTO</h2>
+                  <h2 class="text-danger bolder">Sin foto.</h2>
                </div>
             @endif
 
@@ -91,7 +91,7 @@
                <div class="profile-contact-links align-left ">
                   <a href="{{route('product.edit',$product->product_id)}}" class="btn btn-link">
                      <i class="ace-icon fa fa-plus-circle bigger-120 warning"></i>
-                     Editar el producto
+                     Editar producto
                   </a>
                </div>
 
@@ -99,7 +99,7 @@
                <div class="profile-contact-links align-left ">
                   <a href="{{ route('attribute.edit',$product->product_id) }}" class="btn btn-link">
                      <i class="ace-icon fa fa-plus-circle bigger-120 green"></i>
-                     Editar los atributos
+                     Editar atributos
                   </a>
                </div>
             @endcan
@@ -245,7 +245,7 @@
                               <span class='label label-default'>{{ $value->value }}</span>
                            @endforeach
                         @empty
-                           <b>NO HAY ATRIBUTOS</b>
+                           <b>No hay atributos.</b>
                         @endforelse
                      </span>
                   </div>
@@ -267,7 +267,7 @@
                </div>
             </div>
             <h2>Comentarios</h2>
-            <h6>el color rojo no está aprobado todavía </h6>
+            <h6>El color rojo no está aprobado todavía. </h6>
             <div class="col-sm-6">
                @forelse($comments as $comment)
                   <div class="well well-lg"
@@ -283,7 +283,7 @@
                      {{$comment->comment}}
                   </div>
                @empty
-                  no hay comentarios todavía
+                  Todavía no hay comentarios.
                @endforelse
                {{ $comments->links() }}
             </div>
