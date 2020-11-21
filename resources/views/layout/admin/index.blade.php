@@ -48,7 +48,7 @@
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-rtl"> De derecha a izquierda(rtl)</label>
+                        <label class="lbl" for="ace-settings-rtl"> Derecha-izquierda</label>
                      </div>
 
                      <div class="ace-settings-item">
@@ -64,12 +64,12 @@
                   <div class="pull-left width-50">
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-hover"> Submenú al pasar el mouse</label>
+                        <label class="lbl" for="ace-settings-hover"> Submenú</label>
                      </div>
 
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-compact"> Barra lateral compacta</label>
+                        <label class="lbl" for="ace-settings-compact"> Barra lateral</label>
                      </div>
 
                      <div class="ace-settings-item">
