@@ -1,21 +1,21 @@
 <?php
 return [
-    'notValidId' => 'the id is not valid, should be int',
+    'notValidId' => 'la identificación no es válida',
 
 
 
-    'saved' => 'has created successfully',
-    'savedFailed' => 'could not create , error ',
+    'saved' => 'ha creado con éxito',
+    'savedFailed' => 'no pudo crear , error ',
 
-    'edited' => 'has update successfully',
-    'editedFailed' => 'could not update , error ',
+    'edited' => 'ha actualizado con éxito',
+    'editedFailed' => 'no pudo actualizar , error ',
 
-    'deleted' => 'has deleted successfully',
-    'deletedFailed' => 'could not delete , error ',
+    'deleted' => 'ha borrado con éxito',
+    'deletedFailed' => 'no pudo borrar , error ',
 
-    'restored' => 'restored successfully',
-    'restoredFailed' => 'did not restore ,error',
+    'restored' => 'restaurado con éxito',
+    'restoredFailed' => 'no restauró ,error',
 
-    'status' => 'status has changed successfully',
-    'statusFailed' => 'could not changed status , error',
+    'status' => 'el estado ha cambiado con éxito',
+    'statusFailed' => 'no podía cambiar de estatus , error',
 ];
