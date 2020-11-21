@@ -11,7 +11,7 @@
       <div class="row">
          <div class="row indent-col-none">
             <div class="col-extra-400 col-xs-6 col-md-6">
-               <a href="listing-left-column.html" class="promo-box zoom-in design-14">
+               <a href="http://127.0.0.1:8000/products/categories/limpieza" class="promo-box zoom-in design-14">
                   <img src="{{asset('images/blc.jpg')}}" alt="imagen-categoria">
                   <div class="description point-left">
                      <div class="block-table">
@@ -24,7 +24,7 @@
                </a>
             </div>
             <div class="col-extra-400 col-xs-6 col-md-6">
-               <a href="listing-left-column.html" class="promo-box zoom-in design-14">
+               <a href="http://127.0.0.1:8000/products/categories/electrohogar" class="promo-box zoom-in design-14">
                   <img src="{{asset('images/electrohogar.jpg')}}" alt="imagen-categoria">
                   <div class="description point-left">
                      <div class="block-table">
@@ -39,7 +39,7 @@
          </div>
          <div class="row indent-col-none">
             <div class="col-extra-400 col-xs-6 col-md-6">
-               <a href="listing-left-column.html" class="promo-box zoom-in design-14">
+               <a href="http://127.0.0.1:8000/products/categories/decoracion" class="promo-box zoom-in design-14">
                   <img src="{{asset('images/decoracion.jpg')}}" alt="">
                   <div class="description point-left">
                      <div class="block-table">
@@ -52,7 +52,7 @@
                </a>
             </div>
             <div class="col-extra-400 col-xs-6 col-md-6">
-               <a href="listing-left-column.html" class="promo-box zoom-in design-14">
+               <a href="http://127.0.0.1:8000/products/categories/muebles" class="promo-box zoom-in design-14">
                   <img src="{{asset('images/muebles.jpg')}}" alt="">
                   <div class="description point-left">
                      <div class="block-table">
