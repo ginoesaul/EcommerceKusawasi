@@ -1,10 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-<<<<<<< HEAD
-   Editar Productos
-=======
    Editar producto
->>>>>>> Urpi
 @stop
 @section('extra_css')
    <!-- the script in this page wont work with pjax so i hava to reload it  -->
@@ -89,7 +85,7 @@
                   <span class="lbl"></span>
                </label>
 
-               <label><h4>Discount ?</h4>
+               <label><h4>¿Descuento?</h4>
                   <input type="checkbox" name="is_off" id="is_off" onclick=""
                          class="ace ace-switch ace-switch-5" {{ $product->is_off == 1 ? 'checked' :'' }}>
                   <span class="lbl"></span>
@@ -122,7 +118,7 @@
                   <label>
                      <h4>¿Tiene tamaño?</h4>
                      <input type="checkbox" name="has_size" id="has_size" class="ace ace-switch ace-switch-5"
-                             {{ $product->has_size == 1 ? 'checked' :'' }}>
+                             {{ $product->has_size == 1 ? 'Comprobado' :'' }}>
                      <span class="lbl"></span>
                   </label>
                </div>

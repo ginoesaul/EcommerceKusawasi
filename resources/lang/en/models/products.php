@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'singular' => 'Product',
-  'plural' => 'Products',
+  'singular' => 'Producto',
+  'plural' => 'Productos',
   'fields' => 
   array (
     'product_id' => 'Código de producto',
@@ -12,9 +12,9 @@ return array (
     'sku' => 'Sku',
     'status' => 'Estado',
     'data_available' => 'Data Available',
-    'is_off' => 'Is Off',
-    'off_price' => 'Off Price',
-    'has_size' => 'Has Size',
+    'is_off' => '¿Está completado',
+    'off_price' => 'Precio de descuento',
+    'has_size' => 'Tiene tamaño',
     'buy_price' => 'Precio de compra',
     'sale_price' => 'Precio de venta',
     'quantity' => 'Cantidad',

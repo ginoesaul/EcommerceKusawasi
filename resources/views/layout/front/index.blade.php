@@ -126,7 +126,7 @@
 {{--<script src="{{asset('front-assets/external/panelmenu/panelmenu.js')}}"></script>--}}
 {{--<script src="{{asset('front-assets/js/quick-view.js')}}"></script>--}}
 {{--<script src="{{asset('front-assets/js/main.js')}}"></script>--}}
-<<!-- script for load page on AJAX-->
+<!-- script for load page on AJAX-->
 <script>
     jQuery(document).ready(function () {
        /* jQuery(".load_page").one('click', function (e) {

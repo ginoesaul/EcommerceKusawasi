@@ -1,17 +1,17 @@
 <?php
 
 return array (
-  'singular' => 'Payment',
-  'plural' => 'Payments',
+  'singular' => 'Pago',
+  'plural' => 'Pagos',
   'fields' => 
   array (
-    'payment_id' => 'Payment Id',
-    'user_id' => 'User Id',
-    'order_id' => 'Order Id',
-    'status' => 'Status',
-    'payment_status' => 'Payment Status',
+    'payment_id' => 'Pago Id',
+    'user_id' => 'Usuario Id',
+    'order_id' => 'Orden Id',
+    'status' => 'Estado',
+    'payment_status' => 'Estado de pago',
     'sub_total' => 'Sub Total',
-    'created_at' => 'Created At',
-    'updated_at' => 'Updated At',
+    'created_at' => 'Creado',
+    'updated_at' => 'Actualizado',
   ),
 );
