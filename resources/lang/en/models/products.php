@@ -12,7 +12,7 @@ return array (
     'sku' => 'Sku',
     'status' => 'Estado',
     'data_available' => 'Data Available',
-    'is_off' => 'Está apagado',
+    'is_off' => '¿Está completado',
     'off_price' => 'Precio de descuento',
     'has_size' => 'Tiene tamaño',
     'buy_price' => 'Precio de compra',
