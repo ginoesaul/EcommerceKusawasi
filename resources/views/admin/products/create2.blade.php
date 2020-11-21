@@ -6,7 +6,7 @@
 @endsection
 @section('content')
    <div class="bolder center text-info">
-      <h5>por favor elija la foto y otras opciones</h5>
+      <h5>Por favor, seleccione la imagen y otras opciones.</h5>
    </div>
    <form action="{{ route('product.store2') }}" method="post" enctype="multipart/form-data" id="product-form2">
       @csrf
