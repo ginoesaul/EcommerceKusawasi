@@ -9,5 +9,5 @@ return [
     */
 
     'action' => 'operations',
-    'are_you_sure' => 'are you sure?',
+    'are_you_sure' => '¿Estas seguro?',
 ];

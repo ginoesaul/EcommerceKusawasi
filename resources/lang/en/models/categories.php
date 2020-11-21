@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'singular' => 'Category',
+  'singular' => 'Categoria',
   'plural' => 'Categorías',
   'fields' => 
   array (

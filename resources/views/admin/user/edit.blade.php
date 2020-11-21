@@ -11,14 +11,14 @@
 
       <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
          <label class="bolder bigger-110" for="name">Nombre:</label>
-         <input type="text" name="name" maxlength="21" id="name" placeholder="Name"
+         <input type="text" name="name" maxlength="21" id="name" placeholder="Nombre"
                 value="{{isset($user->name) ? $user->name : old('name')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('name') }}</span>
       </div>
 
       <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
          <label class="bolder bigger-110" for="email">Correo electrónico:</label>
-         <input type="email" name="email" maxlength="21" id="email" placeholder="Email"
+         <input type="email" name="email" maxlength="21" id="email" placeholder="Correo"
                 value="{{isset($user->email) ? $user->email : old('email')}}" required class="form-control">
          <span class="text-danger">{{ $errors->first('email') }}</span>
       </div>
