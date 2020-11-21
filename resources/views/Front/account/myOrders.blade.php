@@ -50,16 +50,16 @@
                   <span class="label badge-normal ">INCOMPLETO</span>
                   @break
                   @case(1)
-                  <span class="label label-default arrowed bolder ">Todavía no se ha enviado.</span>
+                  <span class="label label-default arrowed bolder ">TODAVÍA NO HA SIDO ENVIADO.</span>
                   @break
                   @case(2)
-                  <span class="label label-warning bolder ">Ha sido enviado.</span>
+                  <span class="label label-warning bolder ">HA SIDO ENVIADO.</span>
                   @break
                   @case(3)
-                  <span class="label label-success bolder ">Entregado</span>
+                  <span class="label label-success bolder ">ENTREGADO</span>
                   @break
                   @case(5)
-                  <span class="label bg-brown">Cancelado</span>
+                  <span class="label bg-brown">CANCELADO</span>
                   @break
                @endswitch
             </td>
@@ -84,13 +84,13 @@
                @auth()
                   @if ($order->order_status == 0)
                      <div class="_operations">
-                        <a class="btn btn-xs bg-orange" title="edit address"
+                        <a class="btn btn-xs bg-orange" title="Editar dirección"
                            href="{{ route('front.order.address.edit',$order->order_id) }}">
                            <i class="icon icon-edit"></i>
                         </a>
 
-                        <a class="btn btn-xs btn-red cancel_order" data-id="{{$order->order_id}}" title="Cancel Order"
-                           onclick="return confirm('Are you sure to cancel this order?')"
+                        <a class="btn btn-xs btn-red cancel_order" data-id="{{$order->order_id}}" title="Cancelar Orden"
+                           onclick="return confirm('¿Está seguro de cancelar este pedido?')"
                            href="{{ route('front.cancel.order') }}">
                            <i class="icon icon-delete"></i>
                         </a>
@@ -167,7 +167,7 @@
                    order_id: $(this).data('id')
                };
                if (upload_ajax("{{ route('front.cancel.order') }}", data)) {
-                   alert('your order has been canceled');
+                   alert('su pedido ha sido cancelado');
                    $(this).closest("tr").find('.status_').empty().append('<span class="label bg-brown">Cancelado</span>');
                    $(this).closest('div').remove();
 
