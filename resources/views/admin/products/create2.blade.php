@@ -6,7 +6,7 @@
 @endsection
 @section('content')
    <div class="bolder center text-info">
-      <h5>por favor elija la foto y otras opciones</h5>
+      <h5>Por favor, seleccione la imagen y otras opciones.</h5>
    </div>
    <form action="{{ route('product.store2') }}" method="post" enctype="multipart/form-data" id="product-form2">
       @csrf
@@ -99,7 +99,7 @@
                <input type="submit" class="btn btn-success btn-block" id="" value="GUARDAR">
             </div>
             <div class="col-xs-6">
-               <input type="reset" class="btn btn-warning btn-block" value="Reset!">
+               <input type="reset" class="btn btn-warning btn-block" value="¡Reiniciar!">
             </div>
          </div>
 

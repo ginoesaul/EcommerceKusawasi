@@ -11,8 +11,8 @@ return array (
     'title' => 'Title',
     'body' => 'Body',
     'cover' => 'Cover',
-    'created_at' => 'Created At',
-    'updated_at' => 'Updated At',
-    'deleted_at' => 'Deleted At',
+    'created_at' => 'Creado',
+    'updated_at' => 'Actualizado',
+    'deleted_at' => 'Eliminado',
   ),
 );

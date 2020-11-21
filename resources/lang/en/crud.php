@@ -8,6 +8,6 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'action' => 'operations',
+    'action' => 'operaciones',
     'are_you_sure' => '¿Estas seguro?',
 ];
