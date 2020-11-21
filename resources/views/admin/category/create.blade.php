@@ -16,7 +16,7 @@
       </div>
       <div class="form-group {{ $errors->has('category_slug') ? 'has-error' : '' }}">
          <label class="bolder bigger-110" for="category_slug">Slug de la categoria</label>
-         <input type="text" name="category_slug" maxlength="21" id="category_slug" placeholder="Category Slug"
+         <input type="text" name="category_slug" maxlength="21" id="category_slug" placeholder="Slug de la categoria"
                 value="{{old('category_slug')}}" required
                 class="form-control">
          <span class="text-danger">{{ $errors->first('category_slug') }}</span>

@@ -1,10 +1,6 @@
 @extends('layout.admin.index' )
 @section('title')
-<<<<<<< HEAD
-   Crear Nuevo Producto
-=======
    Crear producto
->>>>>>> Urpi
 @stop
 @section('extra_css')
 @stop
@@ -96,7 +92,7 @@
                   <span class="lbl"></span>
                </label>
                <br>
-               <label><h4>Discount ?</h4>
+               <label><h4>¿Descuento?</h4>
                   <input type="checkbox" name="is_off" id="is_off" onclick="showDiscount()"
                          class="ace ace-switch ace-switch-5" {{ old('is_off') == 'on' ? 'checked' :'' }}>
                   <span class="lbl"></span>
