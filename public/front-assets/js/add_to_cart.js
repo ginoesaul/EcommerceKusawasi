@@ -3,12 +3,12 @@ $(document).on('click','.add_to_cart',function (e) {
     e.preventDefault();
     var color = $('#p_color').val();
     if (!color) {
-        $("#p_error").text('Please select Color').show();
+        $("#p_error").text('Por favor seleccione un color').show();
         return
     }
     var size = $('#p_size').val();
     if (!size) {
-        $("#p_error").text('Please select Size').show();
+        $("#p_error").text('Por favor seleccione un tamaño').show();
         return
     }
     if ($('.select-inline').val()){
