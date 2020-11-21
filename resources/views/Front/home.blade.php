@@ -73,12 +73,8 @@
    <hr>
    
    <hr> 
-<<<<<<< HEAD
-   <--<div class="container" style="margin-top: -0.0rem">
-=======
    <!-- PRODUCTS -->
    <div class="container" style="margin-top: -0.0rem">
->>>>>>> 24548bdb3dc80211f0b2122ead37afcec7142de8
       <div class="row">
          <div class="filter-isotop">
             <div class="grid" id="products_data">
@@ -97,47 +93,47 @@
 @endsection
 @section('extra_js')
    <script type="text/javascript">
-       var page = 1;
-       $(window).scroll(function () {
-          // if ($(window).scrollTop() +
-              // ($('#product_data').height() + $('#footer').height() + 900) >= $(document).height()) {
-               //page++;
-               //this will avoid send more request when all data has loaded
-               //if (page > $("#lastPage").val()) {
-                  // $('.ajax-load').hidden;
-                  // $('#load').show();
-                   //return;
-              // }
-               //avoid to show more than 3 page
-               //if (page === 3){
-                   //return;
-               }//
-               // console.log(page);
-              // loadMoreData(page);
-           //}
-           /*function loadMoreData(page) {
+      // var page = 1;
+      //  $(window).scroll(function () {
+      //      if ($(window).scrollTop() +
+      //        ($('#product_data').height() + $('#footer').height() + 900) >= $(document).height()) {
+      //          page++;
+      //          //this will avoid send more request when all data has loaded
+      //          if (page > $("#lastPage").val()) {
+      //              $('.ajax-load').hidden;
+      //              $('#load').show();
+      //              return;
+      //          }
+      //          avoid to show more than 3 page
+      //          if (page === 3){
+      //              return;
+      //          }
+      //           console.log(page);
+      //          loadMoreData(page);
+      //      }
+      //      function loadMoreData(page) {
 
-               $.ajax(
-                   {
-                       url: '/?page=' + page,
-                       type: "get",
-                       beforeSend: function () {
-                           $('.ajax-load').show();
-                       }
-                   })
-                   .done(function (data) {
-                       if (data.html == " ") {
-                           $('.ajax-load').attr('src', '');
-                           $('#load').show();
-                           return;
-                       }
-                       $('.ajax-load').hide();
-                      // $("#products_data").append(data.html);
-                   })
-                   .fail(function (jqXHR, ajaxOptions, thrownError) {
-                       console.log(jqXHR);
-                   });
-           }*/
-       });
+      //          $.ajax(
+      //              {
+      //                  url: '/?page=' + page,
+      //                  type: "get",
+      //                  beforeSend: function () {
+      //                      $('.ajax-load').show();
+      //                  }
+      //              })
+      //              .done(function (data) {
+      //                  if (data.html == " ") {
+      //                      $('.ajax-load').attr('src', '');
+      //                      $('#load').show();
+      //                      return;
+      //                  }
+      //                  $('.ajax-load').hide();
+      //                 // $("#products_data").append(data.html);
+      //              })
+      //              .fail(function (jqXHR, ajaxOptions, thrownError) {
+      //                  console.log(jqXHR);
+      //              });
+      //      }
+      //  });
    </script>
 @endsection

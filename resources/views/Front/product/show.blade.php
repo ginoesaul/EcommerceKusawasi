@@ -306,7 +306,7 @@
                    id: jQuery('#favorite').attr('data-id')
                };
                if (upload_ajax("{{ route('favorite') }}", data)) {
-                   $('#favorite').empty().append('<span class="fa fa-heart"></span><span class="text">Delete From WISHLIST</span>');
+                   $('#favorite').empty().append('<span class="fa fa-heart"></span><span class="text">Borar de FAVORITOS</span>');
                    $(this).attr('id', 'unfavorites');
                }
            });
@@ -318,7 +318,7 @@
                    id: jQuery('#unfavorites').attr('data-id')
                };
                if (upload_ajax("{{ route('unfavorite') }}", data)) {
-                   $('#unfavorites').empty().append('<span class="fa fa-heart-o"></span><span class="text">ADD TO WISHLIST</span>');
+                   $('#unfavorites').empty().append('<span class="fa fa-heart-o"></span><span class="text">Añadir a FAVORITOS</span>');
                }
            });
 
@@ -329,7 +329,7 @@
                    id: jQuery(this).attr('data-id')
                };
                if (upload_ajax("{{ route('front.productsCompare') }}", data)) {
-                   $('#compare_text').empty().text('added to Compare list');
+                   $('#compare_text').empty().text('añadido a la lista de comparación');
                }
            });
 

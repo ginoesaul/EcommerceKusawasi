@@ -56,7 +56,7 @@
                                autocomplete="off"/>
                         <label class="lbl" for="ace-settings-add-container">
                            Dentro
-                           <b>.container</b>
+                           <b>.contenedor</b>
                         </label>
                      </div>
                   </div><!-- /.pull-left -->
@@ -75,7 +75,7 @@
                      <div class="ace-settings-item">
                         <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight"
                                autocomplete="off"/>
-                        <label class="lbl" for="ace-settings-highlight"> Alt. Elemento activo</label>
+                        <label class="lbl" for="ace-settings-highlight">Elemento activo</label>
                      </div>
                   </div><!-- /.pull-left -->
                </div>

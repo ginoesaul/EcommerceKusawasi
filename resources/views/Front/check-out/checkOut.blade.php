@@ -516,26 +516,26 @@
                    method: "post",
                    data: {giftCode: $("#giftCode").val()},
                    beforeSend: function () {
-                       $("#apply_gift").text('loading...');
+                       $("#apply_gift").text('cargando...');
                    },
                })
                    .done(function (result) {
-                       $("#apply_gift").text('APPLY DISCOUNT');
+                       $("#apply_gift").text('APLICAR DESCUENTO');
                        if (result.success == 'empty') {
-                           jQuery('#error-gift').empty().html('the filed is empty ').addClass('alert-danger');
+                           jQuery('#error-gift').empty().html('el archivo está vacío ').addClass('alert-danger');
                            jQuery('#off_div').removeClass('has-success').addClass('has-error');
                        }
                        if (result.success == 'true') {
-                           jQuery('#error-gift').empty().html('the code has added ').removeClass().addClass('alert-success');
+                           jQuery('#error-gift').empty().html('el código ha añadido ').removeClass().addClass('alert-success');
                            jQuery('#off_div').removeClass('has-error').addClass('has-success');
 
                        }
                        if (result.success == 'false') {
-                           jQuery('#error-gift').empty().html('the code is not true').removeClass().addClass('alert-danger');
+                           jQuery('#error-gift').empty().html('el código no existe').removeClass().addClass('alert-danger');
                            jQuery('#off_div').removeClass('has-success').addClass('has-error');
                        }
                        if (result.success == 'repeat') {
-                           jQuery('#error-gift').empty().html('u can use this code only one time').removeClass().addClass('alert-danger');
+                           jQuery('#error-gift').empty().html('Puedes usar este código sólo una vez').removeClass().addClass('alert-danger');
                            jQuery('#off_div').removeClass('has-success').addClass('has-error');
 
                        }
