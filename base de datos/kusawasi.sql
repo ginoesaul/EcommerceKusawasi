@@ -176,7 +176,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'role-list','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(2,'role-create','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(3,'role-edit','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(4,'role-delete','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(5,'product-list','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(6,'product-create','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(7,'product-edit','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(8,'product-delete','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(9,'order-list','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(10,'order-create','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(11,'order-edit','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(12,'order-delete','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(13,'gift-list','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(14,'gift-create','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(15,'gift-edit','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(16,'gift-delete','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(17,'see-dashboard','web','2020-11-17 05:26:58','2020-11-17 05:26:58');
+INSERT INTO `permissions` VALUES (1,'rol-lista','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(2,'role-create','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(3,'role-edit','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(4,'role-delete','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(5,'product-list','web','2020-11-17 05:26:56','2020-11-17 05:26:56'),(6,'product-create','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(7,'product-edit','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(8,'product-delete','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(9,'order-list','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(10,'order-create','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(11,'order-edit','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(12,'order-delete','web','2020-11-17 05:26:57','2020-11-17 05:26:57'),(13,'gift-list','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(14,'gift-create','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(15,'gift-edit','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(16,'gift-delete','web','2020-11-17 05:26:58','2020-11-17 05:26:58'),(17,'see-dashboard','web','2020-11-17 05:26:58','2020-11-17 05:26:58');
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -232,7 +232,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'super-admin','can do anything','web',NULL,NULL),(2,'employee','can edit and create products , add new brands and categories , manage comments','web',NULL,NULL),(3,'author','can create products , manage comments ','web',NULL,NULL);
+INSERT INTO `roles` VALUES (1,'administrador','puede hacer cualquier cosa','web',NULL,NULL),(2,'empleado','puede editar y crear productos, añadir nuevas marcas y categorías, gestionar los comentarios','web',NULL,NULL),(3,'autor','puede crear productos, gestionar comentarios','web',NULL,NULL);
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 

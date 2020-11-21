@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'search' => 'search',
-    'and' => 'and',
-    'list' => 'list',
+    'search' => 'buscar',
+    'and' => 'y',
+    'list' => 'lista',
 
 
 

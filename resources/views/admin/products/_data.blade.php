@@ -35,10 +35,10 @@
       {{--            <td>--}}
       <td class="center">
          @if($product->is_off == 1)
-            <span class='label label-warning smaller-80'>APAGADO</span>
+            <span class='label label-warning smaller-80'>COMPLETADO</span>
             <b>{{ number_format($product->off_price) }}</b>
          @else
-            <span class="label label-info smaller-80">NO APAGADO</span>
+            <span class="label label-info smaller-80">NO COMPLETADO</span>
          @endif
       </td>
       {{--            <td class="smaller-80">{{ $product->is_off == 1 ? $product->off_price : '' }}</td>--}}
