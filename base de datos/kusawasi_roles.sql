@@ -21,7 +21,7 @@
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'super-admin','can do anything','web',NULL,NULL),(2,'employee','can edit and create products , add new brands and categories , manage comments','web',NULL,NULL),(3,'author','can create products , manage comments ','web',NULL,NULL);
+INSERT INTO `roles` VALUES (1,'administrador','puede hacer cualquier cosa','web',NULL,NULL),(2,'empleado','puede editar y crear productos, añadir nuevas marcas y categorías, gestionar los comentarios','web',NULL,NULL),(3,'autor','puede crear productos, gestionar comentarios','web',NULL,NULL);
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

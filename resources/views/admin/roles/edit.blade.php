@@ -1,6 +1,6 @@
 @extends('layout.admin.index')
 @section('title')
-   Editar el papel
+   Editar roles
 @endsection
 @section('extra_css')
 @endsection
@@ -9,7 +9,7 @@
    <div class="row">
       <div class="col-lg-12 margin-tb">
          <div class="pull-left">
-            <h2>Editar el papel</h2>
+            <h2>Editar roles</h2>
          </div>
       </div>
    </div>
@@ -34,7 +34,7 @@
          </div>
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-               <strong>Permiso:</strong>
+               <strong>Permisos:</strong>
                <br/>
                @foreach($permission as $value)
                   <label>

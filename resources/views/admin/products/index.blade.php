@@ -24,7 +24,7 @@
             <div class="btn-group">
                <select name="sort" id="sort" class="form-control">
                   {{--            <option value="product_id" disabled="" selected="">ORDENADO POR:</option>--}}
-                  <option value="product_id">Ordenar por defecto</option>
+                  <option value="product_id">Productos con defectos</option>
                   <option value="created_at">Nuevos productos</option>
                   <option value="buy_price">Precio de compra</option>
                   <option value="sale_price">Precio de venta</option>
@@ -50,14 +50,14 @@
          </form>
          <a class="click_me btn btn-info2 btn-sm" href="{{ route('product.index.trash') }}">
             <i class="ace-icon fa fa-trash-o "></i>
-            Trash
+            Eliminar
          </a>
       </div>
       <div class="pull-right">
          <form method="post" action="{{ route('admin.search') }}" id="form-search"
                onsubmit="event.preventDefault()">
             @csrf
-            <span><i>@lang('ext.search') : <b>@lang('models/products.fields.product_name')</b> @lang('ext.and') <b>@lang('models/products.fields.sku')</b></i></span>
+            <span><i>Buscar : <b>@lang('models/products.fields.product_name')</b> y <b>@lang('models/products.fields.sku')</b></i></span>
             <input type="hidden" value="products" name="search_kind">
             <span class="input-icon">
                <input type="text" placeholder="Buscando..." class="nav-search-input"
@@ -164,7 +164,7 @@
                        if (data.html == " ") {
                            // $('.ajax-load').attr('src', '');
                            $('#preview').hide();
-                           $('.table_body').html("No more records found");
+                           $('.table_body').html("No se han encontrado más registros");
                            return;
                        }
                        $("#table_body").empty().append(data.html);
