@@ -52,7 +52,7 @@
               for (i = 0, j = data.selected.length; i < j; i++) {
                   r.push(data.instance.get_node(data.selected[i]).li_attr['data-id']);
               }
-              if (!confirm('Are you Sure?')) {
+              if (!confirm('¿Estas seguro?')) {
                   return false;
               }
               var id = r.join(', ');
