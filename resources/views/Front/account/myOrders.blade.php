@@ -50,16 +50,16 @@
                   <span class="label badge-normal ">INCOMPLETO</span>
                   @break
                   @case(1)
-                  <span class="label label-default arrowed bolder ">Todavía no se ha enviado.</span>
+                  <span class="label label-default arrowed bolder ">TODAVÍA NO HA SIDO ENVIADO.</span>
                   @break
                   @case(2)
-                  <span class="label label-warning bolder ">Ha sido enviado.</span>
+                  <span class="label label-warning bolder ">HA SIDO ENVIADO.</span>
                   @break
                   @case(3)
-                  <span class="label label-success bolder ">Entregado</span>
+                  <span class="label label-success bolder ">ENTREGADO</span>
                   @break
                   @case(5)
-                  <span class="label bg-brown">Cancelado</span>
+                  <span class="label bg-brown">CANCELADO</span>
                   @break
                @endswitch
             </td>
