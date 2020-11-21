@@ -31,7 +31,7 @@
                <a class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon-person "></span></a>
                <div class="dropdown-label hidden-sm hidden-xs">Mi perfil</div>
                <ul class="dropdown-menu">
-                  <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li>
+                  <!-- <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li> -->
                   <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Seguimiento de mi pedido</a></li>
                   @auth
                      {{--                           <li>Bienvenido <b>{{ auth()->user()->name }}</b></li>--}}
@@ -192,7 +192,7 @@
                         <span class="dropdown-label hidden-sm hidden-xs">Mi perfil</span>
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li>
+                        <!-- <li><a href="{{ route('front.compare') }}"><span class="fa fa-balance-scale"></span>Comparar</a></li> -->
                         <li><a href="#" data-toggle="modal" data-target="#modalTrackOrder"><span class="icon icon-track_changes"></span>Seguimiento de mi pedido</a></li>
                      @auth
 {{--                           <li>Welcome <b>{{ auth()->user()->name }}</b></li>--}}

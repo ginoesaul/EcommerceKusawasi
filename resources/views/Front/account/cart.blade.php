@@ -77,9 +77,9 @@
             <div class="shopping-cart-btns">
                @if (Cart::count() > 0)
                   <div class="pull-right">
-                     <a class="btn-link" href="#"><span class="icon icon-cached color-base"></span>ACTUALIZAR CARRITO DE COMPRA</a>
+                     <a class="btn-link" href="#"><span class="icon icon-cached color-base"></span>ACTUALIZAR CARRITO</a>
                      <div class="clearfix visible-xs visible-sm"></div>
-                     <a class="btn-link" href="{{ route('cart.clear') }}"><span class="icon icon-delete"></span>ELIMINAR CARRITO DE COMPRA</a>
+                     <a class="btn-link" href="{{ route('cart.clear') }}"><span class="icon icon-delete"></span>ELIMINAR CARRITO</a>
                   </div>
                   <div class="pull-left">
                      <a class="btn-link" href=""><span class="icon icon-keyboard_arrow_left"></span>SEGUIR COMPRANDO
