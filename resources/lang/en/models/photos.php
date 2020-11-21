@@ -1,18 +1,18 @@
 <?php
 
 return array (
-  'singular' => 'Photo',
-  'plural' => 'Photos',
+  'singular' => 'Foto',
+  'plural' => 'Fotos',
   'fields' => 
   array (
-    'photo_id' => 'Photo Id',
-    'photo_title' => 'Photo Title',
+    'photo_id' => 'Foto Id',
+    'photo_title' => 'Titulo de la foto',
     'src' => 'Src',
-    'photo_size' => 'Photo Size',
-    'photo_type' => 'Photo Type',
-    'photoable_type' => 'Photoable Type',
-    'photoable_id' => 'Photoable Id',
-    'created_at' => 'Created At',
-    'updated_at' => 'Updated At',
+    'photo_size' => 'Tamaño de la foto',
+    'photo_type' => 'Tipode la foto',
+    'photoable_type' => 'Tipo fotografiable',
+    'photoable_id' => 'Fotografiable Id',
+    'created_at' => 'Creado',
+    'updated_at' => 'Actualizado',
   ),
 );

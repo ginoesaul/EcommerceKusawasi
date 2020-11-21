@@ -83,8 +83,8 @@ class roleController extends Controller
 
 
         return env('APP_AJAX')
-            ? response()->json(['success' => 'Role created successfully'], 200)
-            : redirect()->route('roles.index')->with('success', 'Role created successfully');
+            ? response()->json(['success' => 'El rol ha sido creado con éxito'], 200)
+            : redirect()->route('roles.index')->with('success', 'El rol ha sido creado con éxito');
     }
 
     /**

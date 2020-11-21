@@ -3,12 +3,12 @@ $(document).on('click','.add_to_cart',function (e) {
     e.preventDefault();
     var color = $('#p_color').val();
     if (!color) {
-        $("#p_error").text('Please select Color').show();
+        $("#p_error").text('Por favor seleccione un color').show();
         return
     }
     var size = $('#p_size').val();
     if (!size) {
-        $("#p_error").text('Please select Size').show();
+        $("#p_error").text('Por favor seleccione un tamaño').show();
         return
     }
     if ($('.select-inline').val()){
@@ -54,7 +54,7 @@ $(document).on('click','.add_to_cart',function (e) {
         .done(function (data) {
             $("#cart_content").empty().append(data.html);
             $("#cart_div").load(location.href + " #cart_div");
-            $('#add_to_cart').text('Añadir a la cesta').css("background-color", "#1B6AAA");
+            $('#add_to_cart').text('Añadir al carrito').css("background-color", "#1B6AAA");
         })
         .fail(function (jqXHR, ajaxOptions, error) {
             console.log(jqXHR, ajaxOptions, error);
@@ -127,7 +127,7 @@ function editCart(e){
         dataType: "Json",
         data: {_token: _token,qty: qty, rowId: rowId},
     }).done(function ($results) {
-        alert('updated');
+        alert('actualizar');
         // console.log($results);
     }).fail(function (jqXHR, ajaxOptions, thrownError) {
         console.log(jqXHR);
