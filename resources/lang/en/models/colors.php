@@ -2,11 +2,11 @@
 
 return array (
   'singular' => 'Color',
-  'plural' => 'Colors',
+  'plural' => 'Colores',
   'fields' => 
   array (
     'color_id' => 'Color Id',
-    'color_name' => 'Color Name',
-    'color_code' => 'Color Code',
+    'color_name' => 'Nombre del color',
+    'color_code' => 'Código del color',
   ),
 );

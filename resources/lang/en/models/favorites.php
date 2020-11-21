@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'singular' => 'Favorite',
-  'plural' => 'Favorites',
+  'singular' => 'Favorito',
+  'plural' => 'Favoritos',
   'fields' => 
   array (
     'favorite_id' => 'Favorite Id',
