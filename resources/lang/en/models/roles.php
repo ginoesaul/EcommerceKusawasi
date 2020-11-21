@@ -6,10 +6,10 @@ return array (
   'fields' => 
   array (
     'id' => 'Id',
-    'name' => 'Name',
-    'description' => 'Description',
-    'guard_name' => 'Guard Name',
-    'created_at' => 'Created At',
-    'updated_at' => 'Updated At',
+    'name' => 'Nombre',
+    'description' => 'Descripción',
+    'guard_name' => 'Guardar Nombre',
+    'created_at' => 'Creado',
+    'updated_at' => 'Actualizado',
   ),
 );
